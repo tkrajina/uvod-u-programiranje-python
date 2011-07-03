@@ -1,0 +1,53 @@
+\select@language {croatian}
+\contentsline {chapter}{Sadr\v zaj}{2}
+\contentsline {chapter}{Uvod}{3}
+\contentsline {section}{Kako se u\v {c}i programirati?}{4}
+\contentsline {section}{Za\v {s}to Python}{5}
+\contentsline {chapter}{\numberline {1}O programiranju, programskim jezicima i programima}{6}
+\contentsline {section}{\numberline {1.1}O programiranju}{6}
+\contentsline {section}{\numberline {1.2}O programskim jezicima}{7}
+\contentsline {subsection}{\numberline {1.2.1}Interpreteri i kompajleri}{8}
+\contentsline {section}{\numberline {1.3}O programima}{10}
+\contentsline {subsection}{\numberline {1.3.1}Primjeri u raznim programskim jezicima}{11}
+\contentsline {section}{\numberline {1.4}O programskom jeziku \emph {Python}}{13}
+\contentsline {subsection}{\numberline {1.4.1}"Python kao Monty Python?"}{13}
+\contentsline {chapter}{\numberline {2}Uvod u programiranje}{14}
+\contentsline {section}{\numberline {2.1}\v {S}to je danas lijep i sun\v {c}an dan}{14}
+\contentsline {subsection}{\numberline {2.1.1}Snimanje programa}{14}
+\contentsline {subsection}{\numberline {2.1.2}Pokretanje programa}{15}
+\contentsline {subsection}{\numberline {2.1.3}Python kao kalkulator}{15}
+\contentsline {section}{\numberline {2.2}Komentari u programu}{16}
+\contentsline {section}{\numberline {2.3}Varijable}{17}
+\contentsline {section}{\numberline {2.4}Naredbe}{18}
+\contentsline {section}{\numberline {2.5}Imena}{20}
+\contentsline {section}{\numberline {2.6}Klju\v {c}ne rije\v {c}i}{21}
+\contentsline {section}{\numberline {2.7}Komuniciranje s okolinom}{22}
+\contentsline {chapter}{\numberline {3}Izrazi}{24}
+\contentsline {section}{\numberline {3.1}Aritmeti\v {c}ki izrazi}{24}
+\contentsline {section}{\numberline {3.2}Logi\v {c}ki izrazi}{25}
+\contentsline {subsection}{\numberline {3.2.1}Logi\v {c}ka operacija \emph {and}}{26}
+\contentsline {subsection}{\numberline {3.2.2}Logi\v {c}ka operacija \emph {or}}{27}
+\contentsline {subsection}{\numberline {3.2.3}Logi\v {c}ka operacija \emph {not}}{27}
+\contentsline {subsection}{\numberline {3.2.4}Nekoliko dodatnih pravila}{28}
+\contentsline {chapter}{\numberline {4}Kontrola toka programa}{29}
+\contentsline {section}{\numberline {4.1}if \dots then \dots else \dots }{29}
+\contentsline {section}{\numberline {4.2}for \dots in range( \dots )}{33}
+\contentsline {section}{\numberline {4.3}while \dots }{39}
+\contentsline {section}{\numberline {4.4}Potprogrami i funkcije}{41}
+\contentsline {subsection}{\numberline {4.4.1}Procedure}{41}
+\contentsline {subsection}{\numberline {4.4.2}Funkcije}{44}
+\contentsline {subsection}{\numberline {4.4.3}Ugra\dj {}ene funkcije}{46}
+\contentsline {subsection}{\numberline {4.4.4}Doseg varijabli}{47}
+\contentsline {section}{\numberline {4.5}try}{47}
+\contentsline {section}{\numberline {4.6}break i continue}{47}
+\contentsline {chapter}{\numberline {5}Tipovi podataka}{48}
+\contentsline {section}{\numberline {5.1}Jednostavni tipovi podataka}{48}
+\contentsline {subsection}{\numberline {5.1.1}Cijeli i realni brojevi}{48}
+\contentsline {subsection}{\numberline {5.1.2}Stringovi}{49}
+\contentsline {subsection}{\numberline {5.1.3}Konverzija tipova}{53}
+\contentsline {subsection}{\numberline {5.1.4}Varijable i vrste podataka}{53}
+\contentsline {section}{\numberline {5.2}Liste}{53}
+\contentsline {section}{\numberline {5.3}Rije\v cnici}{53}
+\contentsline {section}{\numberline {5.4}Datoteka}{53}
+\contentsline {section}{\numberline {5.5}Ostali slo\v zeni tipovi podataka}{53}
+\contentsline {chapter}{\numberline {6}Moduli}{54}

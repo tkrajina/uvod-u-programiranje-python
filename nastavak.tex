@@ -1,0 +1,594 @@
+\chapter{Izrazi}
+
+\section{Aritmeticcki izrazi}
+
+Aritmeticcki izrazi su matematiccki izrazi s kakvima se raccuna u
+osnovnoj sskoli. Najccessche se sastoje od brojeva ili varijabli
+koje imaju brojccanu vrijednost i matematicckih operacija. Primjer
+aritmeticckog izraza mozze biti: $2+4-2$, 
+$\frac{3+6\cdot 5}{7-4}$,
+ili $\frac{s_2-s_1}{t_2-t_1}$. 
+
+Kad nam negdje u programu zatreba
+aritmeticcki izraz zapisujemo ga na sliccan naccin kako bismo ga napisali u
+biljezznici s nekoliko sitnih razlika;
+
+\begin{itemize}
+	\item Mnozzenje zapisujemo pomochu znaka *, a ne $\cdot$.
+	\item Dijeljenje zapisujemo pomochu znaka / umjesto :
+	\item Razlomke zapisujemo pomochu operacije dijeljenja.
+	\item Potencije zapisujemo pomochu "**". Dakle $3^2$ bi zapisalo kao
+		3**2
+	\item Ostatak\footnote{"Modulo"} pri dijeljenju dobijemo pomochu
+		operacije \%.
+\end{itemize}
+
+Izraz 
+$\frac{3+6\cdot 5}{7-4}$, bi napisali: \verb+(3+6*5)/(7-4)+. U ovom
+sluccaju brojnik i nazivnik treba staviti unutar zagrada jer bi u
+sluccaju da je izraz \verb+3+6*5/7-4+ kompjuter pokussao prvo
+izraccunati \verb+6*5/7+, python naime izraze raccuna pazechi na
+prednost raccunskih operacija (npr. mnozzenje i dijeljenje imaju
+prednost pred zbrajanjem i oduzimanjem).
+
+\textbf{Vazzno:}
+Ima joss jedna stvar na koju treba pripaziti pri pisanju algebarskih
+izraza; ukoliko su brojevi s kojima raccunamo cjelobrojni onda che (u
+programskom jeziku python) i rezultat biti cjelobrojan. Dakle, ako probate
+izraccunati \verb+13/4+ dobiti chete \verb+3+, a ne \verb+3.25+! To se
+mozze rijessiti tako da barem jedan od brojeva definiramo kao realan, a za
+to je dovoljno dodati mu decimalnu toccku na kraju. Da bi dobili toccan
+rezultat dijeljenje 13 podijeljeno s 4 trebali bi dakle napisati
+\verb+13/4+.
+
+Zadaci:
+
+\section{Logiccki izrazi}
+
+Sliccno kao aritmeticcki izrazi logiccki izrazi se sastoje od
+operacija i cclanova izraza nad kojima ze izvrssavaju te operacije.
+Kod aritmeticckih izraza cclanovi su brojevi ili varijable s
+brojevnom vrijednosschu, a cclanovi logicckih izraza mogu biti
+\emph{sudovi} ili ccak drugi aritmeticcki izrazi.
+
+\emph{Sud} je tvrdnja koja mozze biti istinita ili lazzna. Primjer
+suda je \emph{"Zemlja kruzzi oko Mjeseca"} ili \emph{"Postoji
+beskonaccno mnogo prirodnih brojeva"}.  Svaki sud mora imati svoju
+istinosnu vrijednost koja mozze biti \emph{"istina"} ili \emph{"lazz"}.
+Ukoliko za neku tvrdnju ne mozzemo sa sigurnosschu kazati je li
+istinita ili lazzna tada to nije sud. Na primjer \emph{"Zemlja
+kruzzi oko Mjeseca"} jest sud zato ssto ima istinosnu vrijednost
+\emph{"lazz"}, kao i \emph{"Postoji beskonaccno mnogo prirodnih
+brojeva"} ccija je istinita vrijednost \emph{"istina"}.  Tvrdnja
+\emph{"Frank Sinatra pjeva bolje od Tine Turner"} nije sud jer je
+nemoguche odrediti istinitost te tvrdnje buduchi da je ona ccisto
+subjektivne prirode (nekome se visse svidja Sinatra, a nekome Tina
+Turner). Isto tako nije sud "Uccini to!" ili "Mozzda chu jednog
+dana naucciti programirati".
+
+Umjesto "istina" ili "lazz" se ccesto koriste velika slova "T" (od
+engleskog "true" = "istina") odnosno "F" (eng. "false" = "lazz").
+
+Sud mozzemo zapisati i matematicckim simbolima: $1<2$ je sud u
+kojemu se tvrti da je jedan manji od 2, a istinosna vrijednost tog
+suda je T (= istina). Matematiccki sudovi kojima se koristimo u
+programiranju najccessche se koriste za opisivanje odnosa izmedju
+brojeva. Pri tome se koristimo sljedechim simbolima iz sljedeche tablice;
+u prvom stupcu se nalazi simbol kako bismo za zapisali u biljezznicu
+ili na ploccu, u drugom stupcu zapisa tog istog simbola u programu,
+a u trechem kako ccitamo taj simbol:
+
+\begin{tabular}{lll}
+	$=$ & $==$ & je jednako \\
+	$\neq$ & $!=$ & nije jednako, je razliccito \\
+	$<$ & $<$ & je manje od \\
+	$\leq$ & $<=$ & je manje ili jednako \\
+	$>$ & $>$ & je veche od \\
+	$\geq$ & $>=$ & je veche ili jednako
+\end{tabular}
+
+Probajmo sada utvrditi istinosnu vrijednost nekih matematicckih izraza:
+
+\begin{tabular}{lll}
+	$12<12.01$ & \verb+12<12.01+ & T\\
+	$1+2\leq 5$ & \verb*1+2<=5* & T\\
+	$10-3\geq 6+1$ & \verb"10-3>=6+1" & T \\
+	$10-2\geq 6+1$ & \verb"10-2>=6+1" & F \\
+	$5\neq 5$ & \verb"5!=5" & F
+\end{tabular}
+
+Gornji primjeri su primjeri \emph{jednostavnih sudova}. Slozzeni
+sudovi su sudovi koji se dobijaju od jednostavnih sudova i logicckih
+operacija \emph{and}, \emph{or} i \emph{not}.
+
+\subsection{Logiccka operacija \emph{and}}
+
+Promotrimo reccenicu \emph{"Ako je lijepo vrijeme
+idemo na izlet."}. O ccemu ovisi ochete li
+otichi na izlet? Ovisi o tome je li lijepo vrijeme, dakle ovisi o
+istinosnoj vrijednosti suda \emph{"Lijepo je vrijeme."}. Ako je
+taj sud istinit (T) otichi chete na izlet, a ako nije (F) -- nissta
+od izleta.
+
+Malo chemo stvar zakomplicirati ako osim lijepog vremena vass izleta
+ovisi o joss neccemu; \emph{"Ako je lijepo vrijeme i nemam drugih obaveza ichi chu na izlet"}.
+Sad vass izlet ovisi o istinitosti suda \emph{"Lijepo je vrijeme i nemam obaveza"}, a on je istinit
+kad su istovremeno istinita sljedecha dva suda:
+
+\begin{itemize}
+	\item[\emph{(a)}] \emph{"Lijepo je vrijeme."}
+	\item[\emph{(b)}] \emph{"Nemam obaveza."}
+\end{itemize}
+
+Dakle, treba vrijediti da je istinito i \emph{(a)} i \emph{(b)},
+jer ako je bilo koje od ta dva lazz onda je i tvrdnja \emph{"Lijepo
+je vrijeme i nemam obaveza"} lazzna.
+
+Ukoliko imamo dva suda koja chemo ovdje oznacciti s $A$, odnosno
+$B$ onda chemo takvu kombinaciju zapisivati s $A and B$. Suda $A
+and B$ je \emph{slozzeni sud} koji se sastoji od jednostavnijih
+sudova $A$ i $B$. Istinitost suda $A and B$ ovisi o istinitosti
+sudova $A$ i $B$; tek ako su oba istinita onda je i $A and B$
+istinit. To se mozze prikazati pomochu sljedeche tablice:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A and B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & lazz & lazz \\
+	lazz & istina & lazz \\
+	lazz & lazz & lazz 
+\end{tabular}
+
+Garnju tablicu zovemo \emph{tablica istinitosti} logiccke operacije $and$.
+
+\subsection{Logiccka operacija \emph{or}}
+
+Pretpostavimo da chete oticci na izlet ako vrijedi \emph{"Lijepo
+je vrijeme ili imam dobro drusstvo"}. Dakle, ako je lijepo vrijeme
+idete na izlet, ako nije lijepo vrijeme i imate dobro drusstvo ipak
+idete na izlet, ako nemate dobro drusstvo i lijepo je vrijeme opet
+idete na izlet, a jedini sluccaj kad ne idete na izlet je kad, niti
+je vrijeme lijepo niti imate dobro drusstvo.
+
+Tablica istinitosti logiccke operacije $or$ izgleda ovako:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A or B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & lazz & istina \\
+	lazz & istina & istina \\
+	lazz & lazz & lazz 
+\end{tabular}
+
+\subsection{Logiccka operacija \emph{not}}
+
+U zadnjem sluccaju otichi chete na izlet tek ako vrijedi \emph{"Nemam
+drugih obaveza"}. Dakle, tek ako \emph{nije} istit sud \emph{"Imam
+drugih obaveza"}. Logiccka operacija $not$ nekom sudu pridodaje
+suprotanu istinosnu vrijednost.
+
+\begin{tabular}{l|l}
+	$A$ & $not A$ \\
+	\hline
+	istina & lazz\\
+	lazz & istina
+\end{tabular}
+
+Zadaci: Probajte odrediti istinitost sljedechih sudova:
+	- 1<2 and 13!=5
+	- 2>5 or 1=2
+	- 1<2 and 5!=5
+	- ( 1<2 or 9=5 ) and 3==3
+	- ( 2==2 and 3!=5 ) or ( 3==4 )
+
+\subsection{Nekoliko dodatnih pravila}
+
+U programskom jeziku python (sliccno kao u mnogim drugim) postoji
+joss nekoliko dodadnih pravila kod utvrdjivanjaistinitosti sudova:
+- svaki broj/izraz je po definiciji sud:
+	- ako njegova vrijednost 0 onda je njegova istinosna vrijednost "lazz" (F)
+	- ako je razliccit od 0 onda je njegova istinosna vrijednost "istina" (T)
+- svaki string je po definiciji sud:
+	- ako je string prazan onda je njegova istinosna vrijednost "lazz" (F)
+	- ako string nije prazan onda je njegova istinosna vrijednost "istina" (T)
+
+dakl ima smisla sud \verb"2<3 or 0". Buduchi da je $2<3$ ondaje prvi dio suda istinit, a (broj) 0 je
+po gornjim pravilima lazzan, dakle imamo sluccaj $"istina" or "lazz"$, dakle rezultat je istina.
+
+Zadaci: Probajte odrediti istinitost sljedechih sudova:
+	- 1 or 3>3
+	- 2!=3 and 1
+	- "" or "jkljkl"
+	- ( 0 or "jkljkl" ) and 2<3
+	- ( not "jkljkl" ) and ( not 12 )
+
+\chapter{Grananje programa}
+
+\section{\verb+if+ \dots \ver+then+ \dots \verb+else+ \dots}
+
+Pretpostavimo da imamo program koji od korisnika trazzi da upisse
+koliko je bodova zaradio na odredjenom testu i zatim ovisno o broju
+bodova ispisuje koju je ocjenu dobio. Ako je dobio manje ili jednako
+39 bodova ocjena je 1, ako ima 40-54 ocjena je 2, za 55-69 ocjena
+je 3, za 70-85 ocjena je 4, a za visse od 85 ocjenjen je s 5.
+
+Probati chemo za poccetak napisati program koji samo ispisuje je
+li ocjena 1 ili vecha. Za to program treba nekako imati naccin kako
+che provjeriti je li broj bodova vechi, manji ili jednak 40.
+
+Program izgleda ovako:
+
+---------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+print "Kraj programa"
+---------------------
+
+Korisstena je naredba if, ona se koristi na sljedechi naccin:
+
+------
+if \emph{logiccki izraz}:
+	\emph{komande programa u sluccaju da je logiccki izraz istinit}
+------
+
+Kao prvo uoccite da je dio programa koji seizvrssava u sluccaju da
+je logiccki izraz istinit \emph{uvuccen} u odnosu na ostatak
+programa. To uvlaccenje je toccno definirano i mora biti jedan
+<tab> (ili 8 razmaknica) raccunajuchi od lijevog ruba polja u kojem se
+editira program!
+
+U poccetnom programu se komanda nakon \verb"if" naredbe izvrssava
+jedino u sluccaju ako je broj bodova manji od 40, ako je broj bodova
+vechi ili jednak 40 program tu liniju jednostavno preskacce. Mozzemo
+srediti i da program preskacce vechi broj linija:
+
+---------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+	print "Molimo vas lijepo da za sljedechi put malo bolje nauccite"
+print "Kraj programa"
+---------------------
+
+Poruka koja se sad ispisuje ukoliko nemate dovoljno bodova je 
+
+--------------
+Nazzalost dobili ste negativnu ocjenu :(
+Molimo vas lijepo da za sljedechi put malo bolje nauccite
+--------------
+
+Opet, \verb"Kraj programa" se ispisuje bez obzira na broj bodova.
+
+Zzelimo li da nass program ispisuje i poruku ukoliko imate visse ili jednako od 40 bodova to se mozze
+tako da koristite dva puta naredbu \verb"if":
+
+---------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+if bodovi >= 40:
+	print "Imate visse od 40 bodova"
+print "Kraj programa"
+---------------------
+
+Ili pomochu jednog dodatka naredbi \verb"if":
+
+---------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+else:
+	print "Imate visse od 40 bodova"
+print "Kraj programa"
+---------------------
+
+\emph{Ako je broj bodova manji od 40 tada ste dobili negativnu
+ocjenu, inacce imate visse od 40 bodova}
+
+Sve ono ssto se nalazi nakon \verb"else", naravno uvucceno za jedan
+<tab> che biti ispisano u sluccaju da uvjet \verb"bodovi<40" nije
+istinit!
+
+Ssta ako ne zzelimo samo podatak o tome jesmo li dobili visse ili
+manje od 40 bodova nego i koju smo ocjenu dobili:
+
+Prvi naccin koristechi niz \verb"if"-ova:
+
+------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+if 40<=bodovi and bodovi<=54:
+	print "Dovoljan (2)"
+if 55<=bodovi and bodovi<=69:
+	print "Dobar (3)"
+if 70<=bodovi and bodovi<=84:
+	print "Vrlo dobar (4)"
+if 85<=bodovi:
+	print "Odliccan (5)"
+------------------
+
+Drugi naccin koristechi \verb"elif" (od eng. "else if"):
+
+------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+elif 40<=bodovi and bodovi<=54:
+	print "Dovoljan (2)"
+elif 55<=bodovi and bodovi<=69:
+	print "Dobar (3)"
+elif 70<=bodovi and bodovi<=84:
+	print "Vrlo dobar (4)"
+elif 85<=bodovi:
+	print "Odliccan (5)"
+------------------
+
+Na hrvatskom bi ovo napisali: \emph{Ako imate manje od 40 bodova dobili ste 2, inacce ukoliko imate
+izmedju 40 i 54 dobili ste 2, inacce ukoliko imate izmedju 55 i 59 dobili ste 3, inacce ukoliko imate
+izmedju 70 i 84 dobili ste 4, inacce ukoliko imate visse od 84 dobili ste 5}.
+
+Mali problem mozze nastati u tome ssto mozzete napisati i 120 ili -340 za broj bodova. Probajmo
+napisati program koji ispravlja tu gressku:
+
+------------------
+bodovi = input( "Upissi broj bodova:" )
+print "Imate", bodovi, "bodova..."
+if 0<= bodovi and bodovi < 40:
+	print "Nazzalost dobili ste negativnu ocjenu :("
+elif 40<=bodovi and bodovi<=54:
+	print "Dovoljan (2)"
+elif 55<=bodovi and bodovi<=69:
+	print "Dobar (3)"
+elif 70<=bodovi and bodovi<=84:
+	print "Vrlo dobar (4)"
+elif 85<=bodovi and bodovi <=100:
+	print "Odliccan (5)"
+else:
+	print "Niste upisali broj izmedju 0 i 100 za broj bodova"
+------------------
+
+Sad bi "prijevod" ovog programa na hrvatski glasio: \emph{Ako imate
+izmedju 0 i 40 bodova dobili ste 2, inacce ukoliko imate izmedju
+40 i 54 dobili ste 2, inacce ukoliko imate izmedju 55 i 59 dobili
+ste 3, inacce ukoliko imate izmedju 70 i 84 dobili ste 4, inacce
+ukoliko imate izmedju 84 i 100 dobili ste 5, a ako nije niti jedan
+od ovih sluccajeva onda ste pogressno upsali broj bodova}.
+
+Zadaci: \textbf{Za napraviti}
+
+\section{\verb"for" \dots \verb"in range(" \dots \verb")"}
+
+Problem je sljedechi; treba ispisati tablicu kvadrata brojeva od do 10.
+Tablica kvadrata je tablica koja ima dva stupca, u prvom se nalazeprirodni
+brojevi, a u drugom njihovi kvadrati (da podsjetimo, kvadrat prirodnog
+broja dobijemo tako da taj broj pomnozzimo sa samim sobom).
+
+To se mozze postichi na sljedechi naccin:
+
+-------------------
+print "n -> n*n"
+print 1, " -> ", 1**2
+print 2, " -> ", 2**2
+print 3, " -> ", 3**2
+print 4, " -> ", 4**2
+print 5, " -> ", 5**2
+print 6, " -> ", 6**2
+print 7, " -> ", 7**2
+print 8, " -> ", 8**2
+print 9, " -> ", 9**2
+print 10, " -> ", 10**2
+-------------------
+
+\verb"5**2" znacci $5^2$. U svakom retku se naredbom print ispisuje broj i
+njegov kvadrat. 
+
+Medjutim, ovo je jedan priliccno \emph{neelegantan} naccin rjessavanja
+problema, a to zato ssto je ovakav program tessko generalizirati,
+odnosno tessko ga je upotrijebiti u sluccaju da njime moramo
+rijessiti neki analogni ili opcehnitiji problem. 
+\footnote{
+	Ako je nass trenutni
+	problem \emph{"Napissi program koji ispisuje tablicku kvadrata
+	prvih 10 brojeva"} analogni (ali slozzeniji) problem mozze glasiti
+	\emph{"Napissi program koji ispisuje tablicu kvadrata za brojeve
+	od 0 do 100"}. Opchenitiji problem bi mogao biti \emph{"Napissi
+	program koji ispisuje tablicu kvadrata za brojeve od 0 do n (gdje
+	je n proizvoljan prirodan broj"}. 
+}
+Taj program se mozze napisati
+na naccin sluccan nassem naccinu, ali priznati chete da pisanje
+sto i jedne linije tipa s naredbom \verb"print" koja ne radi nissta
+drugo negoli ispisuje broj i njegov kvadrat i nije neki pretjerano
+kreativan posao.
+
+Zato postoji nareda \verb"for". Ta naredba od raccunala trazzi da
+odredjeni broj puta ponovi neki postupak uz odredjene uvjete. Uz
+naredbu \verb"for" se nalazi ime varijable i nekakav \emph{skupa}
+ili \emph{lista} prema kojima se ta varijabla "kreche". Buduchi da
+che se ova skripta baviti skupovima, listama i ostalim slozzenim
+tipovima podataka baviti tek kasnije ovdje chu objasniti samo jedan
+od naccina koji se ccesto koriste s naredbom \verb"for".
+
+--------------------
+print "n -> n*n"
+for x in range(11):
+	print x, " -> ", x**2
+--------------------
+
+Rezultat programa che biti potpuno isti kao i kod prosslog programa.
+
+Druga i trecha linija ovog programa kazze otprilike: \emph{"Neka
+varijabla x uzima redom vrijednost 0, 1, 2\dots sve dok je manje
+od 11, i za svaku od tih vrijednosti ispissi vrijednost od x i
+kvadrat od x"}. Nakon ssto python interpreter dodje do druge linije
+programa raccunalo samo varijabli x pridodaje vrijednost 0, i
+izvrssava trechu liniju programa (x je tamo 0). Nakon ssto to
+izvrssi varijabli x se pridruzzuje sljedecha vrijednost; 1. Sad se
+opet ispisuje trecha linija programa, ali s novom vrijednoschu
+varijeble x. Nakon toga x poprima vrijednost 2, izvrssava se trecha
+linija, i tako dalje\dots
+
+\textbf{Vazzno:}
+Nikad ne zaboravite dvotoccku iza "for" linije -- to je naime vrlo
+ccesta poccetniccka gresska gresska
+
+\textbf{Definicija:} Za liniju s \verb"for" naredbom i niz naredbi koje
+se izvrssavaju pri svakoj promjeni varijable nakon \verb"for"
+kazzemo da se zovu \textbf{for-petlja}. Ukoliko je \verb"x" varijabla
+nakon \verb"for" kazzemo da smo izvrssili \textbf{for-petlju po varijabli
+x}. Svaki put kad varijabla \verb"x" promijeni vrijednost zbog \verb"for"
+petlje kazzemo da je izvrsseno \textbf{iteracija}. Niz naredbi koje se
+izvrssavaju u svakoj iteraciji zovemi tijelo for-petlje.
+
+Isto tako, mozzete srediti da se izvrssava i visse linija svaki
+put kad varijabla x u zbog \verb"for" mijenja vrijednost. Jednostavno
+nakon trecheg reda programa napisali biste joss jedan, ali i taj
+obavezno mora biti pomaknuti za jedan <tab> udesno.
+
+Pretpostavimo sad da treba napisati prgram koji od koristnika trazzi
+da mu upisse jedan broj, a zatim ispisuje prvo kvadrat tog broja,
+a onda rezultat pri cjelobrojnom dijeljenju 
+\footnote{
+	Cjelobrojno dijeljenje znacci da se radi o dijeljenju u
+	kojemu se ignorira dio iza decimalne toccke u rezultatu
+	nekog dijeljenja. Npr ukoliko podijelimo 7 sa 4 dobiti
+	chemo 1.75, ali rezultat cjelobrojnog dijeljenja 7 sa 4 je
+	1. Podsjetimo da python vrssi cjelobrojno dijeljenje ukoliko
+	su djeljenik i djelitelj cijeli brojevi (nemaju decimalnog
+	dijela).
+}
+tog broja s 2.
+
+------------
+n = input( "Upissi broj:" )
+for i in range( n+1 ):
+	print "kvadrat od", i, "je", i**2
+	print "rezultat cjelobrojnog dijeljenja od", i, "s 2 je", i/2
+print "Kraj programa"
+------------
+
+Ovdje se tijelo for-petlje sastoji od dvije neradbe (trechi i
+ccetvrti redprograma. Zadnja linija ne spada u tijelo petlje jer
+se ne izvrssava kod svake iteracije nego samo jednom nakon ssto se
+cijela petlja "izvrssi".
+
+Prvo se varijabli \verb"n" pridjeljuje vrijednost koju upisuje
+osoba koja pokreche program. Zatim se vrssi petlja po varijabli
+\verb"i". Obratite pazznju da se petlja sad greche u granicama od
+0, pa po svim cijelim brojevima manjim od \verb"n+1", a najvechi
+cijeli broj manji od \verb"n+1" je \verb"n". Dakle petlja se ne
+izvrassava za \verb"n+1" nego samo do \verb"n", a to je upravo ono
+ssto mi zzelimo.
+
+Zzelim sad program koji che za svaki broj od 0 do 100 ispisati
+njegov kvadrat i, ukoliko je taj broj paran ispisati i poruku o
+tome. Broj je paran u koliko je rezultati pri dijeljenju tog broja
+s 2 jednak s 0. Rezultat pri dijeljenju dobijemo pomochu operacije
+modulo (\verb"%" u python programu)
+
+-------------------
+1: for x in range(101):
+2: 	print x, "na kvadrat iznosi", x**2
+3: 	if x % 2 == 0:
+4: 		print x, "je paran broj"
+5: print "Kraj programa"
+-------------------
+
+\textbf{Komentar:} Tijelo for-petlje koja poccinje s prvim redom
+programa je niz naredbi koji se sastoji od 2-4 linije programa.
+Obratite pazznju da je ovdje 4. linija, koja se izvrssava jedino
+kad je istinit sud \verb"x%2==0" pomaknuta za \emph{dva} <tab>-a!
+Za svaki \verb"x" if-uvjet isprobava je li istina da je rezultat
+pri djeljenju x s 2 jednak 0 (\verb"x%2==0"), a ako je to istina
+izvrssava se 4. linija.
+
+Evo joss jedna varijanta programa:
+
+-------------------
+1: for x in range(101):
+2: 	print x, "na kvadrat iznosi", x**2
+3: 	if x % 2 == 0:
+4: 		print x, "je paran broj"
+5:		else:
+6: 		print x, "nije paran broj"
+7: 	print
+8: print "Kraj programa"
+-------------------
+
+U ccemu se ona razlikuje od gornjeg programa? Probajte sami otkriti ssta
+radi osma linija programa? Ovisi li njeno izvrssavanje o tome je li
+izvrssen uvjet u 3. redu? Probajte promijeniti program tako da se petlja ne
+izvrssava za brojeve do 100 nego da korisnik mozze sam odrediti do kojeg do
+kojeg broja se petlja izvrssava.
+
+Probajte objasniti zassto donji program radi potpuno istu stvar
+kao i nass zadnji program:\footnote{Pomoch: svaki broj je po definiciji sud
+ccija istinitost ovisi o\dots}
+
+-------------------
+1: for x in range(101):
+2: 	print x, "na kvadrat iznosi", x**2
+3: 	if not x % 2:
+4: 		print x, "je paran broj"
+5:		else:
+6: 		print x, "nije paran broj"
+7: 	print
+8: print "Kraj programa"
+-------------------
+
+Joss jedna korisna varijanta varijanta for-petlja s \verb"range(...)" je
+sluccaj u kojem ne zzelim da se petlja izvrssava za brojeve od 0 do nekog
+broja nego od nekog broja razliccitog od 0 do nekog drugog broja:
+
+-----------------
+for i in range( 15, 70 ):
+	print i
+-----------------
+
+Ispisati che brojeve od 15 do 70.
+
+Probajte objasniti ssta radi sljedechi program:
+
+----------
+a = input( "Upissi prvi broj:" )
+b = input( "Upissi prvi broj:" )
+if a < b:
+	for x in range( a, b + 1 ):
+		print x, "na trechu iznosi", x**3
+else:
+	print "hmmm..."
+----------
+
+Napissite sada program koji od korisnika trazzi da upisse dva broja, a
+zatim ispisuje tablicu kvadrata svh brojeva od prvog do drugog.
+
+Evo joss jedan zanimljiv program koji ispisuje tablicu mnozzenja brojeva od
+1 do 10. Treba dakle napisati sve izraze oblika $a\cdot b$ gdje $a$ i $b$
+mogu biti brojevi od 1 do 10. Ali (!) za svaki $a$ od 1 do 10 (for-petlja)
+i $b$ mora mochi poprimiti vrijednosti od 1 do 10.
+
+----------
+for a in range(1, 11):
+	for b in range(1, 11):
+		print a, "puta", b, "je jednako", a*b
+----------
+
+Tijelo prve petlje je drugi i trechi red, a tijelo druge petlje je samo
+trechi red. Dakle, za svaki a od 1 do 10 izvrssiti che se druga petlja u
+kojoj se sad b mijenja od 1 do 10 i kod svake promjene ispisuje poruka.
+
+Ukoliko mislite da ste shvatili rad ovih programa probajte sami sebi
+postavljati probleme i nachi naccina kako te probleme rijessavati
+programima u pythonu. Isto tako, korisno mozze biti da probati modificirati
+vech napisane programe i onda jednostavno pogledate ssta se dessava kad ih
+pokussate pokrenuti.

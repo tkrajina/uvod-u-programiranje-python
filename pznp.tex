@@ -1,0 +1,71 @@
+\documentclass[11pt,oneside,a4paper]{report}
+\linespread{1.2}
+\title{Python za ne-programere}
+% \renewcommand{\familydefault}{cmss}
+\usepackage[dvips]{color}
+\usepackage[croatian]{babel}
+% \usepackage[dvips]{rotating}
+\usepackage{epsfig}
+% \usepackage{floatflt}
+% \addtolength{\hoffset}{-1cm}
+% \addtolength{\voffset}{-3cm}
+% \addtolength{\textwidth}{3cm}
+% \addtolength{\textheight}{4cm}
+% \pagestyle{empty}
+
+\newcommand{\var}[1]{\textcolor{red}{#1}}
+\newcommand{\wrd}[1]{\textcolor{blue}{#1}}
+\newcommand{\com}[1]{\textcolor{green}{#1}}
+\definecolor{fun}{rgb}{0,0.5,0.5}
+\newcommand{\fun}[1]{\textcolor{fun}{#1}}
+\newcommand{\tab}[0]{\hspace*{10mm}}
+\newcommand{\sourcee}[1]{
+
+	\vspace{5mm}
+
+	\begin{tabular}{|l}
+		\hline
+		\begin{minipage}[b]{150mm}
+			\vspace*{2mm}
+			\normalsize{#1}
+		\end{minipage}\\
+		\hline
+	\end{tabular}
+
+	\vspace{5mm}
+}
+
+\newcommand{\source}[2]{
+
+	\vspace{5mm}
+
+	\textbf{#1}
+
+	\begin{tabular}{|l}
+		\hline
+		\begin{minipage}[b]{150mm}
+			\vspace*{2mm}
+			\normalsize{#2}
+		\end{minipage}\\
+		\hline
+	\end{tabular}
+
+	\vspace{5mm}
+}
+
+\begin{document}
+
+\large
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Sadr\v zaj}
+
+\include{uvod}
+\include{o_prog}
+\include{uvod_prog}
+\include{izrazi}
+\include{kontrola_toka}
+\include{tipovi_podataka}
+\include{moduli}
+
+\end{document}

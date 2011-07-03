@@ -1,0 +1,211 @@
+\chapter{Izrazi}
+
+\section{Aritmeti\v{c}ki izrazi}
+
+Aritmeti\v{c}ki izrazi su matemati\v{c}ki izrazi s kakvima se ra\v{c}una u
+osnovnoj \v{s}koli. Naj\v{c}e\v{s}\'{c}e se sastoje od brojeva ili varijabli
+koje imaju broj\v{c}anu vrijednost i matemati\v{c}kih operacija. Primjer
+aritmeti\v{c}kog izraza mo\v{z}e biti: 
+$2+4-2$, 
+$\displaystyle \frac{3+6\cdot 5}{7-4}$,
+ili 
+$\displaystyle \frac{s_2-s_1}{t_2-t_1}$. 
+
+Kad nam negdje u programu zatreba
+aritmeti\v{c}ki izraz zapisujemo ga na sli\v{c}an na\v{c}in kako bismo ga napisali u
+bilje\v{z}nici s nekoliko sitnih razlika;
+
+\begin{itemize}
+	\item Mno\v{z}enje zapisujemo pomo\'{c}u znaka *, a ne $\cdot$.
+	\item Dijeljenje zapisujemo pomo\'{c}u znaka / umjesto :
+	\item Razlomke zapisujemo pomo\'{c}u operacije dijeljenja.
+	\item Potencije zapisujemo pomo\'{c}u "**". Dakle $3^2$ bi zapisalo kao
+		3**2
+	\item Ostatak\footnote{"Modulo"} pri dijeljenju dobijemo pomo\'{c}u
+		operacije \%.
+\end{itemize}
+
+Izraz 
+$\displaystyle \frac{3+6\cdot 5}{7-4}$
+bi napisali: \verb+(3+6*5)/(7-4)+. U ovom
+slu\v{c}aju brojnik i nazivnik treba staviti unutar zagrada jer bi u
+slu\v{c}aju da je izraz \verb+3+6*5/7-4+ kompjuter poku\v{s}ao prvo
+izra\v{c}unati \verb+6*5/7+, python naime izraze ra\v{c}una paze\'{c}i na
+prednost ra\v{c}unskih operacija (npr. mno\v{z}enje i dijeljenje imaju
+prednost pred zbrajanjem i oduzimanjem).
+
+\textbf{Va\v{z}no:}
+Ima jo\v{s} jedna stvar na koju treba pripaziti pri pisanju algebarskih
+izraza; ukoliko su brojevi s kojima ra\v{c}unamo cjelobrojni onda \'{c}e (u
+programskom jeziku python) i rezultat biti cjelobrojan. Dakle, ako probate
+izra\v{c}unati \verb+13/4+ dobiti \'{c}ete \verb+3+, a ne \verb+3.25+! To se
+mo\v{z}e rije\v{s}iti tako da barem jedan od brojeva definiramo kao realan, a za
+to je dovoljno dodati mu decimalnu to\v{c}ku na kraju. Da bi dobili to\v{c}an
+rezultat dijeljenje 13 podijeljeno s 4 trebali bi dakle napisati
+\verb+13/4+.
+
+Zadaci:
+
+\section{Logi\v{c}ki izrazi}
+
+Sli\v{c}no kao aritmeti\v{c}ki izrazi logi\v{c}ki izrazi se sastoje od
+operacija i \v{c}lanova izraza nad kojima ze izvr\v{s}avaju te operacije.
+Kod aritmeti\v{c}kih izraza \v{c}lanovi su brojevi ili varijable s
+brojevnom vrijedno\v{s}\'{c}u, a \v{c}lanovi logi\v{c}kih izraza mogu biti
+\emph{sudovi} ili \v{c}ak drugi aritmeti\v{c}ki izrazi.
+
+\emph{Sud} je tvrdnja koja mo\v{z}e biti istinita ili la\v{z}na. Primjer
+suda je \emph{"Zemlja kru\v{z}i oko Mjeseca"} ili \emph{"Postoji
+beskona\v{c}no mnogo prirodnih brojeva"}.  Svaki sud mora imati svoju
+istinosnu vrijednost koja mo\v{z}e biti \emph{"istina"} ili \emph{"la\v{z}"}.
+Ukoliko za neku tvrdnju ne mo\v{z}emo sa sigurno\v{s}\'{c}u kazati je li
+istinita ili la\v{z}na tada to nije sud. Na primjer \emph{"Zemlja
+kru\v{z}i oko Mjeseca"} jest sud zato \v{s}to ima istinosnu vrijednost
+\emph{"la\v{z}"}, kao i \emph{"Postoji beskona\v{c}no mnogo prirodnih
+brojeva"} \v{c}ija je istinita vrijednost \emph{"istina"}.  Tvrdnja
+\emph{"Frank Sinatra pjeva bolje od Tine Turner"} nije sud jer je
+nemogu\'{c}e odrediti istinitost te tvrdnje budu\'{c}i da je ona \v{c}isto
+subjektivne prirode (nekome se vi\v{s}e svidja Sinatra, a nekome Tina
+Turner). Isto tako nije sud "U\v{c}ini to!" ili "Mo\v{z}da \'{c}u jednog
+dana nau\v{c}iti programirati".
+
+Umjesto "istina" ili "la\v{z}" se \v{c}esto koriste velika slova "T" (od
+engleskog "true" = "istina") odnosno "F" (eng. "false" = "la\v{z}").
+
+Sud mo\v{z}emo zapisati i matemati\v{c}kim simbolima: $1<2$ je sud u
+kojemu se tvrti da je jedan manji od 2, a istinosna vrijednost tog
+suda je T (= istina). Matemati\v{c}ki sudovi kojima se koristimo u
+programiranju naj\v{c}e\v{s}\'{c}e se koriste za opisivanje odnosa izmedju
+brojeva. Pri tome se koristimo sljede\'{c}im simbolima iz sljede\'{c}e tablice;
+u prvom stupcu se nalazi simbol kako bismo za zapisali u bilje\v{z}nicu
+ili na plo\v{c}u, u drugom stupcu zapisa tog istog simbola u programu,
+a u tre\'{c}em kako \v{c}itamo taj simbol:
+
+\begin{tabular}{lll}
+	$=$ & $==$ & je jednako \\
+	$\neq$ & $!=$ & nije jednako, je razli\v{c}ito \\
+	$<$ & $<$ & je manje od \\
+	$\leq$ & $<=$ & je manje ili jednako \\
+	$>$ & $>$ & je ve\'{c}e od \\
+	$\geq$ & $>=$ & je ve\'{c}e ili jednako
+\end{tabular}
+
+Probajmo sada utvrditi istinosnu vrijednost nekih matemati\v{c}kih izraza:
+
+\begin{tabular}{lll}
+	$12<12.01$ & \verb+12<12.01+ & T\\
+	$1+2\leq 5$ & \verb"1+2<=5" & T\\
+	$10-3\geq 6+1$ & \verb"10-3>=6+1" & T \\
+	$10-2\geq 6+1$ & \verb"10-2>=6+1" & F \\
+	$5\neq 5$ & \verb"5!=5" & F
+\end{tabular}
+
+Gornji primjeri su primjeri \emph{jednostavnih sudova}. Slo\v{z}eni
+sudovi su sudovi koji se dobijaju od jednostavnih sudova i logi\v{c}kih
+operacija \emph{and}, \emph{or} i \emph{not}.
+
+\subsection{Logi\v{c}ka operacija \emph{and}}
+
+Promotrimo re\v{c}enicu \emph{"Ako je lijepo vrijeme
+idemo na izlet."}. O \v{c}emu ovisi o\'{c}ete li
+oti\'{c}i na izlet? Ovisi o tome je li lijepo vrijeme, dakle ovisi o
+istinosnoj vrijednosti suda \emph{"Lijepo je vrijeme."}. Ako je
+taj sud istinit (T) oti\'{c}i \'{c}ete na izlet, a ako nije (F) -- ni\v{s}ta
+od izleta.
+
+Malo \'{c}emo stvar zakomplicirati ako osim lijepog vremena va\v{s} izleta
+ovisi o jo\v{s} ne\v{c}emu; \emph{"Ako je lijepo vrijeme i nemam drugih obaveza
+i\'{c}i \'{c}u na izlet"}.
+Sad va\v{s} izlet ovisi o istinitosti suda \emph{"Lijepo je vrijeme i nemam obaveza"}, a on je istinit
+kad su istovremeno istinita sljede\'{c}a dva suda:
+
+\begin{itemize}
+	\item[\emph{(a)}] \emph{"Lijepo je vrijeme."}
+	\item[\emph{(b)}] \emph{"Nemam obaveza."}
+\end{itemize}
+
+Dakle, treba vrijediti da je istinito i \emph{(a)} i \emph{(b)},
+jer ako je bilo koje od ta dva la\v{z} onda je i tvrdnja \emph{"Lijepo
+je vrijeme i nemam obaveza"} la\v{z}na.
+
+Ukoliko imamo dva suda koja \'{c}emo ovdje ozna\v{c}iti s $A$, odnosno
+$B$ onda \'{c}emo takvu kombinaciju zapisivati s $A and B$. Suda $A
+and B$ je \emph{slo\v{z}eni sud} koji se sastoji od jednostavnijih
+sudova $A$ i $B$. Istinitost suda $A and B$ ovisi o istinitosti
+sudova $A$ i $B$; tek ako su oba istinita onda je i $A and B$
+istinit. To se mo\v{z}e prikazati pomo\'{c}u sljede\'{c}e tablice:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A and B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & la\v{z} & la\v{z} \\
+	la\v{z} & istina & la\v{z} \\
+	la\v{z} & la\v{z} & la\v{z} 
+\end{tabular}
+
+Garnju tablicu zovemo \emph{tablica istinitosti} logi\v{c}ke operacije $and$.
+
+\subsection{Logi\v{c}ka operacija \emph{or}}
+
+Pretpostavimo da \'{c}ete oti\'{c}i na izlet ako vrijedi \emph{"Lijepo
+je vrijeme ili imam dobro dru\v{s}tvo"}. Dakle, ako je lijepo vrijeme
+idete na izlet, ako nije lijepo vrijeme i imate dobro dru\v{s}tvo ipak
+idete na izlet, ako nemate dobro dru\v{s}tvo i lijepo je vrijeme opet
+idete na izlet, a jedini slu\v{c}aj kad ne idete na izlet je kad, niti
+je vrijeme lijepo niti imate dobro dru\v{s}tvo.
+
+Tablica istinitosti logi\v{c}ke operacije $or$ izgleda ovako:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A or B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & la\v{z} & istina \\
+	la\v{z} & istina & istina \\
+	la\v{z} & la\v{z} & la\v{z} 
+\end{tabular}
+
+\subsection{Logi\v{c}ka operacija \emph{not}}
+
+U zadnjem slu\v{c}aju oti\'{c}i \'{c}ete na izlet tek ako vrijedi \emph{"Nemam
+drugih obaveza"}. Dakle, tek ako \emph{nije} istit sud \emph{"Imam
+drugih obaveza"}. Logi\v{c}ka operacija $not$ nekom sudu pridodaje
+suprotanu istinosnu vrijednost.
+
+\begin{tabular}{l|l}
+	$A$ & $not A$ \\
+	\hline
+	istina & la\v{z}\\
+	la\v{z} & istina
+\end{tabular}
+
+Zadaci: Probajte odrediti istinitost sljede\'{c}ih sudova:
+	- 1<2 and 13!=5
+	- 2>5 or 1=2
+	- 1<2 and 5!=5
+	- ( 1<2 or 9=5 ) and 3==3
+	- ( 2==2 and 3!=5 ) or ( 3==4 )
+
+\subsection{Nekoliko dodatnih pravila}
+
+U programskom jeziku python (sli\v{c}no kao u mnogim drugim) postoji
+jo\v{s} nekoliko dodadnih pravila kod utvrdjivanjaistinitosti sudova:
+- svaki broj/izraz je po definiciji sud:
+	- ako njegova vrijednost 0 onda je njegova istinosna vrijednost "la\v{z}" (F)
+	- ako je razli\v{c}it od 0 onda je njegova istinosna vrijednost "istina" (T)
+- svaki string je po definiciji sud:
+	- ako je string prazan onda je njegova istinosna vrijednost "la\v{z}" (F)
+	- ako string nije prazan onda je njegova istinosna vrijednost "istina" (T)
+
+dakl ima smisla sud \verb"2<3 or 0". Budu\'{c}i da je $2<3$ ondaje prvi dio suda istinit, a (broj) 0 je
+po gornjim pravilima la\v{z}an, dakle imamo slu\v{c}aj "istina" $or$ "la\v{z}", dakle rezultat je istina.
+
+Zadaci: Probajte odrediti istinitost sljede\'{c}ih sudova:
+\begin{itemize}
+\item \verb"1 or 3>3"
+\item \verb"2!=3 and 1"
+\item \verb+"" or "jkljkl"+
+\item \verb+( 0 or "jkljkl" ) and 2<3+
+\item \verb+( not "jkljkl" ) and ( not 12 )+
+\end{itemize}

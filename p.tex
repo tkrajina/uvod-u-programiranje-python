@@ -1,0 +1,2144 @@
+\chapter*{Uvod}
+\addcontentsline{toc}{chapter}{Uvod}
+
+Kad su se prije dvadesetak godina po\v cela pojavljivati prva osobna ra\v cunala, ona
+su bila bitno druk\v cija od dana\v snjih -- rad na njima nije bio toliko intuitivan i
+jednostavan kao \v sto je rad s dana\v snjim ra\v cunalima. Ipak ljudima koji su tada
+bili djeca doti\v cna ra\v cunala predstavljala izazov, a mnogi dana\v snji
+in\v zinjeri i znanstvenici su u to vrijeme po\v celi eksperimentiranje s naredbama
+programskih jezika koji su im bili na raspolaganju. Veliki dio tih malih "hakera" je s
+vremenom postalo informati\v carima, ali i oni koji to nisu sigurno svoj uspjeh u
+znanosti duguju iskustvima s programiranjem, jer programiranje razvija nekoliko
+izuzetno va\v znih sposobnosti:
+
+\begin{itemize}
+   \item sposobnost egzaktnog i logi\v ckog razmi\v sljanja,
+   \item matemati\v cku intuiciju,
+   \item vizualnu predod\v zbu problema i
+   \item sposobnost kreiranja matemati\v ckog modela za problem pred koji smo
+   posta\-vlje\-ni.
+\end{itemize}
+
+Danas ra\v{c}unala nisu egzoti\v{c}ne sprave koje si mogu dopustiti samo oni
+najimu\'{c}niji, ali postoji jedan veliki problem.
+Ra\v cunala su danas dovoljno intuitivna i jednostavna za kori\v stenje da u stvari ne
+nude neki veliki izazov nadarenima. To ne zna\v ci da ih oni ne koriste, ali
+pitanje je koliko ih kreativno koriste? Internet je danas \emph{in}, ali ako ga ljudi
+koriste za \emph{chat}-anje ili tra\v zenje informacija o omiljenoj grupi mo\v zemo se
+pitati iskori\v stavaju li oni tu mogu\'cnost koliko mogu? Programiranje koje je nekad
+bilo izazov danas je to prestalo biti jer programski jezici s kojima se oni susre\' cu
+u nisu toliko jaki da bi oni mogli raditi programe koji bi barem izgledom sli\v{c}ili
+onima koji se besplatno dobiju na CD-ovima raznih informati\v ckih \v casopisa.
+
+Ovom knji\v{z}icom (skriptom, knji\v{z}uljkom) namjera mi je one mla\dj{}e (i koji se
+tako osje\'{c}aju)
+uvesti u svijet programiranja. 
+
+Prije svega napomenuo bih da "nau\v{c}iti programirati" uop\'{c}e nije jednostavno.
+Moje je iskustvo da dobar programer mo\v{z}e biti samo osoba koja je dovoljno
+inteligentna (u matemati\v{c}ko-logi\v{c}kom smislu). Proces u\v{c}enja programiranja
+je dug i naporan. Biti \'{c}ete bombardirani hrpom \v{c}injenica od kojih ne\'{c}e sve
+biti toliko va\v{z}ne da ih morate pamtiti napamet (ali mogu\'{c}e je da \'{c}e vam
+prije ili kasnije trebati). Jedan od te\v{z}ih zadataka u cijelom tom procesu je i
+sposobnost da znate prepoznate ono \v{s}to je bitno od onog \v{s}to nije.
+Kad i ako jednog dana uspijete savladati neki programski jezik to \'{c}e vam
+sigurno predstavljati veliko zadovoljstvo.
+
+\section*{Kako se u\v{c}i programirati?}
+\addcontentsline{toc}{section}{Kako se u\v{c}i programirati?}
+
+	"Nau\v{c}iti programirati" je dug i naporan proces koji traje godinama i nikad ne
+	prestaje. Ne\v{s}to jednostavnije je "nau\v{c}iti odre\dj{}eni programski jezik",
+	ali nije dovoljno. Kad i ako nau\v{c}ite programirati uprogramskom jeziku Python,
+	jo\v{s} niste niti blizu tome da se mo\v{z}ete smatrati dobrim programerom.
+
+	Da bi postali dobar programer morate:
+	\begin{itemize}
+		\item puno vje\v{z}bati; rje\v{s}avati razne programerske probleme, 
+			poku\v{s}avati na\'{c}i uvijek bolja rje\v{s}enja,
+		\item nau\v{c}iti nekoliko programskih jezika (\v{s}to vi\v{s}e to bolje). 
+			Kad savladate 3-4 programska jezika otkriti \'{c}ete da novi programski
+			jezici nisu niti otprilike onoliko te\v{s}ki koliko je to bilo na
+			po\v{c}etku.
+		\item \v{c}itati knjige i prou\v{c}avati programe iskusnih programera
+		\item stvoriti na\v{c}in matemati\v{c}ko-logi\v{c}ki na\v{c}in razmi\v{s}ljanja
+			razmi\v{s}ljanja za rje\v{s}avanje raznih problema
+		\item \dots i za kraj; morate imati \emph{strast} za programiranjem. Ako vam se
+			ikad desi da pi\v{s}ete neki program i nai\dj{}ete naproblem kojeg ne znate
+			rije\v{s}iti. Promatrajte sebe; Kako reagirate u tom trenutku? Ako odmah
+			odustajete, onda ovo nije za vas. Ako ste uporni i provodite sate, dane 
+			poku\v{s}avaju\'{c}i na\'{c}i izlaz ili gre\v{s}ku u nekom va\v{s}em programu
+			onda je ovo pravi izazov za vas!
+	\end{itemize}
+
+\section*{Za\v{s}to Python?}
+\addcontentsline{toc}{section}{Za\v{s}to Python}
+
+	Ovih nekoliko redova je namijenjeno ljudima koji smatraju da je najbolji programski
+	jezik za po\v{c}eti u\v{c}iti programiranje Pascal, BASIC, Logo ili C.
+
+	Dakle, Python zato jer\dots
+
+	\begin{itemize}
+		\item Python ima \v{c}istu sintaksu koja programera prisiljava da pi\v{s}e
+			pregledne programe (za razliku od kripti\v{c}ne sintakse programskog jezika
+			C)
+		\item je Python \v{z}ivi programski jezik kojeg programeri koriste i koji \'{c}e
+			se sve vi\v{s}e koristiti (za razliku od BASIC-a i Logo-a)
+		\item Pythonova stroga sintakti\v{c}ka pravila programera \emph{prisiljavaju} na
+			neke vrlo dobre programerske navike (za razliku od BASIC-a)
+		\item je Python objektno objektno orijentiran, pa se za u\v{c}enje OO programiranja
+			mo\v{z}e koristiti isti jezik, a ne u\v{c}iti jedan za strukturalno, a jedan
+			za OO programiranje (za razliku od BASIC-a i C-a)
+		\item se u Pythonu, iako je zami\v{s}ljen kao OO jezik bez problema mogu pisati 
+			programi koji nemaju niti traga objektnom programiranju (za razliku od Jave)
+		\item je Python besplatan i dostupan na skoro svim platformama koje vam padaju
+			na pamet
+	\end{itemize}
+\chapter{O programiranju, programskim jezicima i programima}
+
+\section{O programiranju}
+
+	Program je skup naredbi pomo\'{c}u kojih ra\v{c}unalu poku\v{s}avamo objasniti kako
+	da rije\v{s}ava neki problem.
+
+	Dakle, program pi\v{s}emo kad treba rije\v{s}iti neki
+	problem. Mo\v{z}e se raditi o nekom
+	svakodnevnom problemu (napisati program koji \'{c}e nam pamtiti brojeve telefona),
+	nekom matemati\v{c}kom ili logi\v{c}kom zadatku (napisati program
+	koji zbraja kvadrate brojeva od 1 do 100000)\dots Ra\v{c}unalo samo, ne zna
+	rje\v{s}avati probleme, netko treba prije svega na\v{s} problem prevesti na 
+	ra\v{c}unalu razumljiv jezik.
+
+	Program po\v{c}injemo pisati kad \emph{znamo} kako \'{c}emo neki problem
+	rije\v{s}iti, ali nemam dovoljno vremena da to rije\v{s}avamo na neki klasi\v{c}an
+	na\v{c}in. Na primjer, zamislite da vam u jednom trenutku treba podatak je li
+	71283789238881999511\footnote{Broj je prost ako je djeljiv samo s 1 i sa samim sobom} prost broj ili nije. Prije nego li se uhvatite za glavu moramo
+	se slo\v{z}iti da postoji nekoliko vrsta problema:
+
+	\begin{itemize}
+		\item[\emph{(a)}] Problem kod kojeg znamo postupak kako do\'{c}i do rje\v{s}enja i
+			mo\v{z}emo jednostavno do\'{c}i do tog rije\v{s}enja.
+		\item[\emph{(b)}] Problemi kod kojih znamo postupak kako do\'{c}i do 
+			rije\v{s}enja, ali zbog
+			nekog razloga nije tako jednostavno do\'{c}i do rije\v{s}enja.
+		\item[\emph{(c)}] Problemi kod kojih (jo\v{s}) ne znamo postupak do rije\v{s}enja.
+	\end{itemize}
+
+	Tako bi recimo sljede\'{c}i zadatak "Na\dj{}i peto slovo abecede" sigurno spadao u 
+	probleme pod \emph{(a)}, i bilo bi besmisleno pisati program i tjerati ra\v{c}unalo
+	da rje\v{s}ava jedan tako jednostavan problem. Pitanje prostosti broja 
+	71283789238881999511 spada u \emph{(b)}, jer \emph{znamo kako} ispitati je li neki
+	broj prost ili nije. Prvo treba provjeriti djeljivost s $2$, pa s $3$, pa s
+	$5$\dots Ako ispadne da na\v{s} broj nije djeljiv s ni\v{c}im drugim osim s $1$ i
+	sa samim sobom onda jest prost. 
+
+	Postupak je smije\v{s}no jednostavan,\footnote{\dots u stvari i nije. Ima tu puno sitnica kako se taj postupak mo\v{z}e
+	jo\v{s} vi\v{s}e ubrzati.}
+	ali pitanje je koliko dugo vremena nam treba
+	da zavr\v{s}imo. 
+
+	Evo i primjer problema koji mo\v{z}e spadati u skupinu \emph{(c)}: "Pomo\'{c}u
+	brojeva 3, 3, 7, 7 i koriste\'{c}i elementarne ra\v{c}unske operacije trebate
+	dobiti broj 24". Sad bi trebalo napisati program s kojim \'{c}e ra\v{c}unalo samo
+	rije\v{s}iti taj problem.
+
+\section{O programskim jezicima}
+
+	Znati postupak za rije\v{s}avanje nekog problema nije garancija da \'{c}emo taj
+	problem i rije\v{s}iti. 
+	\v{C}ak i ako budem ikada imao dovoljno vremena da ispitam je li broj
+	71283789238881999511 
+	prost nitko mi ne mo\v{z}e garantirati da ne\'{c}u negdje
+	pogrije\v{s}iti u ra\v{c}unu ili, ako radim s kalkulatorom -- da ne\'{c}u negdje
+	pogre\v{s}no utipkati broj.
+	Htio bih, zato, da taj posao ra\v{c}unalo obavi umjesto mene.
+	
+	Problem je u tome \v{s}to ra\v{c}unalo ne govori moj jezik. 
+	Mogao bih se do besvjesti truditi mom PC-ju obja\v{s}njavati kako sam ja 
+	zami\v{s}ljao da se rije\v{s}i neki problem. 
+
+	Ra\v{c}unala razumiju samo jedan jezik -- \emph{ma\v{s}inski jezik}. Naredbe tog
+	jezika se sastoje od nula i jedinica (poznati binarni brojevni sustav), a pisanje
+	programa u ma\v{s}inskom jeziku je sve samo ne jednostavno.
+
+	Zato koristimo neke druge programske jezike koji se onda prevode u 
+	ra\v{c}unalu razumljiv ma\v{s}inski jezik. 
+	Postoje stotine programskih jezika. Nabrojati
+	\'{c}u samo neke od popularnijih: Python, C, C++, Java, Pascal, Lisp, Fortran, 
+	Perl, Forth, PHP, JavaScript, BASIC, Smalltalk, Ada\dots Neki od tih jezika su
+	\emph{interpreteri}, neki \emph{kompajleri}. Neki su \emph{objektno orijentirani},
+	neki \emph{strukturalni}. Neki su \emph{komercijalni}, neki su \emph{open source},
+	ali svi oni imaju neke sli\v{c}ne osobine: svi oni koriste \emph{varijable},
+	\emph{potprograme}, \emph{naredbe grananje}, razne \emph{kontrolne strukture} i
+	tako dalje i tako bli\v{z}e\dots Kada dobro savladate jedan programski
+	jezik ne\'{c}e vam predstavljati velik problem savladati mnoge druge.
+
+	O svim ovim terminima \'{c}e se na\'{c}i pone\v{s}to u ovoj knji\v{z}ici, ali dva
+	su izuzetno bitna pa \'{c}u ih objasniti odmah:
+
+\subsection{Interpreteri i kompajleri}
+
+	Ve\'{c} spomenuh da ra\v{c}unalo razumije samo ma\v{s}inski jezik. Kako onda
+	ra\v{c}unalo mo\v{z}e shvatiti naredbe bilo kojeg od gore nabrojanih jezika?
+	Odgovor je jednostavan, niz naredbi u nekom programskom jeziku se \emph{prevode} na
+	ma\v{s}inski jezik. 
+
+	Zamislite da vam netko tko govori \emph{Swahili}\footnote{\emph{Swahili}
+	je jedan od jezika koji se govore u Zanzibaru. Pretpostavka je da prosje\v{c}ni
+	\v{c}itatelj ove knji\v{z}ice ne razumije Swahili} \v{Z}eli re\'{c}i sljede\'{c}e:
+	\emph{"Otvori knjigu X na stranici 137. pro\v{c}itaj prvu rije\v{c} u petom retku.
+	Ako ta rije\v{c} po\v{c}inje suglasnikom odi u kuhinju i skuhaj ru\v{c}ak, a ako
+	po\v{c}inje samoglasnikom -- idi se pro\v{s}e\'{c}i i pusti me na miru"}.
+	Govornik Swahilija se nalazi u situaciji u kojoj se nalazi programer, a vi glumite
+	ra\v{c}unalo koje poku\v{s}ava shvatiti \v{s}ta vam ovaj ima za kazati. 
+	
+	Postoji, naravno i prevoditelj. Prevoditelj mo\v{z}e prevoditi simultano ili
+	prevesti cijelu poruku odjednom, a vi \'{c}ete onda to pro\v{c}itati i slijediti
+	upute. 
+
+	Ako se prevodi simultano cijela stvar izgleda otprilike ovako ("Sw" je govornik
+	Swahilija, "V" ste vi, "V" je prevoditelj):
+
+	\begin{itemize}
+		\item[\textbf{Sw:}] ".... .... .... ..... ..... ... .... ..... .... .... ....."\footnote{Zamislite da je ovdje neka re\v{c}enica na jeziku Swahili}
+		\item[\textbf{P:}] "Sw je rekao da treba\v{s} otvoriti knjigu X"
+		\item[\textbf{V:}] (otvarate knjigu X)
+		\item[\textbf{Sw:}] "..... .... .... .... 137. ....."
+		\item[\textbf{P:}] "Sw ka\v{z}e da otvori\v{s} stranicu 137."
+		\item[\textbf{V:}] (otvarate knjigu 137.)
+		\item[\textbf{Sw:}] "..... . .... ....  ....."
+		\item[\textbf{P:}] "Sw ka\v{z}e da na\dj{}e\v{s} prvu rije\v{c} u petom retku."
+		\item[\textbf{V:}] (tra\v{z}ite prvu rije\v{c} u petom retku)
+		\item[\textbf{Sw:}] "... ....  ....."
+		\item[\textbf{P:}] "Sw ka\v{z}e da pogleda\v{s} prvo slovo te rije\v{c}i"
+		\item[\textbf{V:}] (OK, prvo slovo te rije\v{c}i je "r")
+		\item[\textbf{Sw:}] "...  ... ... ....  ....."
+		\item[\textbf{P:}] "Sw ka\v{z}e; odi skuhati ru\v{c}ak, ako je to slovo samoglasnik"
+		\item[\textbf{V:}] (nije samoglasnik)
+		\item[\textbf{Sw:}] "...  ... ... ......  .. ...!"
+		\item[\textbf{P:}] "Sw ka\v{z}e da je najbolje da ode\v{s} u \v setnju"
+		\item[\textbf{V:}] (odlazite u \v{s}etnju\dots Bilo je i vrijeme da vas puste na miru!)
+	\end{itemize}
+
+	Ovako funkcioniraju programski jezici \emph{interpreteri} -- \v{c}itaju naredbu
+	programa kojeg ste vi napisali, prevedu ju na ma\v{s}inski jezik, a ra\v{c}unalo to
+	onda izvr\v{s}ava, nakon toga pro\v{c}itaju sljede\'{c}u naredbu, prevedu,
+	ra\v{c}unalo izvr\v{s}ava, pro\v{c}itaju, prevedu, ra\v{c}unalo izvr\v{s}ava\dots
+
+	Drugi na\v{c}in je da prevodioc cijelu poruku poslu\v{s}a do kraja, prevede ju
+	na vama razumljiv jezik, a vi to onda idete izvr\v{s}avati. Programski jezici
+	kompajleri rade upravo to -- pro\v{c}itaju cijeli va\v{s} program, prevedu na
+	ma\v{s}inski jezik, a ra\v{c}unalo onda izvr\v{s}i program kojeg sada
+	ima u obliku kojeg razumije.
+
+	Da bi izvr\v{s}ili program u programskom jeziku koji se interpretira morate uvijek
+	imati interpreter (prevodilac) ve\'{c} instaliran na svom ra\v{c}unalu. Kod
+	izvr\v{s}avanja kompajliranog programa dovoljno je da program jednom kompajlirate,
+	odmah dobijete program u obliku kojeg ra\v{c}unalo razumije, a mo\'{c}i \'{c}ete ga
+	pokrenuti na nekom drugom ra\v{c}unalu (na kojem taj programski jezik "nije
+	instaliran"). 
+
+	Ako na ra\v{c}unalu imate program koji je prethodno kompajliran ne\'{c}ete mo\'{c}i
+	vidjeti kako taj program izgleda, jer on je u memoriji sa\v{c}uvan u ma\v{s}inskom
+	jeziku (a kojeg vjerojatno ne razumijete, kao Swahili uostalom, jelte 
+	:-)\footnote{Ako lutate bespu\'{c}ima interneta onda znate \v{s}ta ova
+	dvoto\v{c}ka-crtica-zagrada zna\v{c}e, ako vam je surfanje nepoznanica, onda
+	pogledajte taj niz znakova tako da ukosite glavu ulijevo. Uz malo truda trebali
+	biste vidjeti nasmijano lice}. 
+	S druge
+	strane, ako u memoriji imate program u nekom od interpretiranih programskih jezika,
+	mo\'{c}i \'{c}ete slobodno pogledati kako taj program izgleda (editirati kao tekst
+	datoteku). Mo\'{c}i \'{c}ete ga pokrenuti ako i samo ako imate instaliran i
+	interpreter-prevodioc za upravo taj programski jezik.
+
+	I, jo\v{s} samo ovo. Razlika izme\dj{}u programskih jezika koji se interpretiraju
+	i onih koji se kompajliraju nije to\v{c}no odre\dj{}ena. Postoje, naime programski
+	jezici koji se mogu pokretati i interpreterom, a mogu se i kompajlirati. Jo\v{s}
+	jedna komplikacija su programski jezici koji se kompajliraju, ali ne u ma\v{s}inski
+	jezik nego u ne\v{s}to \v{s}to razumije samo poseban program koji to onda
+	interpretira\dots Zaboravite, pre\v{z}ivjeti \'{c}ete \v{c}ak i ako ne shvatite sve
+	ove tehnikalije.
+
+\section{O programima}
+	
+	Program je niz naredbi koji opisuje kako se mo\v{z}e rije\v{s}iti neki problem. Taj
+	niz naredbi mora \emph{to\v{c}no} i \underline{vrlo detaljno} opisati taj
+	postupak. Zamislite da nekom stroju morate opisati kako se jede za ru\v{c}kom.
+	Izgleda vrlo jednostavno, ipak -- razmislite malo koliko tu ima detalja. Kao prvo
+	morate sjesti za stol, ali i to ne mo\v{z}ete bez da prethodno ne odmaknete stolicu
+	od stola. Kad sjednete, stolicu treba opet pribli\v{z}iti stolu. OK, idemo na juhu:
+	imate \v{z}licu, grabite u tanjur i stavljate u usta. Opet! Jeste li sigurno da je
+	juha uop\'{c}e na tanjuru, ako nije trebate opisati kako staviti juhu u tanjur.
+	\v{Z}licom, jel? Hm, jeste li sigurni da ste to\v{c}no opisali kako se \v{z}licom
+	stavlja juha, jer ako \v{z}licu ne dr\v{z}ite pod pravim kutom juha \'{c}e
+	se proliti iz \v{z}lice. A jo\v{s} nismo niti po\v{c}eli s jelom. Zamislite
+	koliko komplicirano mo\v{z}e biti ako morate obja\v{s}njavati neki specijalitet od
+	ribe kao drugo jelo.
+	Tko bi imao volje stroju obja\v{s}njavati kako se
+	\v{c}iste riblje kosti?
+
+	\subsection{Primjeri u raznim programskim jezicima}
+
+	OK, uspio sam vas obeshrabriti\dots Molim? Nisam? Hhhmmm\dots Ajmo onda probati
+	ovako: slijedi nekoliko programa u razli\v{c}itim programskim jezicima koji rade
+	jednu te istu stvar:
+
+	\source{Pascal:}{
+		program trlababalan;\\
+		integer x;\\
+		begin\\
+		\hspace*{10mm}x := 5;\\
+		\hspace*{10mm}if x $=$ 10 then\\
+		\hspace*{20mm}writeln( "x je jednako 10" );\\
+		\hspace*{10mm}else\\
+		\hspace*{20mm}writeln( "x nije jednako 10" );\\
+		end.
+	}
+
+	Ili, recimo ovako:
+
+	\source{Perl:}{
+		x = 5;\\
+		if( x == 10 ) \{\\
+		\hspace*{10mm}print "x je jednako 10$\setminus$n";\\
+		\}\\
+		else \{\\
+		\hspace*{10mm}print "x nije jednako 10$\setminus$n";\\
+		\}
+	}
+
+	\v{C}esto je u istom programskom jeziku mogu\'{c}e isti problem rije\v{s}iti na
+	razli\v{c}ite na\v{c}ine, a programski jezik Perl je posebno poznat po tome. 
+	Ovaj gornji program\v{c}i\'{c} iskusan programer bi napisao ovako:
+
+	\source{Perl:}{
+		x = 5;\\
+		print x $==$ 10 ? "x je manji od 10$\setminus$n" : "x je ve\'{c}i od 10$\setminus$n";
+		}
+
+	U Pythonu bi to izgledalo:
+
+	\source{Python:}{
+		x = 5;\\
+		if x $<$ 10:\\
+		\hspace*{10mm}print "x je manje od 10"\\
+		else:\\
+		\hspace*{10mm}print "x je ve\'{c}e od 10"
+	}
+	
+	U programskom jeziku Java:
+
+	\source{Java:}{
+		public class trlababalan \{\\
+		\hspace*{10mm}public static void main( String[] args ) \{\\
+		\hspace*{20mm}int x = 5;\\
+		\hspace*{20mm}if( x == 10 ) \{\\
+		\hspace*{30mm}System.out.println( "x je jednako 10" );\\
+		\hspace*{20mm}\}\\
+		\hspace*{20mm}else \{\\
+		\hspace*{30mm}System.out.println( "x nije jednako 10" );\\
+		\hspace*{20mm}\}\\
+		\hspace*{10mm}\}\\
+		\}
+	}
+	
+	U programskomjeziku HP48 kalkulatora:
+
+	\source{hp48:}{
+		$<<$ 5 'x' STO x 10 IF == THEN "x je jednako 10" ELSE "x nije jednako 10" END
+		MSGBOX $>>$
+	}
+	
+
+	Vjerujem da ste uo\v{c}ili neke sli\v{c}nosti u ovim kratkim program\v{c}i\'{c}ima.
+	Nemojte dopustiti vas ono \v{s}to ne razumijete obeshrabri. Toga \'{c}e uvijek
+	biti -- na veliku \v zalost onih koji brzo odustaju, a na zadovoljstvo onima koji
+	je "nepoznato" samo jo\v s jedan izazov.
+
+\section{O programskom jeziku \emph{Python}}
+
+	Python je programski jezik kojeg je stvorio/kreirao/dizajnirao/smislio Guido Van
+	Rossum. Za razliku od komercijalnih programskih jezika, Guido je odlu\v{c}io da
+	njegov programski jezik mora biti svima dostupan. I, ne samo da \'{c}e biti svima
+	dostupan nego nego programeri sami mogu mijenjati doti\v{c}ni jezik prema svojim
+	potrebama. S vremenom se stvorila grupa ljudi koji su po\v{c}eli pisati programe u
+	tom jeziku, a ako im se svi\dj{}ala neka sitnica iz nekog drugog jezika jednostavno
+	bi i nju dodali Pythonu.
+
+	Python je interpretirani (ali ne ba\v{s} u smislu "simultanog prevo\dj{}enja") i
+	objektno orijentirani (ali bez problema mogu se pisati strukturalni programi)
+	programski jezik. Zbog svoje vrlo \v{c}iste i stroge sintakse je vrlo pogodan da
+	bude "prvi programski jezik" ne-programerima. \v{C}esto je ulogu programskog jezika
+	za u\v{c}enje naj\v{c}e\v{s}\'{c}e imao BASIC, Pascal, Logo i razni drugi jezici. 
+	Well\dots Ne\'{c}u u detalje, ali Python je bolji od njih :-)
+
+	Python je i besplatan, a mo\v{z}e se pokrenuti na skoro svakom ra\v{c}unalu koje
+	vam padne na pamet (osim onih \emph{stvarno} prastarih). Ukoliko \v{z}elite
+	nastaviti \v{c}itanje ove knjige po\v{z}eljno bi bilo da s internet adrese
+	http://www.python.org/ skinete Python interpreter i instalirate ga na svom
+	ra\v{c}unalu.
+
+\subsection{"Python kao Monty Python?"}
+
+	\emph{"Python kao Monty Python?"} -- Da, \emph{Python} kao \emph{Monty Python}. Da
+	citiram "Python tutorial" (za one koji razumiju engleski):
+
+	\begin{quote}
+	By the way, the language is named after the BBC show ``Monty Python's
+	Flying Circus'' and has nothing to do with nasty reptiles.  Making
+	references to Monty Python skits in documentation is not only allowed,
+	it is encouraged!
+	\end{quote}
+
+\chapter{Uvod u programiranje}
+
+\section{\v{S}to je danas lijep i sun\v{c}an dan}
+
+Kad savladate nekoliko programskih jezika uo\v{c}iti \'{c}ete
+nekoliko pravilnosti koje se pojavljuju kod svih njih. Svi oni
+koriste varijable, potprograme, dobar dio njih koristi objekte. Ne
+samo to, nego u svim priru\v{c}nicima za programiranje prvi program
+ima naziv "Hello world"\footnote{eng.  Zdravo svijete}.
+
+Budu\'{c}i da autor ovog spisa nije nimalo revolucionaran tip, i
+mi \'{c}emo zapo\v{c}eti Zdravo-svijetom\footnote{\hspace*{2mm}"Hello
+world"}.  Daklem. "Hello world" u Pythonu izgleda ovako:
+
+	\sourcee{
+		\wrd{print} "Hello world"
+	}
+
+\textbf{Komentar:} Druga linija je ono \v{s}to je bitno u ovom
+programu. Ona ka\v{z}e prevoditelju-interpreteru da ispi\v{s}e na
+monitor niz znakova "Hello world" (bez navodnika, navodnici samo
+slu\v{z}e da se zna gdje po\v{c}inje i gdje zavr\v{s}ava ono \v{s}to
+\v{z}elimo ispisati).
+
+\subsection{Snimanje programa}
+
+Jedan od gornjih "zdravo-svijete" programa napi\v{s}ite u nekom
+tekst editoru (ako radie na Windowsima onda to mo\v{z}e biti NotePad,
+ako ste na Linuxu vi, joe, emacs, ako na Macintoshu\dots)
+
+\dots
+
+\subsection{Pokretanje programa}
+
+Na windowsima; nakon \v{s}to ste program snimili kao datoteku s ekstenzijom
+.py, na\dj{}ite gdje je ikona s tom datotekom i dvaput kliknite na nju.
+
+Na linuxu; u komandnoj liniji treba napisati: "python $<$ime\_datoteke$>$".
+Naravno, $<$ime\_datoteke$>$ zamijenite s imenom kojeg ste upisali pri
+snimanju.
+
+\dots
+
+\subsection{Python kao kalkulator}
+
+Pokrenete li\footnote{Na windowsima tako da kliknete na ikonu, a
+na linuxu tako da u prompt-u upi\v{s}ete "python"} program kojeg
+dobijete kad instalirate python dobiti cete nesto kao:
+
+\sourcee{
+Python 2.2 (\#1, Jan  9 2002, 02:47:26) \\
+$[$GCC 2.95.2 19991024 (release)$]$ on darwin \\
+Type "help", "copyright", "credits" or "license" for more information.  \\
+$>>>$ 
+}
+
+Ovdje sada  mo\v{z}ete upisivati naredbe programskog jezika python i
+vidjeti rezultat:
+
+\sourcee{
+Python 2.2 (\#1, Jan  9 2002, 02:47:26) \\
+$[$GCC 2.95.2 19991024 (release)$]$ on darwin \\
+Type "help", "copyright", "credits" or "license" for more information.  \\
+$>>>$ \var{print 2+3} \\
+5 \\
+$>>>$ \var{d=2} \\
+$>>>$ \var{print d+4} \\
+6 \\
+$>>>$ 
+}
+
+Crvenom bojom su ozna\v{c}ene naredbe koje sam u gornjem slu\v{c}aju
+pisao ja, a ostatak je generiralo ra\v{c}unalo (odnosno python
+interpreter).
+
+Ovaj na\v{c}in pokretanja python interpretera se zove interaktivni. U
+principu sve programe u ovom poglavlju mo\v{z}ete pokretati u interaktivnom
+na\v{c}inu jednostavno tako da upisujete liniju po liniju programa.
+
+\section{Komentari u programu}
+
+	Gornji program je sasvim mogao izgledati i ovako:
+
+	\sourcee{
+		\com{\# "Hello world" (c) 2001 by "Trlababalan" d.d.}\\
+		\wrd{print} "Hello world"
+	}
+
+	\textbf{Komentar:}
+	Prva linija, ona koja zapo\v{c}inje sa znakom \# je \emph{komentar}.
+	Kad interpreter do\dj{}e do ovog znaka on jednostavno presko\v{c}i sve
+	\v{s}to na\dj{}e nakon tog znaka pa sve do kraja reda.
+
+	Nije lo\v{s}e stavljati komentare u va\v{s}e programe. Oni koji \'{c}e slijediti
+	\'{c}e u sebi imati puno komentara. 
+
+	Mogli se napisati i ovako:
+
+	\sourcee{
+		\com{\# Do\v{s}ao \v{s}krtac u restoran pojesti juhu, a u jednom trenutku je\\
+		\# morao oti\'{c}i na WC. Naravno, uhvatila ga panika da mu netko\\
+		\# ne bi pojeo juhu za to vrijeme, pa je ispod juhe stavio papiri\'{c}\\
+		\# na kojeg je napisao "Pljunuo sam u juhu" -- nadaju\'{c}i se da \\
+		\# tako nikome ne\'{c}e pasti na pamet niti primirisati njegovoj tanjuru\\
+		\# \\
+		\# Kad se vratio, otkrio je da je na dnu njegovog papiri\'{c}a netko\\
+		\# nadopisao "\dots i ja"}\\
+		\\
+		\wrd{print} "Hello world"
+	}
+
+	Mo\v{z}e i ovo:
+
+	\sourcee{
+		\wrd{print} "Hello world" 
+		\com{\# ovaj program ispisuje na monitor: "Hello world"}
+	}
+
+	U stvari gornja \v{c}etiri slu\v{c}aja predstavljaju jedan te isti program.
+
+	Postoji jo\v{s} jedan na\v{c}in kako se mogu pisati komentari u programu:
+
+	\sourcee{
+		\wrd{print} "Hello world"\\
+		\com{""" Ovo je samo \\
+		komentar """}
+	}
+
+	\vspace{3mm}
+	Komentar po\v{c}inje s nizom od tri navodnika i zavr\v{s}ava s tri navodnika, a
+	mo\v{z}e se protezati preko vi\v{s}e linija.
+
+\section{Varijable}	
+
+	Promotrite sljede\'{c}i primjer:
+
+
+
+\sourcee{
+\var{x} = 5 \\
+\textcolor{green}{\# od sada (do daljnjega) varijabla x ima vrijednost 5}\\
+\textcolor{blue}{print} "x je", \var{x} \\
+\textcolor{green}{\# ispisuje prvo poruku "x je", a nakon nje vrijednost varijable x}\\
+\var{y} = 10\\
+\textcolor{blue}{print} "...a y je", \var{y}
+}
+
+	Nakon \v{s}to ga snimite i pokrenete ispis \'{c}e biti:
+
+\sourcee{
+x je sada 5\\
+y ima vrijednost 10
+}
+
+	\textbf{Obja\v{s}njenje:} u prevom redu programa, gdje pi\v{s}e \verb|x = 5| smo
+	definirali varijablu \verb|x|. \verb|x| od sada ima vrijednost 5. To ne zna\v{c}i
+	da se ta vrijednost ne\'{c}e promijeniti u buduænosti. 
+	Od sad, svaki put kad poku\v samo ispisati vrijednost x-a dobiti \' cemo broj 5.
+
+	\textbf{Napomena:} znak "=" u prvom redu programa ne treba shvatiti kao
+	matemati\v{c}ku tvrdnju da je \verb+x+ isto \v{s}to i 5, odnosno da \verb+x+ ima
+	vrijednost 5. Redak "\verb+x = 5+" treba shvatiti kao "Od sada \'{c}e \verb+x+
+	imati rijednost 5" ili "Neka \verb+x+ ima vrijednost 5". Dakle varijabli
+	\verb+x+ \underline{pridru\v{z}ujemo vrijednost} 5.
+
+	U trenutku kad smo u programu napisali \verb|x = 5| ka\v{z}emo da smo varijablu
+	\emph{inicijalizirali}, dakle odredili smo joj neku po\v cetnu vrijednost. Ako
+	poku\v samo ispisati neku neinicijaliziranu varijablu interpreter \' ce nam ispisati
+	poruku o gre\v sci:
+
+	\sourcee{
+	\textcolor{blue}{print} \var{x} \textcolor{green}{\# ...ali varijabla x nije prethodno inicijalizirana!}
+	}
+
+	Rezultat je:
+
+	\sourcee{
+Traceback (most recent call last):
+\\
+File "primjer.py", line 1, in ?
+\\
+print x
+\\
+NameError: name 'x' is not defined
+	}
+
+	Obratite pa\v znju na to da vam se to\v cno ka\v ze gdje je gre\v ska u programu
+	("line 1"). To nam sad i nije od neke koristi jer na\v s program ima samo jednu
+	liniju, ali kad se stvari zakompliciraju onda \' cemo takve informacije jako puno
+	koristiti!
+	
+	Pogledajmo sljede\'{c}i primjer:
+
+	\sourcee{
+	\var{x} = 5 \textcolor{green}{\# x ima sada vrijednost 5}\\
+	\textcolor{blue}{print} "x je", \var{x} \textcolor{green}{\# ispisujemo vrijednost od x}\\
+	\var{y} = \var{x} \textcolor{green}{\# sada y poprima vrijednost varijable x}\\
+	\textcolor{blue}{print} "y je", \var{y} \textcolor{green}{\# ispisujemo vrijednost od y}\\
+	\var{x} = 10 \textcolor{green}{\# x je sad 10}\\
+	\textcolor{blue}{print} "x je sad ", \var{x} \textcolor{green}{\# ispisujemo x}\\
+	\textcolor{blue}{print} "y je sad", \var{y} \textcolor{green}{\# ispisujemo y}
+	}
+
+	Kad pokrenemo program ispis je:
+
+	\sourcee{
+	x je 5\\
+	y je 5\\
+	x je sad 10\\
+	y je sad 5
+	}
+
+	Prvo je \verb|x| bio 5, tada smo varijabli \verb|y| dodijelili vrijednost varijable
+	\verb|x|, dakle 5. Tada smo \verb|x| promijenili da sadr\v zi 10, ali \verb|y| je
+	ostao 5 otprije.
+
+\section{Naredbe}
+
+	Program se sastoji od niza naredbi. Svaka naredba ra\v{c}unalu govori \v{s}ta
+	treba \v{c}initi. Razmotriti \'{c}emo jo\v{s} jednom jedan primjer programa
+	pisanog u Pythonu:
+	
+	\sourcee{
+		\var{x} = 5;\\
+		\wrd{if} \var{x} $<$ 10:\\
+		\hspace*{10mm}\textcolor{blue}{print} "x je manje od 10"\\
+		\wrd{else}:\\
+		\hspace*{10mm}\textcolor{blue}{print} "x je ve\'{c}e od 10"
+	}
+
+	Python je programski jezik koji zahtijeva da se svaka naredba pi\v{s}e u odvojenom
+	retku. Tako, svaki red predstavlja jednu naredbu, u prvom redu naredba "=" ka\v{z}e
+	ra\v{c}unalu da varijabli \verb|x| pridru\v{z}i vrijednost 5. Nakon toga jedan
+	\verb+if+--\emph{uvijet}\footnote{Vi\v{s}e rije\v{c}i o uvjetima kasnije\dots} 
+	(naredba \verb+if+)
+	provjerava je
+	li x manji od 10, ako jest onda ispisuje s \verb+print+ poruku "x je manji od 10", a ako nije onda
+	poruku "x je ve\'{c}e od 10". Program \'{c}e, naravno, ispisati prvu poruku
+
+	Naredbu \verb+print+ smo upoznali kod pisanja "Hello world" programa -- ona ispisuje na monitor ono \v{s}to se nalazi iza nje.
+	O toj naredbi \'{c}emo jo\v{s} puno pri\v{c}ati kasnije.
+
+	U nekim programskim jezicima mogu se pisati
+	programi koji u jednoj liniji imaju vi\v{s}e naredbi. Pogledajte na primjer kra\'{c}i
+	od dva programa pisana u programskom jeziku Perl u odjeljku 1.3.1. -- ono za
+	\v{s}to nam u Pythonu treba 5 redova mo\v{z}emo u Perlu napisati dva reda (mogo bi
+	se i u jednom).
+	Mo\v{z}da vam se to mo\v{z}e \v{c}initi prakti\v{c}nim, ali takvi programski jezici
+	rezultiraju s programima koji su vrlo te\v{s}ko shvatljivi. U takvom programu je
+	vrlo te\v{s}ko na\'{c}i gre\v{s}ku.
+
+	Pogledajmo jo\v{s} jednom taj program u programskom jeziku Perl:
+
+	\source{Perl:}{
+		x = 5;\\
+		print x $==$ 10 ? "x je manji od 10$\setminus$n" : "x je ve\'{c}i od 10$\setminus$n";
+		}
+
+	Ako znate imalo engleskog onda bi vam prvi primjer pisan u Pythonu trebao biti
+	dosta jasan, \v{c}ak i ako ne znate programirati. Pogledajte sad ovaj drugi
+	primjer, on je toliko zgusnut i kripti\v{c}an da je programeru-po\v{c}etniku vrlo
+	te\v{s}ko shvatiti \v{s}ta je ovdje \v{s}ta. Zamislite da sad imate program koji
+	ima 1000 ovakvih linija, a znate da se negdje me\dj{}u njima nalazi jedna
+	gre\v{s}ka?!
+
+	\textbf{Zapamtite:} Uvijek se potrudite pisati pregledne programe. Svaku komandu
+	pi\v{s}ite u novu liniju. Svaki slo\v{z}eniji dio programa popratite s komentarima!
+	Desiti \'{c}e vam se da morate prepraviti program koji ste nekad davno pisali. To
+	\'{c}e biti tim lak\v{s}e \v{s}to ste tada taj program preglednije pisali!
+	
+\section{Imena}
+
+	U zadnja dva primjera u na\v{s}im programima koristili smo se varijablama. Te
+	varijable smo nazvali \verb+x+ i \verb+y+. Naravno, mogli smo ih nazvati i
+	druk\v{c}ije. Probati \'{c}emo ne\v{s}to nau\v{c}iti iz sljede\'{c}eg primjera:
+
+	\sourcee{
+\var{pi} = 3.1415926 \\
+\var{v} = 5 \\
+\var{V} = 10 \\
+\var{nova}\_varijabla = 12345 \\
+\var{var1} = 12 \\
+\var{var2} = 13 \\
+\textcolor{blue}{print} "pi je",\var{pi} \\
+\textcolor{blue}{print} "varijabla v ima vrijesnost",\var{v} \\
+\textcolor{blue}{print} "varijabla V (veliko slovo!) ima vrijesnost",\var{V} \\
+\textcolor{blue}{print} "jos jedna varijabla:", \var{nova\_varijabla} \\
+\textcolor{blue}{print} "var1 je", \var{var1}, ", a var2 je", \var{var2} 
+	}
+
+	Prvih 6 linija programa varijablama pridru\v{z}uje neke vrijednosti. Imena tih
+	varijabli su 
+	\verb+pi+,
+	\verb+v+,
+	\verb+V+,
+	\verb+nova_varijabla+,
+	\verb+var1+ i 
+	\verb+var2+.
+
+	\textbf{Va\v{z}no:} Uo\v{c}ite da Python razlikuje velika i mala
+	slova: varijabli \verb+v+ smo
+	pridru\v{z}ili vrijednost 5, a varijabli \verb+V+ (veliko slovo V) vrijednost 10.
+	Kasnije u programu se njih tretira kao dvije razli\v{c}ite varijable!
+
+	Kad daj program upi\v{s}ete i pokrenete dobiti \'{c}ete:
+
+	\sourcee{
+	pi je 3.1415926\\
+	varijabla v ima vrijesnost 5\\
+	varijabla V (veliko slovo!) ima vrijesnost 5\\
+	jos jedna varijabla: 12345\\
+	var1 je 12 , a var2 je 13
+	}
+
+	\textbf{Zapamtite:} Imena varijabli se mogu sastojati kombinacije velikih i malih
+	slova, decimalnih znamenaka
+	i znaka "\_"\footnote{Engleski: underscore}. Decimalna znamenka se ne smije
+	nalaziti na prvom mjestu imena varijable. Razlikuju se velika i mala slova; dakle
+	\verb+kikiriki = 5+ i \verb+Kikiriki = 10+ su dvije razli\v{c}ite varijable s
+	razli\v{c}itim vrijednostima! 
+
+	Ima jo\v{s} jedno pravilo kojeg se morate dr\v{z}ati kod odre\dj{}ivanja imena
+	varijable; ime varijable \emph{ne smije biti klju\v{c}na rije\v{c}!}
+
+\section{Klju\v{c}ne rije\v{c}i}
+
+	Klju\v{c}ne rije\v{c}i su "rije\v{c}i" ili nizovi znakova koje su rezervirane za
+	kori\v{s}tenje u programskom jeziku i ne smiju se koristiti za imenovanje varijabli
+	ili nekih drugih dijelova programa koje odre\dj{}uje programer. Ve\'{c} smo se
+	sreli s  naredbom \verb+print+. \verb+print+ je klju\v{c}na rije\v{c} i ne smije
+	biti kori\v{s}tena kao ime varijable. Mo\v{z}emo na\v{s}u varijablu imenovati npr
+	\verb+var_print+ ili \verb+_print+ ili \verb+print1+, ali nikako \verb+print+!
+
+	Svaki programski jezik ima odre\dj{}eni broj klju\v{c}nih rije\v{c}i. Klju\v{c}ne
+	rije\v{c}i u programskom jeziku Python su:
+
+\begin{center}
+\begin{tabular}{llll}
+and & del & for & is \\
+raise & assert & elif & from\\
+lambda & return & break & else\\
+global & not & try & class\\
+except & if & or & while\\
+continue & exec & import & pass\\
+def & finally & in & print
+\end{tabular}
+\end{center}
+
+	Radi prakti\v{c}nosti, u programima koji se nalaze u ovoj knji\v{z}ici klju\v{c}ne
+	rije\v{c}i su prikazane u plavoj boji.
+
+\section{Komuniciranje s okolinom}
+
+	Ra\v cunalo nema previ\v se smisla ako ne komunicira s okolinom. Pod
+	\emph{komunikacija s okolinom} podradzumijeva se komunikacija s korisnikom ili
+	komunikacija s nekim drugim ure\dj{}ajem vezanim uz ra\v cunalo. Ra\v cunalo
+	komunicira s korisnikom na razli\v cite na\v cine; npr. klikanjem po ikonama,
+	upisivanjem teksta u nekakav formular, diktiranjem u mikrofon spojen 
+	na ra\v cunalo, i tako dalje i tako bli\v ze.
+
+	Nau\v citi \' cemo sada jedan jednostavan na\v cin kako mo\v zemo na\v s program u
+	pythonu natjerati da i komunicira s nama.
+
+	\sourcee{
+		\var{name} = \textcolor{blue}{raw\_input}( "Upi\v site svoje ime:" )\\
+		\textcolor{blue}{print} "Dobar dan", \var{name}
+	}
+
+	Kad pokrenete program ra\v cunalo \' ce ispisati poruku "Upi\v site svoje ime:" i
+	tra\v ziti od vas da upisujete ime. Rezultat mo\v ze biti:
+
+	\sourcee{
+		Upi\v site svoje ime:\textcolor{blue}{Aleksandar Makedonski}\\
+		Dobar dan  Aleksandar Makedonski
+	}
+
+	Plavom bojom je ozna\v cen tekst kojeg upisuje sam korisnik.
+
+	Pomo\' cu naredbe \verb+raw_input+ sad mo\v zemo bilo kojoj varijabli 
+	pridru\v ziti vrijednost broja kojeg \'{c}e korisnik utipkati tek u trenutku kad 
+	se program pokrene. \verb"raw_input" je sli\v{c}an, ali s njime mo\v{z}emo toj
+	varijabli pridru\v{z}iti i vrijednost stringa (a ne isklju\v{c}ivo brojevnu
+	vrijednost).
+
+	Porobati \' cemo sada napisati program koji tra\v zi od korisnika da upi\v se 
+	tri broja, a nakon toga ispisuje njihovu aritmeti\v cku sredinu (prosijek).
+
+	\sourcee{
+		\var{n1} = \textcolor{blue}{input}( "Upi\v si prvi broj:" )\\
+		\var{n2} = \textcolor{blue}{input}( "Upi\v si drugi broj:" )\\
+		\var{n3} = \textcolor{blue}{input}( "Upi\v si tre\' ci broj:" )\\
+		\var{avg} = ( \var{n1} + \var{n2} + \var{n3} ) / 3\\
+		\textcolor{blue}{print} "Aritmeti\v cka sredina je ", \var{avg}
+	}
+
+	\textbf{Komentar:} Program prvo u varijable \verb+n1+, \verb+n2+ i \verb+n2+
+	smje\v sta ono \v sto \' ce korisnik sam upisati kad ga se upita da upi\v se broj.
+	Varijabla \verb"avg" (eng. "average" = "prosjek") zatim prime vrijednost
+	aritmeti\v cke sredine brojeva 
+	\verb"n1",
+	\verb"n2" i 
+	\verb"n3".
+	Na kraju se samo ispisuje vrijednost od \verb"avg".
+
+	Evo jo\v s dvije varijante istog programa:
+
+	\sourcee{
+		\var{n1} = \textcolor{blue}{input}( "Upi\v si prvi broj:" )\\
+		\var{n2} = \textcolor{blue}{input}( "Upi\v si drugi broj:" )\\
+		\var{n3} = \textcolor{blue}{input}( "Upi\v si tre\' ci broj:" )\\
+		\var{avg} = ( float( \var{n1} ) + float( \var{n2} ) + float( \var{n3} ) ) / 3\\
+		\textcolor{blue}{print} "Aritmeti\v cka sredina je ", \var{avg}
+	}
+
+	Ili jo\v s kra\' ce:
+
+	\sourcee{
+		\var{n1} = float( \textcolor{blue}{input}( "Upi\v si prvi broj:" ) )\\
+		\var{n2} = float( \textcolor{blue}{input}( "Upi\v si drugi broj:" ) )\\
+		\var{n3} = float( \textcolor{blue}{input}( "Upi\v si tre\' ci broj:" ) )\\
+		\textcolor{blue}{print} "Aritmeti\v cka sredina je ", ( \var{n1} + \var{n2} + \var{n3} ) / 3
+	}
+
+	\textbf{Napomena:} \verb+float()+ nije jedini na\v cin kako se string mo\v ze
+	pretvoriti u broj. U sljede\' cem poglavlju \' ce biti obja\v snjeno za\v sto se
+	ovdje koristi ba\v s taj.
+
+\chapter{Izrazi}
+
+\section{Aritmeti\v{c}ki izrazi}
+
+Aritmeti\v{c}ki izrazi su matemati\v{c}ki izrazi s kakvima se ra\v{c}una u
+osnovnoj \v{s}koli. Naj\v{c}e\v{s}\'{c}e se sastoje od brojeva ili varijabli
+koje imaju broj\v{c}anu vrijednost i matemati\v{c}kih operacija. Primjer
+aritmeti\v{c}kog izraza mo\v{z}e biti: 
+$2+4-2$, 
+$\displaystyle \frac{3+6\cdot 5}{7-4}$,
+ili 
+$\displaystyle \frac{s_2-s_1}{t_2-t_1}$. 
+
+Kad nam negdje u programu zatreba
+aritmeti\v{c}ki izraz zapisujemo ga na sli\v{c}an na\v{c}in kako bismo ga napisali u
+bilje\v{z}nici s nekoliko sitnih razlika;
+
+\begin{itemize}
+	\item Mno\v{z}enje zapisujemo pomo\'{c}u znaka *, a ne $\cdot$.
+	\item Dijeljenje zapisujemo pomo\'{c}u znaka / umjesto :
+	\item Razlomke zapisujemo pomo\'{c}u operacije dijeljenja.
+	\item Potencije zapisujemo pomo\'{c}u "**". Dakle $3^2$ bi zapisalo kao
+		3**2
+	\item Ostatak\footnote{"Modulo"} pri dijeljenju dobijemo pomo\'{c}u
+		operacije \%.
+\end{itemize}
+
+Izraz 
+$\displaystyle \frac{3+6\cdot 5}{7-4}$
+bi napisali: \verb+(3+6*5)/(7-4)+. U ovom
+slu\v{c}aju brojnik i nazivnik treba staviti unutar zagrada jer bi u
+slu\v{c}aju da je izraz \verb+3+6*5/7-4+ kompjuter poku\v{s}ao prvo
+izra\v{c}unati \verb+6*5/7+, python naime izraze ra\v{c}una paze\'{c}i na
+prednost ra\v{c}unskih operacija (npr. mno\v{z}enje i dijeljenje imaju
+prednost pred zbrajanjem i oduzimanjem).
+
+\textbf{Va\v{z}no:}
+Ima jo\v{s} jedna stvar na koju treba pripaziti pri pisanju algebarskih
+izraza; ukoliko su brojevi s kojima ra\v{c}unamo cjelobrojni onda \'{c}e (u
+programskom jeziku python) i rezultat biti cjelobrojan. Dakle, ako probate
+izra\v{c}unati \verb+13/4+ dobiti \'{c}ete \verb+3+, a ne \verb+3.25+! To se
+mo\v{z}e rije\v{s}iti tako da barem jedan od brojeva definiramo kao realan, a za
+to je dovoljno dodati mu decimalnu to\v{c}ku na kraju. Da bi dobili to\v{c}an
+rezultat dijeljenje 13 podijeljeno s 4 trebali bi dakle napisati
+\verb+13/4+.
+
+Zadaci:
+
+\section{Logi\v{c}ki izrazi}
+
+Sli\v{c}no kao aritmeti\v{c}ki izrazi logi\v{c}ki izrazi se sastoje od
+operacija i \v{c}lanova izraza nad kojima ze izvr\v{s}avaju te operacije.
+Kod aritmeti\v{c}kih izraza \v{c}lanovi su brojevi ili varijable s
+brojevnom vrijedno\v{s}\'{c}u, a \v{c}lanovi logi\v{c}kih izraza mogu biti
+\emph{sudovi} ili \v{c}ak drugi aritmeti\v{c}ki izrazi.
+
+\emph{Sud} je tvrdnja koja mo\v{z}e biti istinita ili la\v{z}na. Primjer
+suda je \emph{"Zemlja kru\v{z}i oko Mjeseca"} ili \emph{"Postoji
+beskona\v{c}no mnogo prirodnih brojeva"}.  Svaki sud mora imati svoju
+istinosnu vrijednost koja mo\v{z}e biti \emph{"istina"} ili \emph{"la\v{z}"}.
+Ukoliko za neku tvrdnju ne mo\v{z}emo sa sigurno\v{s}\'{c}u kazati je li
+istinita ili la\v{z}na tada to nije sud. Na primjer \emph{"Zemlja
+kru\v{z}i oko Mjeseca"} jest sud zato \v{s}to ima istinosnu vrijednost
+\emph{"la\v{z}"}, kao i \emph{"Postoji beskona\v{c}no mnogo prirodnih
+brojeva"} \v{c}ija je istinita vrijednost \emph{"istina"}.  Tvrdnja
+\emph{"Frank Sinatra pjeva bolje od Tine Turner"} nije sud jer je
+nemogu\'{c}e odrediti istinitost te tvrdnje budu\'{c}i da je ona \v{c}isto
+subjektivne prirode (nekome se vi\v{s}e svidja Sinatra, a nekome Tina
+Turner). Isto tako nije sud "U\v{c}ini to!" ili "Mo\v{z}da \'{c}u jednog
+dana nau\v{c}iti programirati".
+
+Umjesto "istina" ili "la\v{z}" se \v{c}esto koriste velika slova "T" (od
+engleskog "true" = "istina") odnosno "F" (eng. "false" = "la\v{z}").
+
+Sud mo\v{z}emo zapisati i matemati\v{c}kim simbolima: $1<2$ je sud u
+kojemu se tvrti da je jedan manji od 2, a istinosna vrijednost tog
+suda je T (= istina). Matemati\v{c}ki sudovi kojima se koristimo u
+programiranju naj\v{c}e\v{s}\'{c}e se koriste za opisivanje odnosa izmedju
+brojeva. Pri tome se koristimo sljede\'{c}im simbolima iz sljede\'{c}e tablice;
+u prvom stupcu se nalazi simbol kako bismo za zapisali u bilje\v{z}nicu
+ili na plo\v{c}u, u drugom stupcu zapisa tog istog simbola u programu,
+a u tre\'{c}em kako \v{c}itamo taj simbol:
+
+\begin{tabular}{lll}
+	$=$ & $==$ & je jednako \\
+	$\neq$ & $!=$ & nije jednako, je razli\v{c}ito \\
+	$<$ & $<$ & je manje od \\
+	$\leq$ & $<=$ & je manje ili jednako \\
+	$>$ & $>$ & je ve\'{c}e od \\
+	$\geq$ & $>=$ & je ve\'{c}e ili jednako
+\end{tabular}
+
+Probajmo sada utvrditi istinosnu vrijednost nekih matemati\v{c}kih izraza:
+
+\begin{tabular}{lll}
+	$12<12.01$ & \verb+12<12.01+ & T\\
+	$1+2\leq 5$ & \verb"1+2<=5" & T\\
+	$10-3\geq 6+1$ & \verb"10-3>=6+1" & T \\
+	$10-2\geq 6+1$ & \verb"10-2>=6+1" & F \\
+	$5\neq 5$ & \verb"5!=5" & F
+\end{tabular}
+
+Gornji primjeri su primjeri \emph{jednostavnih sudova}. Slo\v{z}eni
+sudovi su sudovi koji se dobijaju od jednostavnih sudova i logi\v{c}kih
+operacija \emph{and}, \emph{or} i \emph{not}.
+
+\subsection{Logi\v{c}ka operacija \emph{and}}
+
+Promotrimo re\v{c}enicu \emph{"Ako je lijepo vrijeme
+idemo na izlet."}. O \v{c}emu ovisi o\'{c}ete li
+oti\'{c}i na izlet? Ovisi o tome je li lijepo vrijeme, dakle ovisi o
+istinosnoj vrijednosti suda \emph{"Lijepo je vrijeme."}. Ako je
+taj sud istinit (T) oti\'{c}i \'{c}ete na izlet, a ako nije (F) -- ni\v{s}ta
+od izleta.
+
+Malo \'{c}emo stvar zakomplicirati ako osim lijepog vremena va\v{s} izleta
+ovisi o jo\v{s} ne\v{c}emu; \emph{"Ako je lijepo vrijeme i nemam drugih obaveza
+i\'{c}i \'{c}u na izlet"}.
+Sad va\v{s} izlet ovisi o istinitosti suda \emph{"Lijepo je vrijeme i nemam obaveza"}, a on je istinit
+kad su istovremeno istinita sljede\'{c}a dva suda:
+
+\begin{itemize}
+	\item[\emph{(a)}] \emph{"Lijepo je vrijeme."}
+	\item[\emph{(b)}] \emph{"Nemam obaveza."}
+\end{itemize}
+
+Dakle, treba vrijediti da je istinito i \emph{(a)} i \emph{(b)},
+jer ako je bilo koje od ta dva la\v{z} onda je i tvrdnja \emph{"Lijepo
+je vrijeme i nemam obaveza"} la\v{z}na.
+
+Ukoliko imamo dva suda koja \'{c}emo ovdje ozna\v{c}iti s $A$, odnosno
+$B$ onda \'{c}emo takvu kombinaciju zapisivati s $A and B$. Suda $A
+and B$ je \emph{slo\v{z}eni sud} koji se sastoji od jednostavnijih
+sudova $A$ i $B$. Istinitost suda $A and B$ ovisi o istinitosti
+sudova $A$ i $B$; tek ako su oba istinita onda je i $A and B$
+istinit. To se mo\v{z}e prikazati pomo\'{c}u sljede\'{c}e tablice:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A and B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & la\v{z} & la\v{z} \\
+	la\v{z} & istina & la\v{z} \\
+	la\v{z} & la\v{z} & la\v{z} 
+\end{tabular}
+
+Garnju tablicu zovemo \emph{tablica istinitosti} logi\v{c}ke operacije $and$.
+
+\subsection{Logi\v{c}ka operacija \emph{or}}
+
+Pretpostavimo da \'{c}ete oti\'{c}i na izlet ako vrijedi \emph{"Lijepo
+je vrijeme ili imam dobro dru\v{s}tvo"}. Dakle, ako je lijepo vrijeme
+idete na izlet, ako nije lijepo vrijeme i imate dobro dru\v{s}tvo ipak
+idete na izlet, ako nemate dobro dru\v{s}tvo i lijepo je vrijeme opet
+idete na izlet, a jedini slu\v{c}aj kad ne idete na izlet je kad, niti
+je vrijeme lijepo niti imate dobro dru\v{s}tvo.
+
+Tablica istinitosti logi\v{c}ke operacije $or$ izgleda ovako:
+
+\begin{tabular}{ll|l}
+	$A$ & $B$ & $A or B$ \\
+	\hline
+	istina & istina & istina \\
+	istina & la\v{z} & istina \\
+	la\v{z} & istina & istina \\
+	la\v{z} & la\v{z} & la\v{z} 
+\end{tabular}
+
+\subsection{Logi\v{c}ka operacija \emph{not}}
+
+U zadnjem slu\v{c}aju oti\'{c}i \'{c}ete na izlet tek ako vrijedi \emph{"Nemam
+drugih obaveza"}. Dakle, tek ako \emph{nije} istit sud \emph{"Imam
+drugih obaveza"}. Logi\v{c}ka operacija $not$ nekom sudu pridodaje
+suprotanu istinosnu vrijednost.
+
+\begin{tabular}{l|l}
+	$A$ & $not A$ \\
+	\hline
+	istina & la\v{z}\\
+	la\v{z} & istina
+\end{tabular}
+
+Zadaci: Probajte odrediti istinitost sljede\'{c}ih sudova:
+	- 1<2 and 13!=5
+	- 2>5 or 1=2
+	- 1<2 and 5!=5
+	- ( 1<2 or 9=5 ) and 3==3
+	- ( 2==2 and 3!=5 ) or ( 3==4 )
+
+\subsection{Nekoliko dodatnih pravila}
+
+U programskom jeziku python (sli\v{c}no kao u mnogim drugim) postoji
+jo\v{s} nekoliko dodadnih pravila kod utvrdjivanjaistinitosti sudova:
+- svaki broj/izraz je po definiciji sud:
+	- ako njegova vrijednost 0 onda je njegova istinosna vrijednost "la\v{z}" (F)
+	- ako je razli\v{c}it od 0 onda je njegova istinosna vrijednost "istina" (T)
+- svaki string je po definiciji sud:
+	- ako je string prazan onda je njegova istinosna vrijednost "la\v{z}" (F)
+	- ako string nije prazan onda je njegova istinosna vrijednost "istina" (T)
+
+dakl ima smisla sud \verb"2<3 or 0". Budu\'{c}i da je $2<3$ ondaje prvi dio suda istinit, a (broj) 0 je
+po gornjim pravilima la\v{z}an, dakle imamo slu\v{c}aj "istina" $or$ "la\v{z}", dakle rezultat je istina.
+
+Zadaci: Probajte odrediti istinitost sljede\'{c}ih sudova:
+\begin{itemize}
+\item \verb"1 or 3>3"
+\item \verb"2!=3 and 1"
+\item \verb+"" or "jkljkl"+
+\item \verb+( 0 or "jkljkl" ) and 2<3+
+\item \verb+( not "jkljkl" ) and ( not 12 )+
+\end{itemize}
+\chapter{Kontrola toka programa}
+
+\section{if \dots then \dots else \dots}
+
+Pretpostavimo da imamo program koji od korisnika tra\v{z}i da upi\v{s}e
+koliko je bodova zaradio na odre\dj{}enom testu i zatim ovisno o broju
+bodova ispisuje koju je ocjenu dobio. Ako je dobio manje ili jednako
+39 bodova ocjena je 1, ako ima 40-54 ocjena je 2, za 55-69 ocjena
+je 3, za 70-85 ocjena je 4, a za vi\v{s}e od 85 ocjenjen je s 5.
+
+Probati \'{c}emo za po\v{c}etak napisati program koji samo ispisuje je
+li ocjena 1 ili ve\'{c}a. Za to program treba nekako imati na\v{c}in kako
+\'{c}e provjeriti je li broj bodova ve\'{c}i, manji ili jednak 40.
+
+Program izgleda ovako:
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", bodovi, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\wrd{print} "Kraj programa"
+}
+
+Kori\v{s}tena je naredba if, ona se koristi na sljede\'{c}i na\v{c}in:
+
+\sourcee{
+\wrd{if} \emph{logi\v{c}ki izraz}:
+\\
+\hspace*{10mm}\emph{komande programa u slu\v{c}aju da je logi\v{c}ki izraz istinit}
+}
+
+Kao prvo uo\v{c}ite da je dio programa koji seizvr\v{s}ava u slu\v{c}aju da
+je logi\v{c}ki izraz istinit \emph{uvu\v{c}en} u odnosu na ostatak
+programa. To uvla\v{c}enje je to\v{c}no definirano i mora biti jedan
+$<$tab$>$ (ili 8 razmaknica) ra\v{c}unaju\'{c}i od lijevog ruba polja u kojem se
+editira program!
+
+U po\v{c}etnom programu se komanda nakon \verb"if" naredbe izvr\v{s}ava
+jedino u slu\v{c}aju ako je broj bodova manji od 40, ako je broj bodova
+ve\'{c}i ili jednak 40 program tu liniju jednostavno preska\v{c}e. Mo\v{z}emo
+srediti i da program preska\v{c}e ve\'{c}i broj linija:
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", bodovi, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\hspace*{10mm}
+	\wrd{print} "Molimo vas lijepo da za sljede\'{c}i put malo bolje nau\v{c}ite"
+\\
+\wrd{print} "Kraj programa"
+}
+
+Poruka koja se sad ispisuje ukoliko nemate dovoljno bodova je 
+
+\sourcee{
+Na\v{z}alost dobili ste negativnu ocjenu :(
+\\
+Molimo vas lijepo da za sljede\'{c}i put malo bolje nau\v{c}ite
+}
+
+Opet, \verb"Kraj programa" se ispisuje bez obzira na broj bodova.
+
+\v{Z}elimo li da na\v{s} program ispisuje i poruku ukoliko imate vi\v{s}e ili jednako od 40 bodova to se mo\v{z}e
+tako da koristite dva puta naredbu \verb"if":
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", bodovi, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\wrd{if} \var{bodovi} $>$= 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Imate vi\v{s}e od 40 bodova"
+\\
+\wrd{print} "Kraj programa"
+}
+
+Ili pomo\'{c}u jednog dodatka naredbi \verb"if":
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", bodovi, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\wrd{else}:
+\\
+\hspace*{10mm}
+	\wrd{print} "Imate vi\v{s}e od 40 bodova"
+\\
+\wrd{print} "Kraj programa"
+}
+
+Program govori ra\v cunalu:
+\emph{Ako je broj bodova manji od 40 tada ste dobili negativnu
+ocjenu, ina\v{c}e imate vi\v{s}e od 40 bodova}
+
+Sve ono \v{s}to se nalazi nakon \verb"else", naravno uvu\v{c}eno za jedan
+$<$tab$>$ \'{c}e biti ispisano u slu\v{c}aju da uvjet \verb"bodovi$<$40" nije
+istinit!
+
+\v{S}ta ako ne \v{z}elimo samo podatak o tome jesmo li dobili vi\v{s}e ili
+manje od 40 bodova nego i koju smo ocjenu dobili:
+
+Prvi na\v{c}in koriste\'{c}i niz \verb"if"-ova:
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", bodovi, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\wrd{if} 40$<$=\var{bodovi} and \var{bodovi}$<$=54:
+\\
+\hspace*{10mm}
+	\wrd{print} "Dovoljan (2)"
+\\
+\wrd{if} 55$<$=\var{bodovi} and \var{bodovi}$<$=69:
+\\
+\hspace*{10mm}
+	\wrd{print} "Dobar (3)"
+\\
+\wrd{if} 70$<$=\var{bodovi} and \var{bodovi}$<$=84:
+\\
+\hspace*{10mm}
+	\wrd{print} "Vrlo dobar (4)"
+\\
+\wrd{if} 85$<$=\var{bodovi}:
+\\
+\hspace*{10mm}
+	\wrd{print} "Odli\v{c}an (5)"
+}
+
+Drugi na\v{c}in koriste\'{c}i \verb"elif" (od eng. "else if"):
+
+\sourcee{
+\var{bodovi} = \var{input}( "Upi\v{s}i broj bodova:" )
+\\
+\wrd{print} "Imate", \var{bodovi}, "bodova..."
+\\
+\wrd{if} \var{bodovi} $<$ 40:
+\\
+\hspace*{10mm}
+	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\\
+\wrd{elif} 40$<$=\var{bodovi} and \var{bodovi}$<$=54:
+\\
+\hspace*{10mm}
+	\wrd{print} "Dovoljan (2)"
+\\
+\wrd{elif} 55$<$=\var{bodovi} and \var{bodovi}$<$=69:
+\\
+\hspace*{10mm}
+	\wrd{print} "Dobar (3)"
+\\
+\wrd{elif} 70$<$=\var{bodovi} and \var{bodovi}$<$=84:
+\\
+\hspace*{10mm}
+	\wrd{print} "Vrlo dobar (4)"
+\\
+\wrd{elif} 85$<$=\var{bodovi}:
+\\
+\hspace*{10mm}
+	\wrd{print} "Odli\v{c}an (5)"
+}
+
+Na hrvatskom bi ovo napisali: \emph{Ako imate manje od 40 bodova dobili ste 2, ina\v{c}e ukoliko imate
+izme\dj{}u 40 i 54 dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u 55 i 59 dobili ste 3, ina\v{c}e ukoliko imate
+izme\dj{}u 70 i 84 dobili ste 4, ina\v{c}e ukoliko imate vi\v{s}e od 84 dobili ste 5}.
+
+Mali problem mo\v{z}e nastati u tome \v{s}to mo\v{z}ete napisati i 120 ili -340 za broj bodova. Probajmo
+napisati program koji ispravlja tu gre\v{s}ku:
+
+\sourcee{
+\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" ) \\
+\wrd{print} "Imate", \var{bodovi}, "bodova..." \\
+\wrd{if} 0$<$= \var{bodovi} and \var{bodovi} $<$ 40: \\
+\hspace*{10mm} \wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :(" \\
+\wrd{elif} 40$<$=\var{bodovi} and \var{bodovi}$<$=54: \\
+\hspace*{10mm} \wrd{print} "Dovoljan (2)" \\
+\wrd{elif} 55$<$=\var{bodovi} and \var{bodovi}$<$=69: \\
+\hspace*{10mm} \wrd{print} "Dobar (3)" \\
+\wrd{elif} 70$<$=\var{bodovi} and \var{bodovi}$<$=84: \\
+\hspace*{10mm} \wrd{print} "Vrlo dobar (4)" \\
+\wrd{elif} 85$<$=\var{bodovi} and \var{bodovi} $<$=100: \\
+\hspace*{10mm} \wrd{print} "Odli\v{c}an (5)" \\
+\wrd{else}: \\
+\hspace*{10mm} \wrd{print} "Niste upisali broj izme\dj{}u 0 i 100 za broj bodova"
+}
+
+Sad bi "prijevod" ovog programa na hrvatski glasio: \emph{Ako imate
+izme\dj{}u 0 i 40 bodova dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u
+40 i 54 dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u 55 i 59 dobili
+ste 3, ina\v{c}e ukoliko imate izme\dj{}u 70 i 84 dobili ste 4, ina\v{c}e
+ukoliko imate izme\dj{}u 84 i 100 dobili ste 5, a ako nije niti jedan
+od ovih slu\v{c}ajeva onda ste pogre\v{s}no upsali broj bodova}.
+
+Zadaci: \textbf{Za napraviti}
+
+\section{for \dots in range( \dots )}
+
+Problem je sljede\'{c}i; treba ispisati tablicu kvadrata brojeva od do 10.
+Tablica kvadrata je tablica koja ima dva stupca, u prvom se nalazeprirodni
+brojevi, a u drugom njihovi kvadrati (da podsjetimo, kvadrat prirodnog
+broja dobijemo tako da taj broj pomno\v{z}imo sa samim sobom).
+
+To se mo\v{z}e posti\'{c}i na sljede\'{c}i na\v{c}in:
+
+\sourcee{
+\wrd{print} "n -$>$ n*n" \\
+\wrd{print} 1, " -$>$ ", 1**2 \\
+\wrd{print} 2, " -$>$ ", 2**2 \\
+\wrd{print} 3, " -$>$ ", 3**2 \\
+\wrd{print} 4, " -$>$ ", 4**2 \\
+\wrd{print} 5, " -$>$ ", 5**2 \\
+\wrd{print} 6, " -$>$ ", 6**2 \\
+\wrd{print} 7, " -$>$ ", 7**2 \\
+\wrd{print} 8, " -$>$ ", 8**2 \\
+\wrd{print} 9, " -$>$ ", 9**2 \\
+\wrd{print} 10, " -$>$ ", 10**2
+}
+
+\verb"5**2" zna\v{c}i $5^2$. U svakom retku se naredbom print ispisuje broj i
+njegov kvadrat. 
+
+Me\dj{}utim, ovo je jedan prili\v{c}no \emph{neelegantan} na\v{c}in rje\v{s}avanja
+problema, a to zato \v{s}to je ovakav program te\v{s}ko generalizirati,
+odnosno te\v{s}ko ga je upotrijebiti u slu\v{c}aju da njime moramo
+rije\v{s}iti neki analogni ili opcehnitiji problem. 
+\footnote{
+	Ako je na\v{s} trenutni
+	problem \emph{"Napi\v{s}i program koji ispisuje tablicku kvadrata
+	prvih 10 brojeva"} analogni (ali slo\v{z}eniji) problem mo\v{z}e glasiti
+	\emph{"Napi\v{s}i program koji ispisuje tablicu kvadrata za brojeve
+	od 0 do 100"}. Op\'{c}enitiji problem bi mogao biti \emph{"Napi\v{s}i
+	program koji ispisuje tablicu kvadrata za brojeve od 0 do n (gdje
+	je n proizvoljan prirodan broj)"}. 
+}
+Taj program se mo\v{z}e napisati
+na na\v{c}in slu\v{c}an na\v{s}em na\v{c}inu, ali priznati \'{c}ete da pisanje
+sto i jedne linije tipa s naredbom \verb"print" koja ne radi ni\v{s}ta
+drugo negoli ispisuje broj i njegov kvadrat i nije neki pretjerano
+kreativan posao.
+
+Zato postoji nareda \verb"for". Ta naredba od ra\v{c}unala tra\v{z}i da
+odre\dj{}eni broj puta ponovi neki postupak uz odre\dj{}ene uvjete. Uz
+naredbu \verb"for" se nalazi ime varijable i nekakav \emph{skupa}
+ili \emph{lista} prema kojima se ta varijabla "kre\'{c}e". Budu\'{c}i da
+\'{c}e se ova skripta baviti skupovima, listama i ostalim slo\v{z}enim
+tipovima podataka baviti tek kasnije ovdje \'{c}u objasniti samo jedan
+od na\v{c}ina koji se \v{c}esto koriste s naredbom \verb"for".
+
+\sourcee{
+\wrd{print} "n -$>$ n*n" \\
+\wrd{for} \var{x} \wrd{in} \wrd{range}(11): \\
+\tab \wrd{print} \var{x}, " -$>$ ", \var{x}**2
+}
+
+Rezultat programa \'{c}e biti potpuno isti kao i kod pro\v{s}log programa.
+
+Druga i tre\'{c}a linija ovog programa ka\v{z}e otprilike: \emph{"Neka
+varijabla x uzima redom vrijednost 0, 1, 2\dots sve dok je manje
+od 11, i za svaku od tih vrijednosti ispi\v{s}i vrijednost od x i
+kvadrat od x"}. Nakon \v{s}to python interpreter do\dj{}e do druge linije
+programa ra\v{c}unalo samo varijabli x pridodaje vrijednost 0, i
+izvr\v{s}ava tre\'{c}u liniju programa (x je tamo 0). Nakon \v{s}to to
+izvr\v{s}i varijabli x se pridru\v{z}uje sljede\'{c}a vrijednost; 1. Sad se
+opet ispisuje tre\'{c}a linija programa, ali s novom vrijednos\'{c}u
+varijeble x. Nakon toga x poprima vrijednost 2, izvr\v{s}ava se tre\'{c}a
+linija, i tako dalje\dots
+
+\textbf{Va\v{z}no:}
+Nikad ne zaboravite dvoto\v{c}ku iza "for" linije -- to je naime vrlo
+\v{c}esta po\v{c}etni\v{c}ka gre\v{s}ka.
+
+\textbf{Definicija:} Za liniju s \verb"for" naredbom i niz naredbi koje
+se izvr\v{s}avaju pri svakoj promjeni varijable nakon \verb"for"
+ka\v{z}emo da se zovu \textbf{for-petlja}. Ukoliko je \verb"x" varijabla
+nakon \verb"for" ka\v{z}emo da smo izvr\v{s}ili \textbf{for-petlju po varijabli
+x}. Svaki put kad varijabla \verb"x" promijeni vrijednost zbog \verb"for"
+petlje ka\v{z}emo da je izvr\v{s}eno \textbf{iteracija}. Niz naredbi koje se
+izvr\v{s}avaju u svakoj iteraciji zovemi tijelo for-petlje.
+
+Isto tako, mo\v{z}ete srediti da se izvr\v{s}ava i vi\v{s}e linija svaki
+put kad varijabla x u zbog \verb"for" mijenja vrijednost. Jednostavno
+nakon tre\'{c}eg reda programa napisali biste jo\v{s} jedan, ali i taj
+obavezno mora biti pomaknuti za jedan $<$tab$>$ udesno.
+
+Pretpostavimo sad da treba napisati prgram koji od koristnika tra\v{z}i
+da mu upi\v{s}e jedan broj, a zatim ispisuje prvo kvadrat tog broja,
+a onda rezultat pri cjelobrojnom dijeljenju 
+\footnote{
+	Cjelobrojno dijeljenje zna\v{c}i da se radi o dijeljenju u
+	kojemu se ignorira dio iza decimalne to\v{c}ke u rezultatu
+	nekog dijeljenja. Npr ukoliko podijelimo 7 sa 4 dobiti
+	\'{c}emo 1.75, ali rezultat cjelobrojnog dijeljenja 7 sa 4 je
+	1. Podsjetimo da python vr\v{s}i cjelobrojno dijeljenje ukoliko
+	su djeljenik i djelitelj cijeli brojevi (nemaju decimalnog
+	dijela).
+}
+tog broja s 2.
+
+\sourcee{
+\var{n} = \wrd{input}( "Upi\v{s}i broj:" )
+\\
+\wrd{for} \var{i} \wrd{in} \wrd{range}( \var{n}+1 ):
+\\
+\hspace*{10mm}
+	\wrd{print} "kvadrat od", \var{i}, "je", \var{i}**2
+\\
+\hspace*{10mm}
+	\wrd{print} "rezultat cjelobrojnog dijeljenja od", \var{i}, "s 2 je", \var{i}/2
+\\
+\wrd{print} "Kraj programa"
+}
+
+Ovdje se tijelo for-petlje sastoji od dvije naredbe (tre\'{c}i i
+\v{c}etvrti red programa. Zadnja linija ne spada u tijelo petlje jer
+se ne izvr\v{s}ava kod svake iteracije nego samo jednom nakon \v{s}to se
+cijela petlja "izvr\v{s}i".
+
+Prvo se varijabli \verb"n" pridjeljuje vrijednost koju upisuje
+osoba koja pokre\'{c}e program. Zatim se vr\v{s}i petlja po varijabli
+\verb"i". Obratite pa\v{z}nju da se petlja sad kre\'{c}e u granicama od
+0, pa po svim cijelim brojevima manjim od \verb"n+1", a najve\'{c}i
+cijeli broj manji od \verb"n+1" je \verb"n". Dakle petlja se ne
+izvra\v{s}ava za \verb"n+1" nego samo do \verb"n", a to je upravo ono
+\v{s}to mi \v{z}elimo.
+
+\v{Z}elimo sad program koji \'{c}e za svaki broj od 0 do 100 ispisati
+njegov kvadrat i, ukoliko je taj broj paran ispisati i poruku o
+tome. Broj je paran u koliko je rezultati pri dijeljenju tog broja
+s 2 jednak s 0. Rezultat pri dijeljenju dobijemo pomo\'{c}u operacije
+modulo (\verb"%" u python programu)
+
+\sourcee{
+\wrd{for} \var{x} \wrd{in} \wrd{range}(101): \\
+\tab \wrd{print} \var{x}, "na kvadrat iznosi", \var{x}**2 \\
+\tab \wrd{if} \var{x} \% 2 == 0: \\
+\tab \wrd{print} \var{x}, "je paran broj" \\
+\wrd{print} "Kraj programa"
+}
+
+\textbf{Komentar:} Tijelo for-petlje koja po\v{c}inje s prvim redom
+programa je niz naredbi koji se sastoji od 2-4 linije programa.
+Obratite pa\v{z}nju da je ovdje 4. linija, koja se izvr\v{s}ava jedino
+kad je istinit sud \verb"x%2==0" pomaknuta za \emph{dva} $<$tab$>$-a!
+Za svaki \verb"x" if-uvjet isprobava je li istina da je rezultat
+pri djeljenju x s 2 jednak 0 (\verb"x%2==0"), a ako je to istina
+izvr\v{s}ava se 4. linija.
+
+Evo jo\v{s} jedna varijanta programa:
+\footnote{
+Zbog lak\v{s}eg opisivanja programa ovdje je na po\v{c}etku svakog retka
+ispisan i redni broj tog reda. Kad prepisivanja programa u editoru to n
+prepisujete.
+}
+
+\sourcee{
+1: \wrd{for} \var{x} \wrd{in} \wrd{range}(101): \\
+2:\tab \wrd{print} \var{x}, "na kvadrat iznosi", \var{x}**2 \\
+3:\tab \wrd{if} \var{x} \% 2 == 0: \\
+4:\tab \tab \wrd{print} \var{x}, "je paran broj" \\
+5:\tab \wrd{else}: \\
+6:\tab \tab \wrd{print} \var{x}, "nije paran broj" \\
+7:\tab \wrd{print} \\
+8: \wrd{print} "Kraj programa"
+}
+
+U \v{c}emu se ona razlikuje od gornjeg programa? Probajte sami otkriti \v{s}ta
+radi sedma linija programa? Ovisi li njeno izvr\v{s}avanje o tome je li
+izvr\v{s}en uvjet u 3. redu? Probajte promijeniti program tako da se petlja ne
+izvr\v{s}ava za brojeve do 100 nego da korisnik mo\v{z}e sam odrediti do kojeg do
+kojeg broja se petlja izvr\v{s}ava.
+
+Probajte objasniti za\v{s}to donji program radi potpuno istu stvar
+kao i na\v{s} zadnji program:\footnote{Pomo\'{c}: svaki broj je po definiciji sud
+\v{c}ija istinitost ovisi o\dots}
+
+\sourcee{
+1: \wrd{for} \var{x} \wrd{in} \wrd{range}(101): \\
+2: \tab \wrd{print} \var{x}, "na kvadrat iznosi", \var{x}**2 \\
+3: \tab \wrd{if} \wrd{not} \var{x} \% 2: \\
+4: \tab \tab \wrd{print} \var{x}, "je paran broj" \\
+5:	\tab \wrd{else}: \\
+6: \tab\tab \var{x}, "nije paran broj" \\
+7: \tab \wrd{print} \\
+8: \wrd{print} "Kraj programa"
+}
+
+Jo\v{s} jedna korisna varijanta varijanta for-petlja s \verb"range(...)" je
+slu\v{c}aj u kojem ne \v{z}elim da se petlja izvr\v{s}ava za brojeve od 0 do nekog
+broja nego od nekog broja razli\v{c}itog od 0 do nekog drugog broja:
+
+\sourcee{
+\wrd{for} \var{i} \wrd{in} \wrd{range}( 15, 70 ):\\
+\hspace*{10mm} \wrd{print} \var{i}
+}
+
+Ispisati \'{c}e brojeve od 15 do 70.
+
+Probajte objasniti \v{s}ta radi sljede\'{c}i program:
+
+\sourcee{
+\var{a} = \wrd{input}( "Upi\v{s}i prvi broj:" ) \\
+\var{b} = \wrd{input}( "Upi\v{s}i prvi broj:" ) \\
+\wrd{if} \var{a} $<$ \var{b}: \\
+\hspace*{10mm} \wrd{for} \var{x} \wrd{in} \wrd{range}( \var{a}, \var{b} + 1 ): \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} \var{x}, "na tre\'{c}u iznosi", \var{x}**3 \\
+\wrd{else}: \\
+\hspace*{10mm} \wrd{print} "hmmm..."
+}
+
+Napi\v{s}ite sada program koji od korisnika tra\v{z}i da upi\v{s}e dva broja, a
+zatim ispisuje tablicu kvadrata svh brojeva od prvog do drugog.
+
+Evo jo\v{s} jedan zanimljiv program koji ispisuje tablicu mno\v{z}enja brojeva od
+1 do 10. Treba dakle napisati sve izraze oblika $a\cdot b$ gdje $a$ i $b$
+mogu biti brojevi od 1 do 10. Ali (!) za svaki $a$ od 1 do 10 (for-petlja)
+i $b$ mora mo\'{c}i poprimiti vrijednosti od 1 do 10.
+
+\sourcee{
+\wrd{for} \var{a} \wrd{in} \wrd{range}(1, 11): \\
+\hspace*{10mm} \wrd{for} \var{b} \wrd{in} \wrd{range}(1, 11): \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} \var{a}, "puta", \var{b}, "je jednako", \var{a}*\var{b}
+}
+
+Tijelo prve petlje je drugi i tre\'{c}i red, a tijelo druge petlje je samo
+tre\'{c}i red. Dakle, za svaki a od 1 do 10 izvr\v{s}iti \'{c}e se druga petlja u
+kojoj se sad b mijenja od 1 do 10 i kod svake promjene ispisuje poruka.
+
+Jo\v{s} jedan primjer:
+
+Pretpostavimo da imamo ovakav problem:
+Polaznik jedne auto\v{s}kole pola\v{z}u pismeni dio voza\v{c}kog ispita.
+Ispit se sastoji od 15 pitanja koji su podijeljeni u tri skupine po 5 zadatka.
+Zadaci iz prve skupine nose po 1 bod, iz druge skupine 2 boda, a iz tre\'{c}e
+skupine po 3 boda. Za prolaz na ispitu potrebno je da polaznik ima barem 24 boda.
+Treba napisati program koji od instruktora tra\v{z}i da upi\v{s}e broj to\v{c}nih
+zadataka iz prve, druge i tre\'{c}e skupine i onda ispisuje je li polaznik
+auto\v{s}kole zadovoljio uvjete.
+
+Program bi mogao izgledati ovako:
+
+\sourcee{
+\var{a} = \wrd{input}( "Broj tocnih zadataka u prvoj skupini:" ) \\
+\wrd{b} = \wrd{input}( "Broj tocnih zadataka u drugoj skupini:" ) \\
+\var{c} = \wrd{input}( "Broj tocnih zadataka u trecoj skupini:" ) \\
+\wrd{if} \var{a}+\var{b}+\var{c} $>$= 24: \\
+\hspace*{10mm} \wrd{print} "Polaznik je polozio ispit" \\
+\wrd{else}: \\
+\hspace*{10mm} \wrd{print} "Polaznik nije polozio ispit"
+}
+
+Ukoliko znamo da ta auto\v{s}kola ima 20 polaznika mo\v{z}emo srediti da program
+radi za sve polaznike auto\v{s}kole:
+
+\sourcee{
+\wrd{for} \var{i} \wrd{in} \wrd{range}(20): \\
+\hspace*{10mm} \var{a} = \wrd{input}( "Broj tocnih zadataka u prvoj skupini:" ) \\
+\hspace*{10mm} \var{b} = \wrd{input}( "Broj tocnih zadataka u drugoj skupini:" ) \\
+\hspace*{10mm} \var{c} = \wrd{input}( "Broj tocnih zadataka u trecoj skupini:" ) \\
+\hspace*{10mm} \wrd{if} \var{a}+\var{b}+\var{c} $>$= 24: \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} "Polaznik je polozio ispit" \\
+\hspace*{10mm} \wrd{else}: \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} "Polaznik nije polozio ispit"
+}
+
+Ovaj program funkcionira samo za auto\v{s}kole s 20 polaznika, \v{s}ta ako ne znamo
+koliko polaznika ima auto\v{s}kola?
+
+\sourcee{
+\var{n} = \wrd{input}( "Upisi broj polaznika autoskole: )\\
+\wrd{for} \var{i} \wrd{in} \wrd{range}(n): \\
+\hspace*{10mm} \var{a} = \wrd{input}( "Broj tocnih zadataka u prvoj skupini:" ) \\
+\hspace*{10mm} \var{a} = \wrd{input}( "Broj tocnih zadataka u prvoj skupini:" ) \\
+\hspace*{10mm} \var{b} = \wrd{input}( "Broj tocnih zadataka u drugoj skupini:" ) \\
+\hspace*{10mm} \var{c} = \wrd{input}( "Broj tocnih zadataka u trecoj skupini:" ) \\
+\hspace*{10mm} \wrd{if} \var{a}+\var{b}+\var{c} $>$= 24: \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} "Polaznik je polozio ispit" \\
+\hspace*{10mm} \wrd{else}: \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} "Polaznik nije polozio ispit"
+}
+
+\section{while \dots}
+
+Pomo\'{c}u if-uvjeta i for-petlje se mog rije\v{s}iti mnogi problemi koji se
+postavljaju pred programera. Ono prvo nam omogu\'{c}uje da ra\v{c}unalo samo
+odlu\v{c}uje koje \'{c}e se naredbe izvr\v{s}avati ovisno o nekom uvjetu, a
+pomo\'{c}u for-petlje mo\v{z}emo ponavljati odre\dj{}eni postupak odre\dj{}en broj
+puta. Me\dj{}utim, mo\v{z}e nam se desiti da je odre\dj{}eni niz naredbi potrebno
+ponavljati nekoliko puta, ali da ne znamo koliko puta treba ponoviti prije nego
+\v{s}to pokrenemo program. 
+
+While-petlja rje\v{s}ava taj problem. Op\'{c}i oblik while-petlje je
+
+\sourcee{
+\wrd{while} \emph{logi\v{c}ki izraz}:
+\\
+\hspace*{10mm}\emph{niz (blok) naredbi}
+}
+
+Niz naredbi \'{c}e se ponavljati sve dok je uvijet istinit. 
+
+Primjer koji ispisuje prvih 10 brojeva:
+
+\sourcee{
+\var{n} = 1 \\
+\wrd{while} \var{n} $<$= 10: \\
+\hspace*{10mm} \wrd{print} "varijabla n je sad", \var{n} \\
+\hspace*{10mm} \var{n} = \var{n} + 1
+}
+
+Pro\v{c}itajmo \v{s}ta ovaj program tra\v{z}i od ra\v{c}unala:
+\begin{itemize}
+	\item Neka $n$ bude jednak 1
+	\item Sve dok je $n$ manje od 10 ponavljaj:
+	\begin{itemize}
+		\item Ispi\v{s}i koliki je $n$
+		\item Neka $n$ poprimi vrijednost od $n$ uve\'{c}ano za 1.
+	\end{itemize}
+\end{itemize}
+
+Sve smo to, naravno mogli i s for-petljom. U \v{c}emu je onda bitna razlika? Razlika
+je u tome \v{s}to kod for-petlje na samom po\v{c}etku petlje morate znati koliko
+puta \'{c}e se petlja ponoviti,
+\footnote{Postoji na\v{c}in i da se to zaobi\dj{}e pomo\'{c}u "break" i "continue", ali o tome kasnije}
+a while petlja mo\v{z}ete pokrenuti tako da se tek negdje tokom njenog izvo\dj{}enja
+desi ne\v{s}to tako da uvijet kod \verb"while" postane la\v{z}an.
+
+Promotrimo npr. zadnji program iz poglavlja o for-petlji; on korektno radi svoj posao
+ukoliko instruktor (ili osoba koja ispravlja ispite) zna koliko ima polaznika.
+Pretpostavimo sad da instruktor ne zna to\v{c}no koliko je polaznika pisalo ispit, a
+ispit se odvija na sljede\'{c}i na\v{c}in: polaznici jedan po jedan ulaze u
+instruktorovu kancelariju, kad u\dj{}u on uzima njihov ispit, ispravlja ga i
+\v{z}eli da mu ra\v{c}unalo na osnovu to\v{c}no rje\v{s}enih zadataka iz ispita
+ka\v{z}e za svakog polaznika je li pro\v{s}ao ili nije. Instruktor nema vremena
+izbrojati koliko je bilo polaznika, pa mo\v{z}e samo primati jednog po jednog
+budu\'{c}eg voza\v{c}a, ali nikad ne zna je li on zadnji ili iza njega ima jo\v{s}
+njih.
+
+Program sad nebi radio jer instruktor na po\v{c}etku programa mora napisati koliko
+je bilo ispitanika, a on to ne zna. probati \'{c}emo to sada rije\v{s}iti
+pomo\'{c}u while-petlje:
+
+\sourcee{
+\textcolor{red}{jos} = "da" \\
+\textcolor{blue}{while} \var{jos} != "da": \\
+\hspace*{10mm} \textcolor{red}{a} = \textcolor{blue}{input}( "Broj tocnih zadataka u prvoj skupini:" ) \\
+\hspace*{10mm} \textcolor{red}{b} = \wrd{input}( "Broj tocnih zadataka u drugoj skupini:" ) \\
+\hspace*{10mm} \textcolor{red}{c} = \wrd{input}( "Broj tocnih zadataka u trecoj skupini:" ) \\
+\hspace*{10mm} \wrd{if} \var a+\var b+\var c $>$= 24: \\
+\hspace*{10mm} \hspace*{10mm} \textcolor{blue}{print} "Polaznik je polozio ispit" \\
+\hspace*{10mm} \textcolor{blue}{else}: \\
+\hspace*{10mm} \hspace*{10mm} \textcolor{blue}{print} "Polaznik nije polozio ispit" \\
+\hspace*{10mm} \textcolor{red}{jos} = \textcolor{blue}{raw\_input}( "Ima li jos polaznika (da/ne) " )
+}
+
+Blok naredbi u while-petlji \'{c}e se ponavljati sve dok je varijabla \verb"jos"
+razlicita od "da" (ta varijabla sadr\v{z}i string, a ne broj). Kako je na samom
+po\v{c}etku njoj pridru\v{z}ena vrijednost "da" while petlja se po\v{c}ne
+izvr\v{s}avati, a na samom kraju se od korisnika tra\v{z}i da upi\v{s}e ima li
+jo\v{s} polaznika. Ako on upi\v{s}e "da"\footnote{Bez navodnika,
+naravno} (ili bilo \v{s}ta drugo osim "ne") \verb"jos"
+je i dalje razli\v{c}ito od "ne" pa se blok opet izvr\v{s}ava. Ukoliko upi\v{s}ete
+"ne" program zavr\v{s}ava svoj posao.
+
+\section{Potprogrami i funkcije}
+
+\subsection{Procedure}
+
+De\v{s}ava se da u nekom programu moramo \v{c}esto ponavljati odre\dj{}eni
+niz naredbi. Potprogrami
+su strukture u programu koje nam omogu\'{c}uju da odre\dj{}eni niz naredbi
+koje se u programu trebaju \v{c}esto izvr\v{s}avati u programu napi\v{s}emo
+samo jednom.
+
+Slijedi primjer jednostavnog programa koji koristi potprogram:
+
+\sourcee{
+\wrd{def} \fun{HelloWorld}():\\
+\tab \wrd{print} "Hello world!!! (nalazim se  tijelu potprograma)"\\
+\com{\# Ovdje pocinje glavni dio programa}\\
+\wrd{print} "Pocetak programa"\\
+\fun{HelloWorld}()\\
+\fun{HelloWorld}()\\
+\wrd{print} "Kraj programa"
+}
+
+Rezultat je:
+
+\sourcee{
+Pocetak programa \\
+Hello world!!! (nalazim se  tijelu funkcije) \\
+Hello world!!! (nalazim se  tijelu funkcije) \\
+Kraj programa
+}
+
+Kad je program pokrenut on nije odmah ispisao poruku iz drugog
+reda, ali kasnije, svaki put kad smo upisali HelloWorld() \footnote{Ne
+zaboraviti zagrade!!} ispisana je poruka "Hello world!!! (nalazim
+se  tijelu funkcije)". Dakle, kao da smo definirali jednu novu
+komandu koja ispisuje svoju poruku. 
+
+kad u programu napi\v{s}ete "HelloWorld()" ka\v{z}emo da smo
+\textbf{pozvali potprogram} i tada se izvr\v{s}avaju komande u \textbf{tijelu
+potprograma}. Tijelo potprograma se u na\v{s}em primjeru sastoji od samo
+jednog retka.
+
+\v{C}emu slu\v{z}e zagrade iza \verb"HelloWorld"? 
+
+Vratimo se opet na primjer s instruktorom vo\v{z}nje. \v{Z}elim sad da
+potprogram ispi\v{s}e pravu poruku ovisno o tome koliko je polaznik imao
+bodova. 
+
+\sourcee{
+\wrd{def} \fun{IspisiPoruku}( \var{b} ): \\
+\tab \wrd{if} \var{b} $>$= 24: \\
+\tab \tab \wrd{print} "Prosli se ispit" \\
+\tab \wrd{else}: \\
+\tab \tab \wrd{print} "Niste prosli ispit" \\
+\\
+\fun{IspisiPoruku}( 21 )\\
+\fun{IspisiPoruku}( 29 )
+}
+
+S retkom "def IspisiPoruku( b ):" po\v{c}inje \textbf{definicija potprograma}.
+Budu\'{c}i da smo unutar zagrade iza imena potprograma ("IspisiPoruku")
+napisali "b" -- svaki put kad pozovemo potprogram morati \'{c}emu unutar
+zagrade staviti neku vrijednost (varijabla, broj, string). Vrijednost onoga
+\v{s}to smo upisali u zagradu tamo gdje potprogram pozivamo \'{c}e u tijelu
+potprograma
+poprimiti varijabla "b". Kako smo mi upisali "IspisiPoruku( 21 )", u tijelu
+\'{c}e varijabla b imati vrijednost 21. A sljede\'{c}i put \'{c}e
+zbg istog razloga varijabla "b" (unutar potprograma) imati vrijednost 29.
+
+Ka\v{z}emo da je varijabla "b" u zagradi iza definicije potprograma
+\textbf{argument potprograma}.
+
+Potprogram mo\v{z}e imati i vi\v{s}e argumenata; sljede\'{c}i program
+sadr\v{z}i potprogram koji ispisuje srednju vrijednost od tri broja i ima
+tri argumenta:
+
+\sourcee{
+\wrd{def} \fun{SrednjaVrijednost}( \var{a}, \var{b}, \var{c} ):\\
+\tab \com{""" Funkcija koja ra\v{c}una srednju vrijednost brojeva a, b i c }\\
+\tab \com{ispisuje tu srednju vrijednost """}\\ 
+\tab \var{s} = ( \var{a} + \var{b} + \var{c} ) / 3. \\
+\tab \com{\# iza 3 moramo smo morali staviti to\v{c}ku, jer ina\v{c}e bi se radilo}\\
+\tab \wrd{print} "Srednja vrijednost brojeva", \var{a}, ",", \var{b}, "i", \var{c}, "je", \var{s}\\
+\\
+\fun{SrednjaVrijednost}( 1, 2, 3 )\\
+\var{x} = 2\\
+\fun{SrednjaVrijednost}( 4, \var{x}, 7.5 )\\
+\fun{SrednjaVrijednost}( \var{x}+1, \var{x}, 1 )\\
+\fun{SrednjaVrijednost}( 2*3, 3*3, 4**2 )
+}
+
+Program ispisuje:
+
+\sourcee{
+Srednja vrijednost brojeva 1 , 2 i 3 je 2.0\\
+Srednja vrijednost brojeva 4 , 2 i 7.5 je 4.5\\
+Srednja vrijednost brojeva 3 , 2 i 1 je 2.0\\
+Srednja vrijednost brojeva 6 , 9 i 16 je 10.3333333333
+}
+
+\textbf{Va\v{z}no:} Po\v{z}eljno je, kao u gornjem primjeru odmah nakon
+definicije funkcije napisati jedan komentar (ograni\v{c}enog s """ i """)
+koji otprilike opisuje \v{c}emu slu\v{z}i ta funkcija.
+
+Dodajmo sad jo\v{s} jedan uvijet primjeru s instruktorom
+vo\v{z}nje;  me\dj{}u polaznicima auto\v{s}kole postoje oni koji pola\v{z}u za
+vo\v{z}nju automobila i njima je potrebno 26 boda za prolaz, i postoje oni
+koji pola\v{z}u za vo\v{z}nju mopeda kojima su dovoljna 24 boda za prolaz.
+Treba napisati program koji koristi potprogram s \v{c}etiri argumenta (broj
+to\v{c}no rje\v{s}enih zadataka u svakoj od tri skupine) i podatak o tome
+radi li se o polazniku za moped ili automobil.
+
+\sourcee{
+\wrd{def} \fun{IspisiPoruku}( \var{s1}, \var{s2}, \var{s3}, \var{za} ):\\
+\tab \com{""" Ispisuje je li polaznik koji je imao:\\
+\tab \tab s1 to\v{c}no rje\v{s}en zadatak iz prve grupe,\\
+\tab \tab s2 to\v{c}no rje\v{s}en zadatak iz druge grupe,\\
+\tab \tab s3 to\v{c}no rje\v{s}en zadatak iz trece grupe\\
+\tab ...prosao test.\\
+\tab Ako je varijabla 'za' jednaka "auto" onda se racuna kao za\\
+\tab polaznika za dozvou za voznju automobila, inace\\
+\tab za polaznika voznje s mopedom\\
+\tab """}\\
+\tab \var{bodovi} = \var{s1} + \var{s2} * 2 + \var{s3} * 3\\
+\tab \wrd{if} \var{za} == "auto":\\
+\tab \tab \wrd{if} \var{bodovi} $>$= 26:\\
+\tab \tab \tab \wrd{print} "Prosli ste"\\
+\tab \tab \wrd{else}:\\
+\tab \tab \tab \wrd{print} "Niste prosli"\\
+\tab \wrd{else}:\\
+\tab \tab \wrd{if} \var{bodovi} $>$= 24:\\
+\tab \tab \tab \wrd{print} "Prosli ste"\\
+\tab \tab \wrd{else}:\\
+\tab \tab \tab \wrd{print} "Niste prosli"\\
+		\\
+\fun{IspisiPoruku}( 5, 4, 4, "auto" )\\
+\fun{IspisiPoruku}( 5, 4, 4, "motor" )
+}
+
+\subsection{Funkcije}
+
+Funkcija je matemati\v{c}ki pojam; postoje npr. linearne funkcije,
+trigonometrijske funkcije, logaritamske funkcije, i tako dalje i
+tako bli\v{z}e.
+
+Na primjer, pretpostavimo da imamo funkciju $f(x)=2\cdot x-3$. Tada
+je $f(4)=2\cdot 4-3=8-3=5$, a to zna\v{c}i da funkcija $f$ preslikava
+broj 4 u broj 5, ili mogli bi re\'{c}i da funkcija f za argument
+4 vra\'{c}a 5.
+
+Funkcija se od gornjih potprograma razlikuje u tome \v{s}to funkcija
+ima povratnu vrijednost. Rezultat funkcije se mo\v{z}e ispisati,
+pridru\v{z}iti nekoj drugoj varijabli ili s njime ra\v{c}unati. 
+
+Primjer programa koji koristi funkciju:
+
+\sourcee{
+\wrd{def} \fun{Zbroji}( \var{a}, \var{b} ):\\
+\tab \wrd{return} \var{a} + \var{b}\\
+\\
+\wrd{print} \fun{Zbroji}( 2, 3 )\\
+\wrd{print} \fun{Zbroji}( -3, 3.5 )
+}
+
+Definicija funkcije je ista kao i definicija potprograma, jedino \v{s}to
+funkcija mora imati neku vrijednost koju vra\'{c}a u glavni program. Kao
+\v{s}to vidimo ovdje ispisujemo "Zbroj( 2, 3 )", a ono \v{s}to \'{c}e
+ispisati je upravo ona vrijednost koja se vra\'{c}a pomo\'{c}u naredbe
+"return".
+
+Ovdje je potrebno jedno malo obja\v{s}njenje: U stvari ne postoji razlika
+izme\dj{}u potprograma i funkcije. Funkcija \emph{mora} vra\'{c}ati neku
+vrijednost pomo\'{c}u "return", ali \v{c}ak i potprogram koji ne sadr\v{z}i
+"return" vra\'{c}a vrijednost "None", ali o tome malo vi\v{s}e u
+sljede\'{c}em poglavlju.
+
+Evo primjer funkcije koja vra\'{c}a zbroj svih brojeva manjih od nekog
+zadanog:
+
+\sourcee{
+\wrd{def} \fun{ZbrojBrojeva}( \var{n} ):\\
+\tab \var{x} = 0\\
+\tab \wrd{for} \var{i} \wrd{in} \wrd{range}( \var{n} + 1 ):\\
+\tab \tab \var{x} = \var{x} + \var{i}\\
+\tab \wrd{return} \var{x}	\\
+\\
+\wrd{print} \fun{ZbrojBrojeva}( 5 )\\
+\var{a} =  \fun{ZbrojBrojeva}( 10 )\\
+\var{b} = \fun{ZbrojBrojeva}( 100 )\\
+\wrd{print} \var{a} + \var{b} - 100
+}
+
+Kao \v{s}to vidite, s vrijedno\v{s}\'{c}u koju funkcija vra\'{c}a
+mo\v{z}emo ra\v{c}unati ili tu vrijednost mo\v{z}emo pridru\v{z}iti
+drugim varijablama.
+
+Vratimo se sad primjeru s instruktorom vo\v{z}nje, taj se program pomo\'{c}u funkcije
+mogao napisati ovako:
+
+\sourcee{
+\wrd{def} \fun{IspisiPoruku}( \var{s1}, \var{s2}, \var{s3}, \var{za} ): \\
+\tab \com{""" Vraca string s porukom je li polaznik koji je imao: \\
+\tab  s1 tocno rjesen zadatak iz prve grupe, \\
+\tab  s2 tocno rjesen zadatak iz druge grupe, \\
+\tab  s3 tocno rjesen zadatak iz trece grupe \\
+\tab ...prosao test.  \\
+\tab Ako je varijabla 'za' jednaka "auto" onda se racuna kao za \\
+\tab polaznika za dozvou za voznju automobila, inace \\
+\tab za polaznika voznje s mopedom \\
+\tab """} \\
+\tab \var{bodovi} = \var{s1} + \var{s2} * 2 + \var{s3} * 3 \\
+\tab \wrd{if} \var{za} == "auto": \\
+\tab \tab \wrd{if} \var{bodovi} $>$= 26: \\
+\tab \tab \tab \var{temp} = "Prosli ste" \\
+\tab \tab \wrd{else}: \\
+\tab \tab \tab \wrd{temp} = "Niste prosli" \\
+\tab \wrd{else}: \\
+\tab \tab \wrd{if} \var{bodovi} $>$= 24: \\
+\tab \tab \tab \var{temp} = "Prosli ste" \\
+\tab \tab \wrd{else}: \\
+\tab \tab \tab \var{temp} = "Niste prosli" \\
+\tab \wrd{return} \var{temp} \\
+\tab \\
+\wrd{print} \fun{IspisiPoruku}( 5, 4, 4, "auto" ) \\
+\wrd{print} \fun{IspisiPoruku}( 5, 4, 4, "motor" ) 
+}
+
+Bitna razlika izme\dj{}u ovog i pro\v{s}le verzije ovog programa je u tome \v{s}to je u
+pro\v{s}lom programu bilo dovoljno napisati npr. "IspisiPoruku( 5, 4, 4, 'motor' )" kao
+komandu, a potprogram bi onda ispisao poruku. Sad potprogram samo vra\'{c}a vijrednost
+koju onda treba ispisati. 
+
+\subsection{Ugra\dj{}ene funkcije}
+
+\dots
+
+\subsection{Doseg varijabli}
+
+\dots
+
+\section{try}
+
+\dots
+
+\section{break i continue}
+
+\dots
+
+\chapter{Tipovi podataka}
+
+\section{Jednostavni tipovi podataka}
+
+	Varijable u dosada\v{s}njim programima se kao vrijednosti imale brojeve, ali
+	mogle su sadr\v{z}avati i razne druge vrste podataka.
+
+	Ovisno o tome koliko je slo\v{z}en problem kojeg \v{z}elimo rije\v{s}iti s
+	programom podaci s kojima trebamo raditi mogu biti i vrlo slo\v{z}eni. Okvirno
+	podatke mo\v{z}emo podijeliti na dva jednostavne i slo\v{z}ene. Slo\v{z}eni tipovi
+	podataka su oni koji u sebi mogu sadr\'{c}avati nekoliko drugih podataka.
+
+	Jednostavni su cjelobrojni tip, realni brojevi i stringovi.
+
+\subsection{Cijeli i realni brojevi}
+
+	Cijeli brojevi su svi prirodni brojevi, nula i brojevi suprotni prirodnim
+	brojevima.
+
+	Kad ka\v{z}emo realni brojevi u programiranju obi\v{c}no mislimo samo na relalne
+	brojeve koje mo\v{z}emo zapisati u s to\v{c}no odre\dj{}enim brojem decimalnih
+	mjesta. Za svako ra\v{c}unalo i programski jezik postoje to\v{c}ne granice koliko
+	najvie\v{s} decimalnih mjesta mogu sadr\v{z}\'{c}avati, koja je najmanja, a koja
+	najve\'{c}a mogu\'{c}a brojevna vrijednost koju mo\v{z}emo koristiti itd.
+
+	\sourcee{
+	\var{broj} = 12.13 \textcolor{green}{\# realni broj}\\
+	\var{c} = 12 \textcolor{green}{\# cijeli broj}\\
+	\var{r} = 12.0 \textcolor{green}{\# realni broj (jer ima decimalnu tocku!)}
+	}
+
+	U zadnjem slu\v{c}aju varijabla "r" sadr\v{z}ava realan broj jer je 12.0
+	opisan kao decimalan broj. 
+
+	Realne brojeve mo\v{z}emo napisati i u "znanstvenom obliku", dakle u obliku $a\cdot
+	10^{b}$.
+
+	\vspace{3mm}
+	\begin{tabular}{l|l}
+		Broj & u Python programu\\
+		\hline
+		$5\cdot 10^{13}$ & \verb+5e13+\\
+		$3.56\cdot 10^{-17}$ & \verb+3.56e-17+\\
+	\end{tabular}
+	\vspace{3mm}
+
+	Brojevi u heksadecimalnom ili oktalno zapisu i imaginarni brojevi:
+
+	\vspace{3mm}
+	\begin{tabular}{l|l|l}
+		& Zapis & U programu \\	
+		\hline
+		Heksadecimalni & 177 & 0177 \\
+		\hline
+		Oktalni & BAB7& 0xBAB7 \\
+		\hline
+		Imaginarni & $i$ & 1j \\
+		\hline 
+		Imaginarni & $0.5i$ & 0.5j \\
+		\hline 
+		Imaginarni & $2.5+3i$ & 2.5+3j \\
+	\end{tabular}
+	\vspace{3mm}
+
+	Ukoliko radimo s cjelobrojnim varijablama i veli\v{c}inama, ra\v{c}unalo nam
+	postavlja odre\dj{}ene granice. Ne mo\v{z}emo ra\v{c}unati s \emph{obi\v{c}nim}
+	cijeli brojem koji ima 20 znamenaka. Kad nam je zbog nekog slo\v{z}enog ra\v{c}una
+	potrebno raditi s tako veliki brojevima moramo iza samog broja dodati "L"\footnote{Ovo
+	"L" mo\v{z}e slobodno biti napisano i malim slovom "l", ali ovdje je napisano "L"
+	da se ne bi pomije\v{s}alo "l" (malo "l") s "I" (veliko "i")}. Dakle ne
+	ne bi napisali 
+	
+	"a = 128904389523789123789"
+
+	nego\dots
+
+	"a = 128904389523789123789L"
+
+	Probajte oba slu\v{c}aja napisati kao dio jednog va\v{s}eg programa i nakon toga
+	probati ispisati tu varijablu s "print a" i pogledajte \v{s}to se desilo!
+
+\subsection{Stringovi}
+
+	String je niz znakova proizvoljne du\v zine. \v{C}lan stringa mo\v{z}e biti svaki
+	simbol kojeg mo\v{z}ete dobiti pritiskom na neku tipku tastature, a i omnogi drugi.
+	Stringovi se zapisuju u navodnicima. Dakle primjeri stringova su 
+	>>Ovo je string"123"<<, >>'sdjkl'<< ili >>"""String"""<<
+
+\textbf{Zapamtite:} Stringove (nizove znakova) mo\v{z}emo zapisati
+na tri na\v{c}ina: 
+
+	\begin{itemize}
+		\item Unutar dvostrukih navodnika -- " 
+		\item Unutar jednostrukih navodnika -- '
+		\item Ograni\v{c}enih (na po\v{c}etku i na kraju) s nizom od tri dvostruka
+			navodnika
+	\end{itemize}
+
+	Ponekad \'{c}e nam trebati da unutar stringa moramo imati neki drugi navodnik. Da
+	bi to postigli promotrimo sljede\'{c}i primjer.
+	
+	\sourcee{
+		\var{str} = "Ovo je jedan 'string'"\\
+		\textcolor{blue}{print} \var{str}
+	}
+
+	Ispisati \'{c}e
+
+	\sourcee{
+		Ovo je jedan 'string'
+	}
+
+	Postoji jo\v{s} nekoliko na\v{c}ina:
+
+	\sourcee{
+		\var{str} = "Ovo je jedan 'string'" \\
+		\textcolor{blue}{print} str \\
+		\var{str2} = 'Ovo je jos jedan "string"' \\
+		\textcolor{blue}{print} \var{str2} \\
+		\var{str3} = \textcolor{green}{"""Ovo je jedan "string" """} \\
+		\textcolor{blue}{print} \var{str3} \\
+		\var{str4} = "Ovo je jedan $\setminus$"string$\setminus$"" \\
+		\textcolor{blue}{print} \var{str4}
+	}
+
+	Rezultat nakon pokretanja programa je:
+
+	\sourcee{
+		Ovo je jedan 'string' \\
+		Ovo je jos jedan "string" \\
+		Ovo je jedan "string" \\
+		Ovo je jedan "string"
+	}
+
+	Dakle, dvostruki navodnik u stringu mo\v{z}ete dobiti tako da string
+	ograni\v{c}ite s jednostrukim navodnicima ili s nizom trostrukih navodnika. I,
+	postoji jo\v{s} jedan izuzetno va\v{z}an na\v{c}in, a to je ono 
+	>>str4 = "Ovo je jedan \"string\""<<
+	Tamo gdje \v{z}elimo da nam se u varijabli nalazi jednostruki ili dvostruki
+	navodnik jednostavimo \verb+\"+. Isto tako bi mogli staviti i \verb+\'+. 
+	
+	Ako recimo \v{z}elimo da se na\v{s} string sastoji samo od jednog dvostrukog
+	navodnika mo\v{z}emo napisati \verb+a = "\""+, a ako \v{z}elimo da se sastoji od
+	znaka \verb+\\+ i " napisali bi \verb+a = "\\\""+ -- prvi i zadnji navodnik su oznake gdje
+	po\v{c}inje, a gdje zavr\v{s}ava string. Nakon prvog navodnika niz \verb+\\+ zna\v{c}i
+	da se tu nalazi simbol \verb+\+, a \verb+\+" je simbol dvostrukog navodnika.
+	
+	Postoji
+	odre\dj{}eni broj znakova i i simbola koje mo\v{z}emo staviti u string samo
+	kombinacijom \verb+\+ i taj znak ili neko slovo:
+
+	{\normalsize
+	\begin{tabular}{ll}
+		\verb+\+$<$newline$>$ & Ignored \\
+		\verb+\\+ & Backslash (\verb+\+) \\
+		\verb+\'+ & Jednostruki navodnik (') \\
+		\verb+\"+ & Dvostruki navodnik (") \\
+		\verb+\a+ & ASCII Bell (BEL)\\
+		\verb+\b+ & ASCII Backspace (BS)\\
+		\verb+\f+ & ASCII Formfeed (FF)\\
+		\verb+\n+ & ASCII Linefeed (LF)\\
+		\verb+\N{name}+ & Character named name in the Unicode database (Unicode only)\\
+		\verb+\r+ & ASCII Carriage Return (CR)\\
+		\verb+\t+ & ASCII Horizontal Tab (TAB)\\
+		\verb+\uxxxx+ & Character with 16-bit hex value xxxx (Unicode only)\\
+		\verb+\Uxxxxxxxx+ & Character with 32-bit hex value xxxxxxxx (Unicode only)\\
+		\verb+\v+ & ASCII Vertical Tab (VT)\\
+		\verb+\ooo+ & ASCII character with octal value ooo\\
+		\verb+\xhh+ & ASCII character with hex value hh\\
+	\end{tabular}
+	}
+
+	\vspace{2mm}
+Veliku ve\'{c}inu njih mo\v{z}ete slobodno zaboraviti, ali ima
+nekoliko njih koje \'{c}ete \v{c}esto koristiti: \verb+\<newline>+
+(ovdje \verb+<newline>+ predstavlja tipku "enter", "newline" ili
+"return"). Interpreter to jednostavno ignorira, \v{s}to je jako
+korisno ako imamo string koji je prevelik za jedan red pa ga u
+programu \v{z}elimo imati napisanog u vi\v{s}e redova.
+
+Izuzetno va\v{z}na je i kombinacija \verb+\n+ -- kada u string
+stavimo tu kombinaciju, pri ispisu stringa \'{c}e na tom mjestu
+ra\v{c}unalo pre\'{c}i u novi red.
+
+	\sourcee{
+		\var{a} = "Ovo je jedan $\setminus$"string$\setminus$" koji je $\setminus$ \\
+		toliko dug da mi ga je malo nezgodno $\setminus$ \\
+		imati u jednom redu, pa sam ga napisao $\setminus$ \\
+		u vise redova" \\
+		\var{b} = "A, ovo je jedan$\setminus$n$\setminus$n$\setminus$n$\setminus$nhmmm..." \\
+		\textcolor{blue}{print} \var{a} \\
+		\textcolor{blue}{print} \var{b}
+	}
+
+	Sadr\v{z}aj stringa a je "Ovo je jedan $\setminus$"string$\setminus$" koji je toliko dug da mi ga je malo nezgodno imati u jednom redu, pa sam ga napisao u vise redova",
+	a kad budemo ispisivali varijablu b vidjeti \'{c}emo \v{s}ta se zbiva s onim
+	\verb+\n+ -- svaki put kad ga ra\v{c}unalo "sretne" oti\'{c}i \'{c}e u novi red.
+	Dakle ispisati \'{c}e "A ovo je jedan" zatim tri puta novi red (dakle tri razmaka
+	od jedan red) i onda "hmmmm...".
+
+	Rezultat je dakle:
+
+	\sourcee{
+	Ovo je jedan "string" koji je toliko dug da mi ga je malo nezgodno imati u jednom
+	\\
+	redu, pa sam ga napisao u vise redova
+	\\
+	A, ovo je jedan
+	\\
+\ 
+	\\
+\ 
+	\\
+\ 
+	\\
+	hmmm...
+	}
+
+Uo\v{c}ite da je ra\v{c}unalo, ipak, string \verb+a+ napisalo u
+dva reda i to jednostavno zato \v{s}to mu nije stalo u jedan red.
+Da smo imali dovoljno velik monitor bilo bi napisano sve u jednom
+redu za razliku od string b u kojemu \'{c}e uvijek ispisati ona
+tri prazna reda upravo zato \v{s}to smo mi eksplicitno tra\'{c}ili
+da oni tu budu.
+
+Jo\v{s} samo jedna zadnja napomena. Trebate znati razlikovati
+izme\dj{}u \verb+a = 123+ i \verb+a = "123"+. U prvom slu\v{c}aju
+varijabla \verb+a+ \'{c}e sadr\v{z}avati \underline{broj} 123 i s
+njim mo\v{z}emo raditi sve ono \v{s}to mo\v{z}emo raditi s brojevima,
+a u drugom slu\v{c}aju varijabla a sadr\v{z}ava \underline{string}
+"123". Sa brojem 123 \'{c}emo mo\'{c}i normalno ra\v{c}unati kao
+\v{s}to op\'{c}enito mo\v{z}emo s brojevima, a sa stringom "123"
+to ne mo\v{z}emo.
+
+\subsection{Konverzija tipova}
+
+\dots
+
+\subsection{Varijable i vrste podataka}
+
+Neki programski jezici od programera zahtijevaju da to\v{c}no odredi
+kakve \'{c}e podatke (odnosno vrste podataka) neka varijabla
+sadr\v{z}avati. Na po\v{c}etku programa se odredi da \'{c}e npr.
+varijabla \verb+x+ sadr\v{z}avati samo cijele brojeve, a ako onda
+negdje u programu toj varijabli poku\v{s}amo pridru\v{z}iti neki
+string ili realan broj, javiti \'{c}e nam se gre\v{s}ka. Za primjer
+takvog programskog jezika pogledajte Pascal-program u 1.3.1.  U
+Pythonu svaka varijabla mo\v{z}e sadr\v{z}avati podatak bilo kojeg
+tipa. Ipak, postoje neke dobre programerske navike, a jedna od njih
+je da se trudite varijablama . Dakle, ako na po\v{c}etku programa
+imate varijablu \verb+n+ koja ima cjelobrojnu vrijednost --
+po\v{z}eljno je da ta varijabla i dalje u programu sadr\v{z}i cijele
+brojeve.
+
+\section{Liste}
+
+Jednostavni tipovi podataka kao \v{s}to su brojevi i stringovi
+\v{c}esto nisu dovoljni (ili pogodni) za rje\v{s}avanje mnogih
+problema. Ako imamo neki jako dug program, \v{c}esto \'{c}e nam se
+desiti da broj varijabli postane prevelik. Pretpostavimo npr. da
+imamo program u kojemu se mora raditi s jako velikom koli\v{c}inom
+podataka; npr. broj u\v{c}enika neke \v{s}kole.
+
+\dots
+
+\section{Rije\v cnici}
+
+\section{Datoteka}
+
+\section{Ostali slo\v zeni tipovi podataka}
+\chapter{Moduli}
+
+
