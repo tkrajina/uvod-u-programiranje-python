@@ -1,0 +1,4 @@
+- Rad s datotekama
+- Unicode
+- Python 2 i python 3
+- Nekakav predgovor
