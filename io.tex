@@ -1,0 +1,87 @@
+\chapter{Komuniciranje s okolinom}
+
+\section{Sto je danas lijep i sunčan dan}
+
+	Računalo nema previše smisla ako ne komunicira s okolinom. Pod
+	\emph{komunikacija s okolinom} podradzumijeva se komunikacija s korisnikom ili
+	komunikacija s nekim drugim uređajem vezanim uz računalo. Računalo
+	komunicira s korisnikom na različite načine; npr. klikanjem po ikonama,
+	upisivanjem teksta u nekakav formular, diktiranjem u mikrofon spojen 
+	na računalo, i tako dalje i tako blize.
+
+	Naučiti ćemo sada jedan jednostavan način kako mozemo naš program u
+	pythonu natjerati da i komunicira s nama.
+
+	\sourcee{
+		\var{name} = \textcolor{blue}{raw\_input}( "Upišite svoje ime:" )\\
+		\textcolor{blue}{print} "Dobar dan", \var{name}
+	}
+
+	Kad pokrenete program računalo će ispisati poruku "Upišite svoje ime:" i
+	traziti od vas da upisujete ime. Rezultat moze biti:
+
+	\sourcee{
+		Upišite svoje ime:\textcolor{blue}{Aleksandar Makedonski}\\
+		Dobar dan  Aleksandar Makedonski
+	}
+
+	Plavom bojom je označen tekst kojeg upisuje sam korisnik.
+
+	Pomoću naredbe \verb+raw_input+ sad mozemo bilo kojoj varijabli 
+	pridruziti vrijednost broja kojeg će korisnik utipkati tek u trenutku kad 
+	se program pokrene. \verb"raw_input" je sličan, ali s njime mozemo toj
+	varijabli pridruziti i vrijednost stringa (a ne isključivo brojevnu
+	vrijednost).
+
+	Porobati ćemo sada napisati program koji trazi od korisnika da upiše 
+	tri broja, a nakon toga ispisuje njihovu aritmetičku sredinu (prosijek).
+
+	\sourcee{
+		\var{n1} = \textcolor{blue}{input}( "Upiši prvi broj:" )\\
+		\var{n2} = \textcolor{blue}{input}( "Upiši drugi broj:" )\\
+		\var{n3} = \textcolor{blue}{input}( "Upiši treći broj:" )\\
+		\var{avg} = ( \var{n1} + \var{n2} + \var{n3} ) / 3\\
+		\textcolor{blue}{print} "Aritmetička sredina je ", \var{avg}
+	}
+
+	\textbf{Komentar:} Program prvo u varijable \verb+n1+, \verb+n2+ i \verb+n2+
+	smješta ono što će korisnik sam upisati kad ga se upita da upiše broj.
+	Varijabla \verb"avg" (eng. "average" = "prosjek") zatim prime vrijednost
+	aritmetičke sredine brojeva 
+	\verb"n1",
+	\verb"n2" i 
+	\verb"n3".
+	Na kraju se samo ispisuje vrijednost od \verb"avg".
+
+	Evo još dvije varijante istog programa:
+
+	\sourcee{
+		\var{n1} = \textcolor{blue}{input}( "Upiši prvi broj:" )\\
+		\var{n2} = \textcolor{blue}{input}( "Upiši drugi broj:" )\\
+		\var{n3} = \textcolor{blue}{input}( "Upiši treći broj:" )\\
+		\var{avg} = ( float( \var{n1} ) + float( \var{n2} ) + float( \var{n3} ) ) / 3\\
+		\textcolor{blue}{print} "Aritmetička sredina je ", \var{avg}
+	}
+
+	Ili još kraće:
+
+	\sourcee{
+		\var{n1} = float( \textcolor{blue}{input}( "Upiši prvi broj:" ) )\\
+		\var{n2} = float( \textcolor{blue}{input}( "Upiši drugi broj:" ) )\\
+		\var{n3} = float( \textcolor{blue}{input}( "Upiši treći broj:" ) )\\
+		\textcolor{blue}{print} "Aritmetička sredina je ", ( \var{n1} + \var{n2} + \var{n3} ) / 3
+	}
+
+	\textbf{Napomena:} \verb+float()+ nije jedini način kako se string moze
+	pretvoriti u broj. U sljedećem poglavlju će biti objašnjeno zašto se
+	ovdje koristi baš taj.
+
+\section{Komuniciranje putem konzole}
+
+TODO
+
+\section{Datoteke}
+
+TODO
+
+\section{Komuniciranje "s internetom"}
