@@ -2,61 +2,61 @@
 
 \section{if \dots then \dots else \dots}
 
-Pretpostavimo da imamo program koji od korisnika tra\v{z}i da upi\v{s}e
-koliko je bodova zaradio na odre\dj{}enom testu i zatim ovisno o broju
+Pretpostavimo da imamo program koji od korisnika trazi da upiše
+koliko je bodova zaradio na određenom testu i zatim ovisno o broju
 bodova ispisuje koju je ocjenu dobio. Ako je dobio manje ili jednako
 39 bodova ocjena je 1, ako ima 40-54 ocjena je 2, za 55-69 ocjena
-je 3, za 70-85 ocjena je 4, a za vi\v{s}e od 85 ocjenjen je s 5.
+je 3, za 70-85 ocjena je 4, a za više od 85 ocjenjen je s 5.
 
-Probati \'{c}emo za po\v{c}etak napisati program koji samo ispisuje je
-li ocjena 1 ili ve\'{c}a. Za to program treba nekako imati na\v{c}in kako
-\'{c}e provjeriti je li broj bodova ve\'{c}i, manji ili jednak 40.
+Probati ćemo za početak napisati program koji samo ispisuje je
+li ocjena 1 ili veća. Za to program treba nekako imati način kako
+će provjeriti je li broj bodova veći, manji ili jednak 40.
 
 Program izgleda ovako:
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", bodovi, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
-\hspace*{10mm}\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+\hspace*{10mm}\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \wrd{print} "Kraj programa"
 }
 
-Kori\v{s}tena je naredba if, ona se koristi na sljede\'{c}i na\v{c}in:
+Korištena je naredba if, ona se koristi na sljedeći način:
 
 \sourcee{
-\wrd{if} \emph{logi\v{c}ki izraz}:
+\wrd{if} \emph{logički izraz}:
 \\
-\hspace*{10mm}\emph{komande programa u slu\v{c}aju da je logi\v{c}ki izraz istinit}
+\hspace*{10mm}\emph{komande programa u slučaju da je logički izraz istinit}
 }
 
-Kao prvo uo\v{c}ite da je dio programa koji seizvr\v{s}ava u slu\v{c}aju da
-je logi\v{c}ki izraz istinit \emph{uvu\v{c}en} u odnosu na ostatak
-programa. To uvla\v{c}enje je to\v{c}no definirano i mora biti jedan
-$<$tab$>$ (ili 8 razmaknica) ra\v{c}unaju\'{c}i od lijevog ruba polja u kojem se
+Kao prvo uočite da je dio programa koji seizvršava u slučaju da
+je logički izraz istinit \emph{uvučen} u odnosu na ostatak
+programa. To uvlačenje je točno definirano i mora biti jedan
+$<$tab$>$ (ili 8 razmaknica) računajući od lijevog ruba polja u kojem se
 editira program!
 
-U po\v{c}etnom programu se komanda nakon \verb"if" naredbe izvr\v{s}ava
-jedino u slu\v{c}aju ako je broj bodova manji od 40, ako je broj bodova
-ve\'{c}i ili jednak 40 program tu liniju jednostavno preska\v{c}e. Mo\v{z}emo
-srediti i da program preska\v{c}e ve\'{c}i broj linija:
+U početnom programu se komanda nakon \verb"if" naredbe izvršava
+jedino u slučaju ako je broj bodova manji od 40, ako je broj bodova
+veći ili jednak 40 program tu liniju jednostavno preskače. Mozemo
+srediti i da program preskače veći broj linija:
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", bodovi, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+	\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \hspace*{10mm}
-	\wrd{print} "Molimo vas lijepo da za sljede\'{c}i put malo bolje nau\v{c}ite"
+	\wrd{print} "Molimo vas lijepo da za sljedeći put malo bolje naučite"
 \\
 \wrd{print} "Kraj programa"
 }
@@ -64,76 +64,76 @@ srediti i da program preska\v{c}e ve\'{c}i broj linija:
 Poruka koja se sad ispisuje ukoliko nemate dovoljno bodova je 
 
 \sourcee{
-Na\v{z}alost dobili ste negativnu ocjenu :(
+Nazalost dobili ste negativnu ocjenu :(
 \\
-Molimo vas lijepo da za sljede\'{c}i put malo bolje nau\v{c}ite
+Molimo vas lijepo da za sljedeći put malo bolje naučite
 }
 
 Opet, \verb"Kraj programa" se ispisuje bez obzira na broj bodova.
 
-\v{Z}elimo li da na\v{s} program ispisuje i poruku ukoliko imate vi\v{s}e ili jednako od 40 bodova to se mo\v{z}e
+Zelimo li da naš program ispisuje i poruku ukoliko imate više ili jednako od 40 bodova to se moze
 tako da koristite dva puta naredbu \verb"if":
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", bodovi, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+	\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \wrd{if} \var{bodovi} $>$= 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Imate vi\v{s}e od 40 bodova"
+	\wrd{print} "Imate više od 40 bodova"
 \\
 \wrd{print} "Kraj programa"
 }
 
-Ili pomo\'{c}u jednog dodatka naredbi \verb"if":
+Ili pomoću jednog dodatka naredbi \verb"if":
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", bodovi, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+	\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \wrd{else}:
 \\
 \hspace*{10mm}
-	\wrd{print} "Imate vi\v{s}e od 40 bodova"
+	\wrd{print} "Imate više od 40 bodova"
 \\
 \wrd{print} "Kraj programa"
 }
 
-Program govori ra\v cunalu:
+Program govori računalu:
 \emph{Ako je broj bodova manji od 40 tada ste dobili negativnu
-ocjenu, ina\v{c}e imate vi\v{s}e od 40 bodova}
+ocjenu, inače imate više od 40 bodova}
 
-Sve ono \v{s}to se nalazi nakon \verb"else", naravno uvu\v{c}eno za jedan
-$<$tab$>$ \'{c}e biti ispisano u slu\v{c}aju da uvjet \verb"bodovi$<$40" nije
+Sve ono što se nalazi nakon \verb"else", naravno uvučeno za jedan
+$<$tab$>$ će biti ispisano u slučaju da uvjet \verb"bodovi$<$40" nije
 istinit!
 
-\v{S}ta ako ne \v{z}elimo samo podatak o tome jesmo li dobili vi\v{s}e ili
+Sta ako ne zelimo samo podatak o tome jesmo li dobili više ili
 manje od 40 bodova nego i koju smo ocjenu dobili:
 
-Prvi na\v{c}in koriste\'{c}i niz \verb"if"-ova:
+Prvi način koristeći niz \verb"if"-ova:
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", bodovi, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+	\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \wrd{if} 40$<$=\var{bodovi} and \var{bodovi}$<$=54:
 \\
@@ -153,20 +153,20 @@ Prvi na\v{c}in koriste\'{c}i niz \verb"if"-ova:
 \wrd{if} 85$<$=\var{bodovi}:
 \\
 \hspace*{10mm}
-	\wrd{print} "Odli\v{c}an (5)"
+	\wrd{print} "Odličan (5)"
 }
 
-Drugi na\v{c}in koriste\'{c}i \verb"elif" (od eng. "else if"):
+Drugi način koristeći \verb"elif" (od eng. "else if"):
 
 \sourcee{
-\var{bodovi} = \var{input}( "Upi\v{s}i broj bodova:" )
+\var{bodovi} = \var{input}( "Upiši broj bodova:" )
 \\
 \wrd{print} "Imate", \var{bodovi}, "bodova..."
 \\
 \wrd{if} \var{bodovi} $<$ 40:
 \\
 \hspace*{10mm}
-	\wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :("
+	\wrd{print} "Nazalost dobili ste negativnu ocjenu :("
 \\
 \wrd{elif} 40$<$=\var{bodovi} and \var{bodovi}$<$=54:
 \\
@@ -186,21 +186,21 @@ Drugi na\v{c}in koriste\'{c}i \verb"elif" (od eng. "else if"):
 \wrd{elif} 85$<$=\var{bodovi}:
 \\
 \hspace*{10mm}
-	\wrd{print} "Odli\v{c}an (5)"
+	\wrd{print} "Odličan (5)"
 }
 
-Na hrvatskom bi ovo napisali: \emph{Ako imate manje od 40 bodova dobili ste 2, ina\v{c}e ukoliko imate
-izme\dj{}u 40 i 54 dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u 55 i 59 dobili ste 3, ina\v{c}e ukoliko imate
-izme\dj{}u 70 i 84 dobili ste 4, ina\v{c}e ukoliko imate vi\v{s}e od 84 dobili ste 5}.
+Na hrvatskom bi ovo napisali: \emph{Ako imate manje od 40 bodova dobili ste 2, inače ukoliko imate
+između 40 i 54 dobili ste 2, inače ukoliko imate između 55 i 59 dobili ste 3, inače ukoliko imate
+između 70 i 84 dobili ste 4, inače ukoliko imate više od 84 dobili ste 5}.
 
-Mali problem mo\v{z}e nastati u tome \v{s}to mo\v{z}ete napisati i 120 ili -340 za broj bodova. Probajmo
-napisati program koji ispravlja tu gre\v{s}ku:
+Mali problem moze nastati u tome što mozete napisati i 120 ili -340 za broj bodova. Probajmo
+napisati program koji ispravlja tu grešku:
 
 \sourcee{
-\var{bodovi} = \wrd{input}( "Upi\v{s}i broj bodova:" ) \\
+\var{bodovi} = \wrd{input}( "Upiši broj bodova:" ) \\
 \wrd{print} "Imate", \var{bodovi}, "bodova..." \\
 \wrd{if} 0$<$= \var{bodovi} and \var{bodovi} $<$ 40: \\
-\hspace*{10mm} \wrd{print} "Na\v{z}alost dobili ste negativnu ocjenu :(" \\
+\hspace*{10mm} \wrd{print} "Nazalost dobili ste negativnu ocjenu :(" \\
 \wrd{elif} 40$<$=\var{bodovi} and \var{bodovi}$<$=54: \\
 \hspace*{10mm} \wrd{print} "Dovoljan (2)" \\
 \wrd{elif} 55$<$=\var{bodovi} and \var{bodovi}$<$=69: \\
@@ -208,28 +208,28 @@ napisati program koji ispravlja tu gre\v{s}ku:
 \wrd{elif} 70$<$=\var{bodovi} and \var{bodovi}$<$=84: \\
 \hspace*{10mm} \wrd{print} "Vrlo dobar (4)" \\
 \wrd{elif} 85$<$=\var{bodovi} and \var{bodovi} $<$=100: \\
-\hspace*{10mm} \wrd{print} "Odli\v{c}an (5)" \\
+\hspace*{10mm} \wrd{print} "Odličan (5)" \\
 \wrd{else}: \\
-\hspace*{10mm} \wrd{print} "Niste upisali broj izme\dj{}u 0 i 100 za broj bodova"
+\hspace*{10mm} \wrd{print} "Niste upisali broj između 0 i 100 za broj bodova"
 }
 
 Sad bi "prijevod" ovog programa na hrvatski glasio: \emph{Ako imate
-izme\dj{}u 0 i 40 bodova dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u
-40 i 54 dobili ste 2, ina\v{c}e ukoliko imate izme\dj{}u 55 i 59 dobili
-ste 3, ina\v{c}e ukoliko imate izme\dj{}u 70 i 84 dobili ste 4, ina\v{c}e
-ukoliko imate izme\dj{}u 84 i 100 dobili ste 5, a ako nije niti jedan
-od ovih slu\v{c}ajeva onda ste pogre\v{s}no upsali broj bodova}.
+između 0 i 40 bodova dobili ste 2, inače ukoliko imate između
+40 i 54 dobili ste 2, inače ukoliko imate između 55 i 59 dobili
+ste 3, inače ukoliko imate između 70 i 84 dobili ste 4, inače
+ukoliko imate između 84 i 100 dobili ste 5, a ako nije niti jedan
+od ovih slučajeva onda ste pogrešno upsali broj bodova}.
 
 Zadaci: \textbf{Za napraviti}
 
 \section{for \dots in range( \dots )}
 
-Problem je sljede\'{c}i; treba ispisati tablicu kvadrata brojeva od do 10.
+Problem je sljedeći; treba ispisati tablicu kvadrata brojeva od do 10.
 Tablica kvadrata je tablica koja ima dva stupca, u prvom se nalazeprirodni
 brojevi, a u drugom njihovi kvadrati (da podsjetimo, kvadrat prirodnog
-broja dobijemo tako da taj broj pomno\v{z}imo sa samim sobom).
+broja dobijemo tako da taj broj pomnozimo sa samim sobom).
 
-To se mo\v{z}e posti\'{c}i na sljede\'{c}i na\v{c}in:
+To se moze postići na sljedeći način:
 
 \sourcee{
 \wrd{print} "n -$>$ n*n" \\
@@ -245,35 +245,35 @@ To se mo\v{z}e posti\'{c}i na sljede\'{c}i na\v{c}in:
 \wrd{print} 10, " -$>$ ", 10**2
 }
 
-\verb"5**2" zna\v{c}i $5^2$. U svakom retku se naredbom print ispisuje broj i
+\verb"5**2" znači $5^2$. U svakom retku se naredbom print ispisuje broj i
 njegov kvadrat. 
 
-Me\dj{}utim, ovo je jedan prili\v{c}no \emph{neelegantan} na\v{c}in rje\v{s}avanja
-problema, a to zato \v{s}to je ovakav program te\v{s}ko generalizirati,
-odnosno te\v{s}ko ga je upotrijebiti u slu\v{c}aju da njime moramo
-rije\v{s}iti neki analogni ili opcehnitiji problem. 
+Međutim, ovo je jedan prilično \emph{neelegantan} način rješavanja
+problema, a to zato što je ovakav program teško generalizirati,
+odnosno teško ga je upotrijebiti u slučaju da njime moramo
+riješiti neki analogni ili opcehnitiji problem. 
 \footnote{
-	Ako je na\v{s} trenutni
-	problem \emph{"Napi\v{s}i program koji ispisuje tablicku kvadrata
-	prvih 10 brojeva"} analogni (ali slo\v{z}eniji) problem mo\v{z}e glasiti
-	\emph{"Napi\v{s}i program koji ispisuje tablicu kvadrata za brojeve
-	od 0 do 100"}. Op\'{c}enitiji problem bi mogao biti \emph{"Napi\v{s}i
+	Ako je naš trenutni
+	problem \emph{"Napiši program koji ispisuje tablicku kvadrata
+	prvih 10 brojeva"} analogni (ali slozeniji) problem moze glasiti
+	\emph{"Napiši program koji ispisuje tablicu kvadrata za brojeve
+	od 0 do 100"}. Općenitiji problem bi mogao biti \emph{"Napiši
 	program koji ispisuje tablicu kvadrata za brojeve od 0 do n (gdje
 	je n proizvoljan prirodan broj)"}. 
 }
-Taj program se mo\v{z}e napisati
-na na\v{c}in slu\v{c}an na\v{s}em na\v{c}inu, ali priznati \'{c}ete da pisanje
-sto i jedne linije tipa s naredbom \verb"print" koja ne radi ni\v{s}ta
+Taj program se moze napisati
+na način slučan našem načinu, ali priznati ćete da pisanje
+sto i jedne linije tipa s naredbom \verb"print" koja ne radi ništa
 drugo negoli ispisuje broj i njegov kvadrat i nije neki pretjerano
 kreativan posao.
 
-Zato postoji nareda \verb"for". Ta naredba od ra\v{c}unala tra\v{z}i da
-odre\dj{}eni broj puta ponovi neki postupak uz odre\dj{}ene uvjete. Uz
+Zato postoji nareda \verb"for". Ta naredba od računala trazi da
+određeni broj puta ponovi neki postupak uz određene uvjete. Uz
 naredbu \verb"for" se nalazi ime varijable i nekakav \emph{skupa}
-ili \emph{lista} prema kojima se ta varijabla "kre\'{c}e". Budu\'{c}i da
-\'{c}e se ova skripta baviti skupovima, listama i ostalim slo\v{z}enim
-tipovima podataka baviti tek kasnije ovdje \'{c}u objasniti samo jedan
-od na\v{c}ina koji se \v{c}esto koriste s naredbom \verb"for".
+ili \emph{lista} prema kojima se ta varijabla "kreće". Budući da
+će se ova skripta baviti skupovima, listama i ostalim slozenim
+tipovima podataka baviti tek kasnije ovdje ću objasniti samo jedan
+od načina koji se često koriste s naredbom \verb"for".
 
 \sourcee{
 \wrd{print} "n -$>$ n*n" \\
@@ -281,52 +281,52 @@ od na\v{c}ina koji se \v{c}esto koriste s naredbom \verb"for".
 \tab \wrd{print} \var{x}, " -$>$ ", \var{x}**2
 }
 
-Rezultat programa \'{c}e biti potpuno isti kao i kod pro\v{s}log programa.
+Rezultat programa će biti potpuno isti kao i kod prošlog programa.
 
-Druga i tre\'{c}a linija ovog programa ka\v{z}e otprilike: \emph{"Neka
+Druga i treća linija ovog programa kaze otprilike: \emph{"Neka
 varijabla x uzima redom vrijednost 0, 1, 2\dots sve dok je manje
-od 11, i za svaku od tih vrijednosti ispi\v{s}i vrijednost od x i
-kvadrat od x"}. Nakon \v{s}to python interpreter do\dj{}e do druge linije
-programa ra\v{c}unalo samo varijabli x pridodaje vrijednost 0, i
-izvr\v{s}ava tre\'{c}u liniju programa (x je tamo 0). Nakon \v{s}to to
-izvr\v{s}i varijabli x se pridru\v{z}uje sljede\'{c}a vrijednost; 1. Sad se
-opet ispisuje tre\'{c}a linija programa, ali s novom vrijednos\'{c}u
-varijeble x. Nakon toga x poprima vrijednost 2, izvr\v{s}ava se tre\'{c}a
+od 11, i za svaku od tih vrijednosti ispiši vrijednost od x i
+kvadrat od x"}. Nakon što python interpreter dođe do druge linije
+programa računalo samo varijabli x pridodaje vrijednost 0, i
+izvršava treću liniju programa (x je tamo 0). Nakon što to
+izvrši varijabli x se pridruzuje sljedeća vrijednost; 1. Sad se
+opet ispisuje treća linija programa, ali s novom vrijednosću
+varijeble x. Nakon toga x poprima vrijednost 2, izvršava se treća
 linija, i tako dalje\dots
 
-\textbf{Va\v{z}no:}
-Nikad ne zaboravite dvoto\v{c}ku iza "for" linije -- to je naime vrlo
-\v{c}esta po\v{c}etni\v{c}ka gre\v{s}ka.
+\textbf{Vazno:}
+Nikad ne zaboravite dvotočku iza "for" linije -- to je naime vrlo
+česta početnička greška.
 
 \textbf{Definicija:} Za liniju s \verb"for" naredbom i niz naredbi koje
-se izvr\v{s}avaju pri svakoj promjeni varijable nakon \verb"for"
-ka\v{z}emo da se zovu \textbf{for-petlja}. Ukoliko je \verb"x" varijabla
-nakon \verb"for" ka\v{z}emo da smo izvr\v{s}ili \textbf{for-petlju po varijabli
+se izvršavaju pri svakoj promjeni varijable nakon \verb"for"
+kazemo da se zovu \textbf{for-petlja}. Ukoliko je \verb"x" varijabla
+nakon \verb"for" kazemo da smo izvršili \textbf{for-petlju po varijabli
 x}. Svaki put kad varijabla \verb"x" promijeni vrijednost zbog \verb"for"
-petlje ka\v{z}emo da je izvr\v{s}eno \textbf{iteracija}. Niz naredbi koje se
-izvr\v{s}avaju u svakoj iteraciji zovemi tijelo for-petlje.
+petlje kazemo da je izvršeno \textbf{iteracija}. Niz naredbi koje se
+izvršavaju u svakoj iteraciji zovemi tijelo for-petlje.
 
-Isto tako, mo\v{z}ete srediti da se izvr\v{s}ava i vi\v{s}e linija svaki
+Isto tako, mozete srediti da se izvršava i više linija svaki
 put kad varijabla x u zbog \verb"for" mijenja vrijednost. Jednostavno
-nakon tre\'{c}eg reda programa napisali biste jo\v{s} jedan, ali i taj
+nakon trećeg reda programa napisali biste još jedan, ali i taj
 obavezno mora biti pomaknuti za jedan $<$tab$>$ udesno.
 
-Pretpostavimo sad da treba napisati prgram koji od koristnika tra\v{z}i
-da mu upi\v{s}e jedan broj, a zatim ispisuje prvo kvadrat tog broja,
+Pretpostavimo sad da treba napisati prgram koji od koristnika trazi
+da mu upiše jedan broj, a zatim ispisuje prvo kvadrat tog broja,
 a onda rezultat pri cjelobrojnom dijeljenju 
 \footnote{
-	Cjelobrojno dijeljenje zna\v{c}i da se radi o dijeljenju u
-	kojemu se ignorira dio iza decimalne to\v{c}ke u rezultatu
+	Cjelobrojno dijeljenje znači da se radi o dijeljenju u
+	kojemu se ignorira dio iza decimalne točke u rezultatu
 	nekog dijeljenja. Npr ukoliko podijelimo 7 sa 4 dobiti
-	\'{c}emo 1.75, ali rezultat cjelobrojnog dijeljenja 7 sa 4 je
-	1. Podsjetimo da python vr\v{s}i cjelobrojno dijeljenje ukoliko
+	ćemo 1.75, ali rezultat cjelobrojnog dijeljenja 7 sa 4 je
+	1. Podsjetimo da python vrši cjelobrojno dijeljenje ukoliko
 	su djeljenik i djelitelj cijeli brojevi (nemaju decimalnog
 	dijela).
 }
 tog broja s 2.
 
 \sourcee{
-\var{n} = \wrd{input}( "Upi\v{s}i broj:" )
+\var{n} = \wrd{input}( "Upiši broj:" )
 \\
 \wrd{for} \var{i} \wrd{in} \wrd{range}( \var{n}+1 ):
 \\
@@ -339,23 +339,23 @@ tog broja s 2.
 \wrd{print} "Kraj programa"
 }
 
-Ovdje se tijelo for-petlje sastoji od dvije naredbe (tre\'{c}i i
-\v{c}etvrti red programa. Zadnja linija ne spada u tijelo petlje jer
-se ne izvr\v{s}ava kod svake iteracije nego samo jednom nakon \v{s}to se
-cijela petlja "izvr\v{s}i".
+Ovdje se tijelo for-petlje sastoji od dvije naredbe (treći i
+četvrti red programa. Zadnja linija ne spada u tijelo petlje jer
+se ne izvršava kod svake iteracije nego samo jednom nakon što se
+cijela petlja "izvrši".
 
 Prvo se varijabli \verb"n" pridjeljuje vrijednost koju upisuje
-osoba koja pokre\'{c}e program. Zatim se vr\v{s}i petlja po varijabli
-\verb"i". Obratite pa\v{z}nju da se petlja sad kre\'{c}e u granicama od
-0, pa po svim cijelim brojevima manjim od \verb"n+1", a najve\'{c}i
+osoba koja pokreće program. Zatim se vrši petlja po varijabli
+\verb"i". Obratite paznju da se petlja sad kreće u granicama od
+0, pa po svim cijelim brojevima manjim od \verb"n+1", a najveći
 cijeli broj manji od \verb"n+1" je \verb"n". Dakle petlja se ne
-izvra\v{s}ava za \verb"n+1" nego samo do \verb"n", a to je upravo ono
-\v{s}to mi \v{z}elimo.
+izvrašava za \verb"n+1" nego samo do \verb"n", a to je upravo ono
+što mi zelimo.
 
-\v{Z}elimo sad program koji \'{c}e za svaki broj od 0 do 100 ispisati
+Zelimo sad program koji će za svaki broj od 0 do 100 ispisati
 njegov kvadrat i, ukoliko je taj broj paran ispisati i poruku o
 tome. Broj je paran u koliko je rezultati pri dijeljenju tog broja
-s 2 jednak s 0. Rezultat pri dijeljenju dobijemo pomo\'{c}u operacije
+s 2 jednak s 0. Rezultat pri dijeljenju dobijemo pomoću operacije
 modulo (\verb"%" u python programu)
 
 \sourcee{
@@ -366,17 +366,17 @@ modulo (\verb"%" u python programu)
 \wrd{print} "Kraj programa"
 }
 
-\textbf{Komentar:} Tijelo for-petlje koja po\v{c}inje s prvim redom
+\textbf{Komentar:} Tijelo for-petlje koja počinje s prvim redom
 programa je niz naredbi koji se sastoji od 2-4 linije programa.
-Obratite pa\v{z}nju da je ovdje 4. linija, koja se izvr\v{s}ava jedino
+Obratite paznju da je ovdje 4. linija, koja se izvršava jedino
 kad je istinit sud \verb"x%2==0" pomaknuta za \emph{dva} $<$tab$>$-a!
 Za svaki \verb"x" if-uvjet isprobava je li istina da je rezultat
 pri djeljenju x s 2 jednak 0 (\verb"x%2==0"), a ako je to istina
-izvr\v{s}ava se 4. linija.
+izvršava se 4. linija.
 
-Evo jo\v{s} jedna varijanta programa:
+Evo još jedna varijanta programa:
 \footnote{
-Zbog lak\v{s}eg opisivanja programa ovdje je na po\v{c}etku svakog retka
+Zbog lakšeg opisivanja programa ovdje je na početku svakog retka
 ispisan i redni broj tog reda. Kad prepisivanja programa u editoru to n
 prepisujete.
 }
@@ -392,15 +392,15 @@ prepisujete.
 8: \wrd{print} "Kraj programa"
 }
 
-U \v{c}emu se ona razlikuje od gornjeg programa? Probajte sami otkriti \v{s}ta
-radi sedma linija programa? Ovisi li njeno izvr\v{s}avanje o tome je li
-izvr\v{s}en uvjet u 3. redu? Probajte promijeniti program tako da se petlja ne
-izvr\v{s}ava za brojeve do 100 nego da korisnik mo\v{z}e sam odrediti do kojeg do
-kojeg broja se petlja izvr\v{s}ava.
+U čemu se ona razlikuje od gornjeg programa? Probajte sami otkriti šta
+radi sedma linija programa? Ovisi li njeno izvršavanje o tome je li
+izvršen uvjet u 3. redu? Probajte promijeniti program tako da se petlja ne
+izvršava za brojeve do 100 nego da korisnik moze sam odrediti do kojeg do
+kojeg broja se petlja izvršava.
 
-Probajte objasniti za\v{s}to donji program radi potpuno istu stvar
-kao i na\v{s} zadnji program:\footnote{Pomo\'{c}: svaki broj je po definiciji sud
-\v{c}ija istinitost ovisi o\dots}
+Probajte objasniti zašto donji program radi potpuno istu stvar
+kao i naš zadnji program:\footnote{Pomoć: svaki broj je po definiciji sud
+čija istinitost ovisi o\dots}
 
 \sourcee{
 1: \wrd{for} \var{x} \wrd{in} \wrd{range}(101): \\
@@ -413,36 +413,36 @@ kao i na\v{s} zadnji program:\footnote{Pomo\'{c}: svaki broj je po definiciji su
 8: \wrd{print} "Kraj programa"
 }
 
-Jo\v{s} jedna korisna varijanta varijanta for-petlja s \verb"range(...)" je
-slu\v{c}aj u kojem ne \v{z}elim da se petlja izvr\v{s}ava za brojeve od 0 do nekog
-broja nego od nekog broja razli\v{c}itog od 0 do nekog drugog broja:
+Još jedna korisna varijanta varijanta for-petlja s \verb"range(...)" je
+slučaj u kojem ne zelim da se petlja izvršava za brojeve od 0 do nekog
+broja nego od nekog broja različitog od 0 do nekog drugog broja:
 
 \sourcee{
 \wrd{for} \var{i} \wrd{in} \wrd{range}( 15, 70 ):\\
 \hspace*{10mm} \wrd{print} \var{i}
 }
 
-Ispisati \'{c}e brojeve od 15 do 70.
+Ispisati će brojeve od 15 do 70.
 
-Probajte objasniti \v{s}ta radi sljede\'{c}i program:
+Probajte objasniti šta radi sljedeći program:
 
 \sourcee{
-\var{a} = \wrd{input}( "Upi\v{s}i prvi broj:" ) \\
-\var{b} = \wrd{input}( "Upi\v{s}i prvi broj:" ) \\
+\var{a} = \wrd{input}( "Upiši prvi broj:" ) \\
+\var{b} = \wrd{input}( "Upiši prvi broj:" ) \\
 \wrd{if} \var{a} $<$ \var{b}: \\
 \hspace*{10mm} \wrd{for} \var{x} \wrd{in} \wrd{range}( \var{a}, \var{b} + 1 ): \\
-\hspace*{10mm} \hspace*{10mm} \wrd{print} \var{x}, "na tre\'{c}u iznosi", \var{x}**3 \\
+\hspace*{10mm} \hspace*{10mm} \wrd{print} \var{x}, "na treću iznosi", \var{x}**3 \\
 \wrd{else}: \\
 \hspace*{10mm} \wrd{print} "hmmm..."
 }
 
-Napi\v{s}ite sada program koji od korisnika tra\v{z}i da upi\v{s}e dva broja, a
+Napišite sada program koji od korisnika trazi da upiše dva broja, a
 zatim ispisuje tablicu kvadrata svh brojeva od prvog do drugog.
 
-Evo jo\v{s} jedan zanimljiv program koji ispisuje tablicu mno\v{z}enja brojeva od
+Evo još jedan zanimljiv program koji ispisuje tablicu mnozenja brojeva od
 1 do 10. Treba dakle napisati sve izraze oblika $a\cdot b$ gdje $a$ i $b$
 mogu biti brojevi od 1 do 10. Ali (!) za svaki $a$ od 1 do 10 (for-petlja)
-i $b$ mora mo\'{c}i poprimiti vrijednosti od 1 do 10.
+i $b$ mora moći poprimiti vrijednosti od 1 do 10.
 
 \sourcee{
 \wrd{for} \var{a} \wrd{in} \wrd{range}(1, 11): \\
@@ -450,20 +450,20 @@ i $b$ mora mo\'{c}i poprimiti vrijednosti od 1 do 10.
 \hspace*{10mm} \hspace*{10mm} \wrd{print} \var{a}, "puta", \var{b}, "je jednako", \var{a}*\var{b}
 }
 
-Tijelo prve petlje je drugi i tre\'{c}i red, a tijelo druge petlje je samo
-tre\'{c}i red. Dakle, za svaki a od 1 do 10 izvr\v{s}iti \'{c}e se druga petlja u
+Tijelo prve petlje je drugi i treći red, a tijelo druge petlje je samo
+treći red. Dakle, za svaki a od 1 do 10 izvršiti će se druga petlja u
 kojoj se sad b mijenja od 1 do 10 i kod svake promjene ispisuje poruka.
 
-Jo\v{s} jedan primjer:
+Još jedan primjer:
 
 Pretpostavimo da imamo ovakav problem:
-Polaznik jedne auto\v{s}kole pola\v{z}u pismeni dio voza\v{c}kog ispita.
+Polaznik jedne autoškole polazu pismeni dio vozačkog ispita.
 Ispit se sastoji od 15 pitanja koji su podijeljeni u tri skupine po 5 zadatka.
-Zadaci iz prve skupine nose po 1 bod, iz druge skupine 2 boda, a iz tre\'{c}e
+Zadaci iz prve skupine nose po 1 bod, iz druge skupine 2 boda, a iz treće
 skupine po 3 boda. Za prolaz na ispitu potrebno je da polaznik ima barem 24 boda.
-Treba napisati program koji od instruktora tra\v{z}i da upi\v{s}e broj to\v{c}nih
-zadataka iz prve, druge i tre\'{c}e skupine i onda ispisuje je li polaznik
-auto\v{s}kole zadovoljio uvjete.
+Treba napisati program koji od instruktora trazi da upiše broj točnih
+zadataka iz prve, druge i treće skupine i onda ispisuje je li polaznik
+autoškole zadovoljio uvjete.
 
 Program bi mogao izgledati ovako:
 
@@ -477,8 +477,8 @@ Program bi mogao izgledati ovako:
 \hspace*{10mm} \wrd{print} "Polaznik nije polozio ispit"
 }
 
-Ukoliko znamo da ta auto\v{s}kola ima 20 polaznika mo\v{z}emo srediti da program
-radi za sve polaznike auto\v{s}kole:
+Ukoliko znamo da ta autoškola ima 20 polaznika mozemo srediti da program
+radi za sve polaznike autoškole:
 
 \sourcee{
 \wrd{for} \var{i} \wrd{in} \wrd{range}(20): \\
@@ -491,8 +491,8 @@ radi za sve polaznike auto\v{s}kole:
 \hspace*{10mm} \hspace*{10mm} \wrd{print} "Polaznik nije polozio ispit"
 }
 
-Ovaj program funkcionira samo za auto\v{s}kole s 20 polaznika, \v{s}ta ako ne znamo
-koliko polaznika ima auto\v{s}kola?
+Ovaj program funkcionira samo za autoškole s 20 polaznika, šta ako ne znamo
+koliko polaznika ima autoškola?
 
 \sourcee{
 \var{n} = \wrd{input}( "Upisi broj polaznika autoskole: )\\
@@ -509,23 +509,23 @@ koliko polaznika ima auto\v{s}kola?
 
 \section{while \dots}
 
-Pomo\'{c}u if-uvjeta i for-petlje se mog rije\v{s}iti mnogi problemi koji se
-postavljaju pred programera. Ono prvo nam omogu\'{c}uje da ra\v{c}unalo samo
-odlu\v{c}uje koje \'{c}e se naredbe izvr\v{s}avati ovisno o nekom uvjetu, a
-pomo\'{c}u for-petlje mo\v{z}emo ponavljati odre\dj{}eni postupak odre\dj{}en broj
-puta. Me\dj{}utim, mo\v{z}e nam se desiti da je odre\dj{}eni niz naredbi potrebno
+Pomoću if-uvjeta i for-petlje se mog riješiti mnogi problemi koji se
+postavljaju pred programera. Ono prvo nam omogućuje da računalo samo
+odlučuje koje će se naredbe izvršavati ovisno o nekom uvjetu, a
+pomoću for-petlje mozemo ponavljati određeni postupak određen broj
+puta. Međutim, moze nam se desiti da je određeni niz naredbi potrebno
 ponavljati nekoliko puta, ali da ne znamo koliko puta treba ponoviti prije nego
-\v{s}to pokrenemo program. 
+što pokrenemo program. 
 
-While-petlja rje\v{s}ava taj problem. Op\'{c}i oblik while-petlje je
+While-petlja rješava taj problem. Opći oblik while-petlje je
 
 \sourcee{
-\wrd{while} \emph{logi\v{c}ki izraz}:
+\wrd{while} \emph{logički izraz}:
 \\
 \hspace*{10mm}\emph{niz (blok) naredbi}
 }
 
-Niz naredbi \'{c}e se ponavljati sve dok je uvijet istinit. 
+Niz naredbi će se ponavljati sve dok je uvijet istinit. 
 
 Primjer koji ispisuje prvih 10 brojeva:
 
@@ -536,37 +536,37 @@ Primjer koji ispisuje prvih 10 brojeva:
 \hspace*{10mm} \var{n} = \var{n} + 1
 }
 
-Pro\v{c}itajmo \v{s}ta ovaj program tra\v{z}i od ra\v{c}unala:
+Pročitajmo šta ovaj program trazi od računala:
 \begin{itemize}
 	\item Neka $n$ bude jednak 1
 	\item Sve dok je $n$ manje od 10 ponavljaj:
 	\begin{itemize}
-		\item Ispi\v{s}i koliki je $n$
-		\item Neka $n$ poprimi vrijednost od $n$ uve\'{c}ano za 1.
+		\item Ispiši koliki je $n$
+		\item Neka $n$ poprimi vrijednost od $n$ uvećano za 1.
 	\end{itemize}
 \end{itemize}
 
-Sve smo to, naravno mogli i s for-petljom. U \v{c}emu je onda bitna razlika? Razlika
-je u tome \v{s}to kod for-petlje na samom po\v{c}etku petlje morate znati koliko
-puta \'{c}e se petlja ponoviti,
-\footnote{Postoji na\v{c}in i da se to zaobi\dj{}e pomo\'{c}u "break" i "continue", ali o tome kasnije}
-a while petlja mo\v{z}ete pokrenuti tako da se tek negdje tokom njenog izvo\dj{}enja
-desi ne\v{s}to tako da uvijet kod \verb"while" postane la\v{z}an.
+Sve smo to, naravno mogli i s for-petljom. U čemu je onda bitna razlika? Razlika
+je u tome što kod for-petlje na samom početku petlje morate znati koliko
+puta će se petlja ponoviti,
+\footnote{Postoji način i da se to zaobiđe pomoću "break" i "continue", ali o tome kasnije}
+a while petlja mozete pokrenuti tako da se tek negdje tokom njenog izvođenja
+desi nešto tako da uvijet kod \verb"while" postane lazan.
 
 Promotrimo npr. zadnji program iz poglavlja o for-petlji; on korektno radi svoj posao
 ukoliko instruktor (ili osoba koja ispravlja ispite) zna koliko ima polaznika.
-Pretpostavimo sad da instruktor ne zna to\v{c}no koliko je polaznika pisalo ispit, a
-ispit se odvija na sljede\'{c}i na\v{c}in: polaznici jedan po jedan ulaze u
-instruktorovu kancelariju, kad u\dj{}u on uzima njihov ispit, ispravlja ga i
-\v{z}eli da mu ra\v{c}unalo na osnovu to\v{c}no rje\v{s}enih zadataka iz ispita
-ka\v{z}e za svakog polaznika je li pro\v{s}ao ili nije. Instruktor nema vremena
-izbrojati koliko je bilo polaznika, pa mo\v{z}e samo primati jednog po jednog
-budu\'{c}eg voza\v{c}a, ali nikad ne zna je li on zadnji ili iza njega ima jo\v{s}
+Pretpostavimo sad da instruktor ne zna točno koliko je polaznika pisalo ispit, a
+ispit se odvija na sljedeći način: polaznici jedan po jedan ulaze u
+instruktorovu kancelariju, kad uđu on uzima njihov ispit, ispravlja ga i
+zeli da mu računalo na osnovu točno rješenih zadataka iz ispita
+kaze za svakog polaznika je li prošao ili nije. Instruktor nema vremena
+izbrojati koliko je bilo polaznika, pa moze samo primati jednog po jednog
+budućeg vozača, ali nikad ne zna je li on zadnji ili iza njega ima još
 njih.
 
-Program sad nebi radio jer instruktor na po\v{c}etku programa mora napisati koliko
-je bilo ispitanika, a on to ne zna. probati \'{c}emo to sada rije\v{s}iti
-pomo\'{c}u while-petlje:
+Program sad nebi radio jer instruktor na početku programa mora napisati koliko
+je bilo ispitanika, a on to ne zna. probati ćemo to sada riješiti
+pomoću while-petlje:
 
 \sourcee{
 \textcolor{red}{jos} = "da" \\
@@ -581,23 +581,23 @@ pomo\'{c}u while-petlje:
 \hspace*{10mm} \textcolor{red}{jos} = \textcolor{blue}{raw\_input}( "Ima li jos polaznika (da/ne) " )
 }
 
-Blok naredbi u while-petlji \'{c}e se ponavljati sve dok je varijabla \verb"jos"
-razlicita od "da" (ta varijabla sadr\v{z}i string, a ne broj). Kako je na samom
-po\v{c}etku njoj pridru\v{z}ena vrijednost "da" while petlja se po\v{c}ne
-izvr\v{s}avati, a na samom kraju se od korisnika tra\v{z}i da upi\v{s}e ima li
-jo\v{s} polaznika. Ako on upi\v{s}e "da"\footnote{Bez navodnika,
-naravno} (ili bilo \v{s}ta drugo osim "ne") \verb"jos"
-je i dalje razli\v{c}ito od "ne" pa se blok opet izvr\v{s}ava. Ukoliko upi\v{s}ete
-"ne" program zavr\v{s}ava svoj posao.
+Blok naredbi u while-petlji će se ponavljati sve dok je varijabla \verb"jos"
+razlicita od "da" (ta varijabla sadrzi string, a ne broj). Kako je na samom
+početku njoj pridruzena vrijednost "da" while petlja se počne
+izvršavati, a na samom kraju se od korisnika trazi da upiše ima li
+još polaznika. Ako on upiše "da"\footnote{Bez navodnika,
+naravno} (ili bilo šta drugo osim "ne") \verb"jos"
+je i dalje različito od "ne" pa se blok opet izvršava. Ukoliko upišete
+"ne" program završava svoj posao.
 
 \section{Potprogrami i funkcije}
 
 \subsection{Procedure}
 
-De\v{s}ava se da u nekom programu moramo \v{c}esto ponavljati odre\dj{}eni
+Dešava se da u nekom programu moramo često ponavljati određeni
 niz naredbi. Potprogrami
-su strukture u programu koje nam omogu\'{c}uju da odre\dj{}eni niz naredbi
-koje se u programu trebaju \v{c}esto izvr\v{s}avati u programu napi\v{s}emo
+su strukture u programu koje nam omogućuju da određeni niz naredbi
+koje se u programu trebaju često izvršavati u programu napišemo
 samo jednom.
 
 Slijedi primjer jednostavnog programa koji koristi potprogram:
@@ -627,15 +627,15 @@ zaboraviti zagrade!!} ispisana je poruka "Hello world!!! (nalazim
 se  tijelu funkcije)". Dakle, kao da smo definirali jednu novu
 komandu koja ispisuje svoju poruku. 
 
-kad u programu napi\v{s}ete "HelloWorld()" ka\v{z}emo da smo
-\textbf{pozvali potprogram} i tada se izvr\v{s}avaju komande u \textbf{tijelu
-potprograma}. Tijelo potprograma se u na\v{s}em primjeru sastoji od samo
+kad u programu napišete "HelloWorld()" kazemo da smo
+\textbf{pozvali potprogram} i tada se izvršavaju komande u \textbf{tijelu
+potprograma}. Tijelo potprograma se u našem primjeru sastoji od samo
 jednog retka.
 
-\v{C}emu slu\v{z}e zagrade iza \verb"HelloWorld"? 
+Čemu sluze zagrade iza \verb"HelloWorld"? 
 
-Vratimo se opet na primjer s instruktorom vo\v{z}nje. \v{Z}elim sad da
-potprogram ispi\v{s}e pravu poruku ovisno o tome koliko je polaznik imao
+Vratimo se opet na primjer s instruktorom voznje. Zelim sad da
+potprogram ispiše pravu poruku ovisno o tome koliko je polaznik imao
 bodova. 
 
 \sourcee{
@@ -649,29 +649,29 @@ bodova.
 \fun{IspisiPoruku}( 29 )
 }
 
-S retkom "def IspisiPoruku( b ):" po\v{c}inje \textbf{definicija potprograma}.
-Budu\'{c}i da smo unutar zagrade iza imena potprograma ("IspisiPoruku")
-napisali "b" -- svaki put kad pozovemo potprogram morati \'{c}emu unutar
+S retkom "def IspisiPoruku( b ):" počinje \textbf{definicija potprograma}.
+Budući da smo unutar zagrade iza imena potprograma ("IspisiPoruku")
+napisali "b" -- svaki put kad pozovemo potprogram morati ćemu unutar
 zagrade staviti neku vrijednost (varijabla, broj, string). Vrijednost onoga
-\v{s}to smo upisali u zagradu tamo gdje potprogram pozivamo \'{c}e u tijelu
+što smo upisali u zagradu tamo gdje potprogram pozivamo će u tijelu
 potprograma
 poprimiti varijabla "b". Kako smo mi upisali "IspisiPoruku( 21 )", u tijelu
-\'{c}e varijabla b imati vrijednost 21. A sljede\'{c}i put \'{c}e
+će varijabla b imati vrijednost 21. A sljedeći put će
 zbg istog razloga varijabla "b" (unutar potprograma) imati vrijednost 29.
 
-Ka\v{z}emo da je varijabla "b" u zagradi iza definicije potprograma
+Kazemo da je varijabla "b" u zagradi iza definicije potprograma
 \textbf{argument potprograma}.
 
-Potprogram mo\v{z}e imati i vi\v{s}e argumenata; sljede\'{c}i program
-sadr\v{z}i potprogram koji ispisuje srednju vrijednost od tri broja i ima
+Potprogram moze imati i više argumenata; sljedeći program
+sadrzi potprogram koji ispisuje srednju vrijednost od tri broja i ima
 tri argumenta:
 
 \sourcee{
 \wrd{def} \fun{SrednjaVrijednost}( \var{a}, \var{b}, \var{c} ):\\
-\tab \com{""" Funkcija koja ra\v{c}una srednju vrijednost brojeva a, b i c }\\
+\tab \com{""" Funkcija koja računa srednju vrijednost brojeva a, b i c }\\
 \tab \com{ispisuje tu srednju vrijednost """}\\ 
 \tab \var{s} = ( \var{a} + \var{b} + \var{c} ) / 3. \\
-\tab \com{\# iza 3 moramo smo morali staviti to\v{c}ku, jer ina\v{c}e bi se radilo}\\
+\tab \com{\# iza 3 moramo smo morali staviti točku, jer inače bi se radilo}\\
 \tab \wrd{print} "Srednja vrijednost brojeva", \var{a}, ",", \var{b}, "i", \var{c}, "je", \var{s}\\
 \\
 \fun{SrednjaVrijednost}( 1, 2, 3 )\\
@@ -690,24 +690,24 @@ Srednja vrijednost brojeva 3 , 2 i 1 je 2.0\\
 Srednja vrijednost brojeva 6 , 9 i 16 je 10.3333333333
 }
 
-\textbf{Va\v{z}no:} Po\v{z}eljno je, kao u gornjem primjeru odmah nakon
-definicije funkcije napisati jedan komentar (ograni\v{c}enog s """ i """)
-koji otprilike opisuje \v{c}emu slu\v{z}i ta funkcija.
+\textbf{Vazno:} Pozeljno je, kao u gornjem primjeru odmah nakon
+definicije funkcije napisati jedan komentar (ograničenog s """ i """)
+koji otprilike opisuje čemu sluzi ta funkcija.
 
-Dodajmo sad jo\v{s} jedan uvijet primjeru s instruktorom
-vo\v{z}nje;  me\dj{}u polaznicima auto\v{s}kole postoje oni koji pola\v{z}u za
-vo\v{z}nju automobila i njima je potrebno 26 boda za prolaz, i postoje oni
-koji pola\v{z}u za vo\v{z}nju mopeda kojima su dovoljna 24 boda za prolaz.
-Treba napisati program koji koristi potprogram s \v{c}etiri argumenta (broj
-to\v{c}no rje\v{s}enih zadataka u svakoj od tri skupine) i podatak o tome
+Dodajmo sad još jedan uvijet primjeru s instruktorom
+voznje;  među polaznicima autoškole postoje oni koji polazu za
+voznju automobila i njima je potrebno 26 boda za prolaz, i postoje oni
+koji polazu za voznju mopeda kojima su dovoljna 24 boda za prolaz.
+Treba napisati program koji koristi potprogram s četiri argumenta (broj
+točno rješenih zadataka u svakoj od tri skupine) i podatak o tome
 radi li se o polazniku za moped ili automobil.
 
 \sourcee{
 \wrd{def} \fun{IspisiPoruku}( \var{s1}, \var{s2}, \var{s3}, \var{za} ):\\
 \tab \com{""" Ispisuje je li polaznik koji je imao:\\
-\tab \tab s1 to\v{c}no rje\v{s}en zadatak iz prve grupe,\\
-\tab \tab s2 to\v{c}no rje\v{s}en zadatak iz druge grupe,\\
-\tab \tab s3 to\v{c}no rje\v{s}en zadatak iz trece grupe\\
+\tab \tab s1 točno rješen zadatak iz prve grupe,\\
+\tab \tab s2 točno rješen zadatak iz druge grupe,\\
+\tab \tab s3 točno rješen zadatak iz trece grupe\\
 \tab ...prosao test.\\
 \tab Ako je varijabla 'za' jednaka "auto" onda se racuna kao za\\
 \tab polaznika za dozvou za voznju automobila, inace\\
@@ -731,18 +731,18 @@ radi li se o polazniku za moped ili automobil.
 
 \subsection{Funkcije}
 
-Funkcija je matemati\v{c}ki pojam; postoje npr. linearne funkcije,
+Funkcija je matematički pojam; postoje npr. linearne funkcije,
 trigonometrijske funkcije, logaritamske funkcije, i tako dalje i
-tako bli\v{z}e.
+tako blize.
 
 Na primjer, pretpostavimo da imamo funkciju $f(x)=2\cdot x-3$. Tada
-je $f(4)=2\cdot 4-3=8-3=5$, a to zna\v{c}i da funkcija $f$ preslikava
-broj 4 u broj 5, ili mogli bi re\'{c}i da funkcija f za argument
-4 vra\'{c}a 5.
+je $f(4)=2\cdot 4-3=8-3=5$, a to znači da funkcija $f$ preslikava
+broj 4 u broj 5, ili mogli bi reći da funkcija f za argument
+4 vraća 5.
 
-Funkcija se od gornjih potprograma razlikuje u tome \v{s}to funkcija
-ima povratnu vrijednost. Rezultat funkcije se mo\v{z}e ispisati,
-pridru\v{z}iti nekoj drugoj varijabli ili s njime ra\v{c}unati. 
+Funkcija se od gornjih potprograma razlikuje u tome što funkcija
+ima povratnu vrijednost. Rezultat funkcije se moze ispisati,
+pridruziti nekoj drugoj varijabli ili s njime računati. 
 
 Primjer programa koji koristi funkciju:
 
@@ -754,19 +754,19 @@ Primjer programa koji koristi funkciju:
 \wrd{print} \fun{Zbroji}( -3, 3.5 )
 }
 
-Definicija funkcije je ista kao i definicija potprograma, jedino \v{s}to
-funkcija mora imati neku vrijednost koju vra\'{c}a u glavni program. Kao
-\v{s}to vidimo ovdje ispisujemo "Zbroj( 2, 3 )", a ono \v{s}to \'{c}e
-ispisati je upravo ona vrijednost koja se vra\'{c}a pomo\'{c}u naredbe
+Definicija funkcije je ista kao i definicija potprograma, jedino što
+funkcija mora imati neku vrijednost koju vraća u glavni program. Kao
+što vidimo ovdje ispisujemo "Zbroj( 2, 3 )", a ono što će
+ispisati je upravo ona vrijednost koja se vraća pomoću naredbe
 "return".
 
-Ovdje je potrebno jedno malo obja\v{s}njenje: U stvari ne postoji razlika
-izme\dj{}u potprograma i funkcije. Funkcija \emph{mora} vra\'{c}ati neku
-vrijednost pomo\'{c}u "return", ali \v{c}ak i potprogram koji ne sadr\v{z}i
-"return" vra\'{c}a vrijednost "None", ali o tome malo vi\v{s}e u
-sljede\'{c}em poglavlju.
+Ovdje je potrebno jedno malo objašnjenje: U stvari ne postoji razlika
+između potprograma i funkcije. Funkcija \emph{mora} vraćati neku
+vrijednost pomoću "return", ali čak i potprogram koji ne sadrzi
+"return" vraća vrijednost "None", ali o tome malo više u
+sljedećem poglavlju.
 
-Evo primjer funkcije koja vra\'{c}a zbroj svih brojeva manjih od nekog
+Evo primjer funkcije koja vraća zbroj svih brojeva manjih od nekog
 zadanog:
 
 \sourcee{
@@ -782,11 +782,11 @@ zadanog:
 \wrd{print} \var{a} + \var{b} - 100
 }
 
-Kao \v{s}to vidite, s vrijedno\v{s}\'{c}u koju funkcija vra\'{c}a
-mo\v{z}emo ra\v{c}unati ili tu vrijednost mo\v{z}emo pridru\v{z}iti
+Kao što vidite, s vrijednošću koju funkcija vraća
+mozemo računati ili tu vrijednost mozemo pridruziti
 drugim varijablama.
 
-Vratimo se sad primjeru s instruktorom vo\v{z}nje, taj se program pomo\'{c}u funkcije
+Vratimo se sad primjeru s instruktorom voznje, taj se program pomoću funkcije
 mogao napisati ovako:
 
 \sourcee{
@@ -817,12 +817,12 @@ mogao napisati ovako:
 \wrd{print} \fun{IspisiPoruku}( 5, 4, 4, "motor" ) 
 }
 
-Bitna razlika izme\dj{}u ovog i pro\v{s}le verzije ovog programa je u tome \v{s}to je u
-pro\v{s}lom programu bilo dovoljno napisati npr. "IspisiPoruku( 5, 4, 4, 'motor' )" kao
-komandu, a potprogram bi onda ispisao poruku. Sad potprogram samo vra\'{c}a vijrednost
+Bitna razlika između ovog i prošle verzije ovog programa je u tome što je u
+prošlom programu bilo dovoljno napisati npr. "IspisiPoruku( 5, 4, 4, 'motor' )" kao
+komandu, a potprogram bi onda ispisao poruku. Sad potprogram samo vraća vijrednost
 koju onda treba ispisati. 
 
-\subsection{Ugra\dj{}ene funkcije}
+\subsection{Ugrađene funkcije}
 
 \dots
 

@@ -2,189 +2,189 @@
 
 \section{O programiranju}
 
-	Program je skup naredbi pomo\'{c}u kojih ra\v{c}unalu poku\v{s}avamo objasniti kako
-	da rije\v{s}ava neki problem.
+	Program je skup naredbi pomoću kojih računalu pokušavamo objasniti kako
+	da riješava neki problem.
 
-	Dakle, program pi\v{s}emo kad treba rije\v{s}iti neki
-	problem. Mo\v{z}e se raditi o nekom
-	svakodnevnom problemu (napisati program koji \'{c}e nam pamtiti brojeve telefona),
-	nekom matemati\v{c}kom ili logi\v{c}kom zadatku (napisati program
-	koji zbraja kvadrate brojeva od 1 do 100000)\dots Ra\v{c}unalo samo, ne zna
-	rje\v{s}avati probleme, netko treba prije svega na\v{s} problem prevesti na 
-	ra\v{c}unalu razumljiv jezik.
+	Dakle, program pišemo kad treba riješiti neki
+	problem. Moze se raditi o nekom
+	svakodnevnom problemu (napisati program koji će nam pamtiti brojeve telefona),
+	nekom matematičkom ili logičkom zadatku (napisati program
+	koji zbraja kvadrate brojeva od 1 do 100000)\dots Računalo samo, ne zna
+	rješavati probleme, netko treba prije svega naš problem prevesti na 
+	računalu razumljiv jezik.
 
-	Program po\v{c}injemo pisati kad \emph{znamo} kako \'{c}emo neki problem
-	rije\v{s}iti, ali nemam dovoljno vremena da to rije\v{s}avamo na neki klasi\v{c}an
-	na\v{c}in. Na primjer, zamislite da vam u jednom trenutku treba podatak je li
+	Program počinjemo pisati kad \emph{znamo} kako ćemo neki problem
+	riješiti, ali nemam dovoljno vremena da to riješavamo na neki klasičan
+	način. Na primjer, zamislite da vam u jednom trenutku treba podatak je li
 	71283789238881999511\footnote{Broj je prost ako je djeljiv samo s 1 i sa samim sobom} prost broj ili nije. Prije nego li se uhvatite za glavu moramo
-	se slo\v{z}iti da postoji nekoliko vrsta problema:
+	se sloziti da postoji nekoliko vrsta problema:
 
 	\begin{itemize}
-		\item[\emph{(a)}] Problem kod kojeg znamo postupak kako do\'{c}i do rje\v{s}enja i
-			mo\v{z}emo jednostavno do\'{c}i do tog rije\v{s}enja.
-		\item[\emph{(b)}] Problemi kod kojih znamo postupak kako do\'{c}i do 
-			rije\v{s}enja, ali zbog
-			nekog razloga nije tako jednostavno do\'{c}i do rije\v{s}enja.
-		\item[\emph{(c)}] Problemi kod kojih (jo\v{s}) ne znamo postupak do rije\v{s}enja.
+		\item[\emph{(a)}] Problem kod kojeg znamo postupak kako doći do rješenja i
+			mozemo jednostavno doći do tog riješenja.
+		\item[\emph{(b)}] Problemi kod kojih znamo postupak kako doći do 
+			riješenja, ali zbog
+			nekog razloga nije tako jednostavno doći do riješenja.
+		\item[\emph{(c)}] Problemi kod kojih (još) ne znamo postupak do riješenja.
 	\end{itemize}
 
-	Tako bi recimo sljede\'{c}i zadatak "Na\dj{}i peto slovo abecede" sigurno spadao u 
-	probleme pod \emph{(a)}, i bilo bi besmisleno pisati program i tjerati ra\v{c}unalo
-	da rje\v{s}ava jedan tako jednostavan problem. Pitanje prostosti broja 
+	Tako bi recimo sljedeći zadatak "Nađi peto slovo abecede" sigurno spadao u 
+	probleme pod \emph{(a)}, i bilo bi besmisleno pisati program i tjerati računalo
+	da rješava jedan tako jednostavan problem. Pitanje prostosti broja 
 	71283789238881999511 spada u \emph{(b)}, jer \emph{znamo kako} ispitati je li neki
 	broj prost ili nije. Prvo treba provjeriti djeljivost s $2$, pa s $3$, pa s
-	$5$\dots Ako ispadne da na\v{s} broj nije djeljiv s ni\v{c}im drugim osim s $1$ i
+	$5$\dots Ako ispadne da naš broj nije djeljiv s ničim drugim osim s $1$ i
 	sa samim sobom onda jest prost. 
 
-	Postupak je smije\v{s}no jednostavan,\footnote{\dots u stvari i nije. Ima tu puno sitnica kako se taj postupak mo\v{z}e
-	jo\v{s} vi\v{s}e ubrzati.}
+	Postupak je smiješno jednostavan,\footnote{\dots u stvari i nije. Ima tu puno sitnica kako se taj postupak moze
+	još više ubrzati.}
 	ali pitanje je koliko dugo vremena nam treba
-	da zavr\v{s}imo. 
+	da završimo. 
 
-	Evo i primjer problema koji mo\v{z}e spadati u skupinu \emph{(c)}: "Pomo\'{c}u
-	brojeva 3, 3, 7, 7 i koriste\'{c}i elementarne ra\v{c}unske operacije trebate
-	dobiti broj 24". Sad bi trebalo napisati program s kojim \'{c}e ra\v{c}unalo samo
-	rije\v{s}iti taj problem.
+	Evo i primjer problema koji moze spadati u skupinu \emph{(c)}: "Pomoću
+	brojeva 3, 3, 7, 7 i koristeći elementarne računske operacije trebate
+	dobiti broj 24". Sad bi trebalo napisati program s kojim će računalo samo
+	riješiti taj problem.
 
 \section{O programskim jezicima}
 
-	Znati postupak za rije\v{s}avanje nekog problema nije garancija da \'{c}emo taj
-	problem i rije\v{s}iti. 
-	\v{C}ak i ako budem ikada imao dovoljno vremena da ispitam je li broj
+	Znati postupak za riješavanje nekog problema nije garancija da ćemo taj
+	problem i riješiti. 
+	Čak i ako budem ikada imao dovoljno vremena da ispitam je li broj
 	71283789238881999511 
-	prost nitko mi ne mo\v{z}e garantirati da ne\'{c}u negdje
-	pogrije\v{s}iti u ra\v{c}unu ili, ako radim s kalkulatorom -- da ne\'{c}u negdje
-	pogre\v{s}no utipkati broj.
-	Htio bih, zato, da taj posao ra\v{c}unalo obavi umjesto mene.
+	prost nitko mi ne moze garantirati da neću negdje
+	pogriješiti u računu ili, ako radim s kalkulatorom -- da neću negdje
+	pogrešno utipkati broj.
+	Htio bih, zato, da taj posao računalo obavi umjesto mene.
 	
-	Problem je u tome \v{s}to ra\v{c}unalo ne govori moj jezik. 
-	Mogao bih se do besvjesti truditi mom PC-ju obja\v{s}njavati kako sam ja 
-	zami\v{s}ljao da se rije\v{s}i neki problem. 
+	Problem je u tome što računalo ne govori moj jezik. 
+	Mogao bih se do besvjesti truditi mom PC-ju objašnjavati kako sam ja 
+	zamišljao da se riješi neki problem. 
 
-	Ra\v{c}unala razumiju samo jedan jezik -- \emph{ma\v{s}inski jezik}. Naredbe tog
+	Računala razumiju samo jedan jezik -- \emph{mašinski jezik}. Naredbe tog
 	jezika se sastoje od nula i jedinica (poznati binarni brojevni sustav), a pisanje
-	programa u ma\v{s}inskom jeziku je sve samo ne jednostavno.
+	programa u mašinskom jeziku je sve samo ne jednostavno.
 
 	Zato koristimo neke druge programske jezike koji se onda prevode u 
-	ra\v{c}unalu razumljiv ma\v{s}inski jezik. 
+	računalu razumljiv mašinski jezik. 
 	Postoje stotine programskih jezika. Nabrojati
-	\'{c}u samo neke od popularnijih: Python, C, C++, Java, Pascal, Lisp, Fortran, 
+	ću samo neke od popularnijih: Python, C, C++, Java, Pascal, Lisp, Fortran, 
 	Perl, Forth, PHP, JavaScript, BASIC, Smalltalk, Ada\dots Neki od tih jezika su
 	\emph{interpreteri}, neki \emph{kompajleri}. Neki su \emph{objektno orijentirani},
 	neki \emph{strukturalni}. Neki su \emph{komercijalni}, neki su \emph{open source},
-	ali svi oni imaju neke sli\v{c}ne osobine: svi oni koriste \emph{varijable},
+	ali svi oni imaju neke slične osobine: svi oni koriste \emph{varijable},
 	\emph{potprograme}, \emph{naredbe grananje}, razne \emph{kontrolne strukture} i
-	tako dalje i tako bli\v{z}e\dots Kada dobro savladate jedan programski
-	jezik ne\'{c}e vam predstavljati velik problem savladati mnoge druge.
+	tako dalje i tako blize\dots Kada dobro savladate jedan programski
+	jezik neće vam predstavljati velik problem savladati mnoge druge.
 
-	O svim ovim terminima \'{c}e se na\'{c}i pone\v{s}to u ovoj knji\v{z}ici, ali dva
-	su izuzetno bitna pa \'{c}u ih objasniti odmah:
+	O svim ovim terminima će se naći ponešto u ovoj knjizici, ali dva
+	su izuzetno bitna pa ću ih objasniti odmah:
 
 \subsection{Interpreteri i kompajleri}
 
-	Ve\'{c} spomenuh da ra\v{c}unalo razumije samo ma\v{s}inski jezik. Kako onda
-	ra\v{c}unalo mo\v{z}e shvatiti naredbe bilo kojeg od gore nabrojanih jezika?
+	Već spomenuh da računalo razumije samo mašinski jezik. Kako onda
+	računalo moze shvatiti naredbe bilo kojeg od gore nabrojanih jezika?
 	Odgovor je jednostavan, niz naredbi u nekom programskom jeziku se \emph{prevode} na
-	ma\v{s}inski jezik. 
+	mašinski jezik. 
 
 	Zamislite da vam netko tko govori \emph{Swahili}\footnote{\emph{Swahili}
-	je jedan od jezika koji se govore u Zanzibaru. Pretpostavka je da prosje\v{c}ni
-	\v{c}itatelj ove knji\v{z}ice ne razumije Swahili} \v{Z}eli re\'{c}i sljede\'{c}e:
-	\emph{"Otvori knjigu X na stranici 137. pro\v{c}itaj prvu rije\v{c} u petom retku.
-	Ako ta rije\v{c} po\v{c}inje suglasnikom odi u kuhinju i skuhaj ru\v{c}ak, a ako
-	po\v{c}inje samoglasnikom -- idi se pro\v{s}e\'{c}i i pusti me na miru"}.
+	je jedan od jezika koji se govore u Zanzibaru. Pretpostavka je da prosječni
+	čitatelj ove knjizice ne razumije Swahili} Zeli reći sljedeće:
+	\emph{"Otvori knjigu X na stranici 137. pročitaj prvu riječ u petom retku.
+	Ako ta riječ počinje suglasnikom odi u kuhinju i skuhaj ručak, a ako
+	počinje samoglasnikom -- idi se prošeći i pusti me na miru"}.
 	Govornik Swahilija se nalazi u situaciji u kojoj se nalazi programer, a vi glumite
-	ra\v{c}unalo koje poku\v{s}ava shvatiti \v{s}ta vam ovaj ima za kazati. 
+	računalo koje pokušava shvatiti šta vam ovaj ima za kazati. 
 	
-	Postoji, naravno i prevoditelj. Prevoditelj mo\v{z}e prevoditi simultano ili
-	prevesti cijelu poruku odjednom, a vi \'{c}ete onda to pro\v{c}itati i slijediti
+	Postoji, naravno i prevoditelj. Prevoditelj moze prevoditi simultano ili
+	prevesti cijelu poruku odjednom, a vi ćete onda to pročitati i slijediti
 	upute. 
 
 	Ako se prevodi simultano cijela stvar izgleda otprilike ovako ("Sw" je govornik
 	Swahilija, "V" ste vi, "V" je prevoditelj):
 
 	\begin{itemize}
-		\item[\textbf{Sw:}] ".... .... .... ..... ..... ... .... ..... .... .... ....."\footnote{Zamislite da je ovdje neka re\v{c}enica na jeziku Swahili}
-		\item[\textbf{P:}] "Sw je rekao da treba\v{s} otvoriti knjigu X"
+		\item[\textbf{Sw:}] ".... .... .... ..... ..... ... .... ..... .... .... ....."\footnote{Zamislite da je ovdje neka rečenica na jeziku Swahili}
+		\item[\textbf{P:}] "Sw je rekao da trebaš otvoriti knjigu X"
 		\item[\textbf{V:}] (otvarate knjigu X)
 		\item[\textbf{Sw:}] "..... .... .... .... 137. ....."
-		\item[\textbf{P:}] "Sw ka\v{z}e da otvori\v{s} stranicu 137."
+		\item[\textbf{P:}] "Sw kaze da otvoriš stranicu 137."
 		\item[\textbf{V:}] (otvarate knjigu 137.)
 		\item[\textbf{Sw:}] "..... . .... ....  ....."
-		\item[\textbf{P:}] "Sw ka\v{z}e da na\dj{}e\v{s} prvu rije\v{c} u petom retku."
-		\item[\textbf{V:}] (tra\v{z}ite prvu rije\v{c} u petom retku)
+		\item[\textbf{P:}] "Sw kaze da nađeš prvu riječ u petom retku."
+		\item[\textbf{V:}] (trazite prvu riječ u petom retku)
 		\item[\textbf{Sw:}] "... ....  ....."
-		\item[\textbf{P:}] "Sw ka\v{z}e da pogleda\v{s} prvo slovo te rije\v{c}i"
-		\item[\textbf{V:}] (OK, prvo slovo te rije\v{c}i je "r")
+		\item[\textbf{P:}] "Sw kaze da pogledaš prvo slovo te riječi"
+		\item[\textbf{V:}] (OK, prvo slovo te riječi je "r")
 		\item[\textbf{Sw:}] "...  ... ... ....  ....."
-		\item[\textbf{P:}] "Sw ka\v{z}e; odi skuhati ru\v{c}ak, ako je to slovo samoglasnik"
+		\item[\textbf{P:}] "Sw kaze; odi skuhati ručak, ako je to slovo samoglasnik"
 		\item[\textbf{V:}] (nije samoglasnik)
 		\item[\textbf{Sw:}] "...  ... ... ......  .. ...!"
-		\item[\textbf{P:}] "Sw ka\v{z}e da je najbolje da ode\v{s} u \v setnju"
-		\item[\textbf{V:}] (odlazite u \v{s}etnju\dots Bilo je i vrijeme da vas puste na miru!)
+		\item[\textbf{P:}] "Sw kaze da je najbolje da odeš u šetnju"
+		\item[\textbf{V:}] (odlazite u šetnju\dots Bilo je i vrijeme da vas puste na miru!)
 	\end{itemize}
 
-	Ovako funkcioniraju programski jezici \emph{interpreteri} -- \v{c}itaju naredbu
-	programa kojeg ste vi napisali, prevedu ju na ma\v{s}inski jezik, a ra\v{c}unalo to
-	onda izvr\v{s}ava, nakon toga pro\v{c}itaju sljede\'{c}u naredbu, prevedu,
-	ra\v{c}unalo izvr\v{s}ava, pro\v{c}itaju, prevedu, ra\v{c}unalo izvr\v{s}ava\dots
+	Ovako funkcioniraju programski jezici \emph{interpreteri} -- čitaju naredbu
+	programa kojeg ste vi napisali, prevedu ju na mašinski jezik, a računalo to
+	onda izvršava, nakon toga pročitaju sljedeću naredbu, prevedu,
+	računalo izvršava, pročitaju, prevedu, računalo izvršava\dots
 
-	Drugi na\v{c}in je da prevodioc cijelu poruku poslu\v{s}a do kraja, prevede ju
-	na vama razumljiv jezik, a vi to onda idete izvr\v{s}avati. Programski jezici
-	kompajleri rade upravo to -- pro\v{c}itaju cijeli va\v{s} program, prevedu na
-	ma\v{s}inski jezik, a ra\v{c}unalo onda izvr\v{s}i program kojeg sada
+	Drugi način je da prevodioc cijelu poruku posluša do kraja, prevede ju
+	na vama razumljiv jezik, a vi to onda idete izvršavati. Programski jezici
+	kompajleri rade upravo to -- pročitaju cijeli vaš program, prevedu na
+	mašinski jezik, a računalo onda izvrši program kojeg sada
 	ima u obliku kojeg razumije.
 
-	Da bi izvr\v{s}ili program u programskom jeziku koji se interpretira morate uvijek
-	imati interpreter (prevodilac) ve\'{c} instaliran na svom ra\v{c}unalu. Kod
-	izvr\v{s}avanja kompajliranog programa dovoljno je da program jednom kompajlirate,
-	odmah dobijete program u obliku kojeg ra\v{c}unalo razumije, a mo\'{c}i \'{c}ete ga
-	pokrenuti na nekom drugom ra\v{c}unalu (na kojem taj programski jezik "nije
+	Da bi izvršili program u programskom jeziku koji se interpretira morate uvijek
+	imati interpreter (prevodilac) već instaliran na svom računalu. Kod
+	izvršavanja kompajliranog programa dovoljno je da program jednom kompajlirate,
+	odmah dobijete program u obliku kojeg računalo razumije, a moći ćete ga
+	pokrenuti na nekom drugom računalu (na kojem taj programski jezik "nije
 	instaliran"). 
 
-	Ako na ra\v{c}unalu imate program koji je prethodno kompajliran ne\'{c}ete mo\'{c}i
-	vidjeti kako taj program izgleda, jer on je u memoriji sa\v{c}uvan u ma\v{s}inskom
+	Ako na računalu imate program koji je prethodno kompajliran nećete moći
+	vidjeti kako taj program izgleda, jer on je u memoriji sačuvan u mašinskom
 	jeziku (a kojeg vjerojatno ne razumijete, kao Swahili uostalom, jelte 
-	:-)\footnote{Ako lutate bespu\'{c}ima interneta onda znate \v{s}ta ova
-	dvoto\v{c}ka-crtica-zagrada zna\v{c}e, ako vam je surfanje nepoznanica, onda
+	:-)\footnote{Ako lutate bespućima interneta onda znate šta ova
+	dvotočka-crtica-zagrada znače, ako vam je surfanje nepoznanica, onda
 	pogledajte taj niz znakova tako da ukosite glavu ulijevo. Uz malo truda trebali
 	biste vidjeti nasmijano lice}. 
 	S druge
 	strane, ako u memoriji imate program u nekom od interpretiranih programskih jezika,
-	mo\'{c}i \'{c}ete slobodno pogledati kako taj program izgleda (editirati kao tekst
-	datoteku). Mo\'{c}i \'{c}ete ga pokrenuti ako i samo ako imate instaliran i
+	moći ćete slobodno pogledati kako taj program izgleda (editirati kao tekst
+	datoteku). Moći ćete ga pokrenuti ako i samo ako imate instaliran i
 	interpreter-prevodioc za upravo taj programski jezik.
 
-	I, jo\v{s} samo ovo. Razlika izme\dj{}u programskih jezika koji se interpretiraju
-	i onih koji se kompajliraju nije to\v{c}no odre\dj{}ena. Postoje, naime programski
-	jezici koji se mogu pokretati i interpreterom, a mogu se i kompajlirati. Jo\v{s}
-	jedna komplikacija su programski jezici koji se kompajliraju, ali ne u ma\v{s}inski
-	jezik nego u ne\v{s}to \v{s}to razumije samo poseban program koji to onda
-	interpretira\dots Zaboravite, pre\v{z}ivjeti \'{c}ete \v{c}ak i ako ne shvatite sve
+	I, još samo ovo. Razlika između programskih jezika koji se interpretiraju
+	i onih koji se kompajliraju nije točno određena. Postoje, naime programski
+	jezici koji se mogu pokretati i interpreterom, a mogu se i kompajlirati. Još
+	jedna komplikacija su programski jezici koji se kompajliraju, ali ne u mašinski
+	jezik nego u nešto što razumije samo poseban program koji to onda
+	interpretira\dots Zaboravite, prezivjeti ćete čak i ako ne shvatite sve
 	ove tehnikalije.
 
 \section{O programima}
 	
-	Program je niz naredbi koji opisuje kako se mo\v{z}e rije\v{s}iti neki problem. Taj
-	niz naredbi mora \emph{to\v{c}no} i \underline{vrlo detaljno} opisati taj
-	postupak. Zamislite da nekom stroju morate opisati kako se jede za ru\v{c}kom.
+	Program je niz naredbi koji opisuje kako se moze riješiti neki problem. Taj
+	niz naredbi mora \emph{točno} i \underline{vrlo detaljno} opisati taj
+	postupak. Zamislite da nekom stroju morate opisati kako se jede za ručkom.
 	Izgleda vrlo jednostavno, ipak -- razmislite malo koliko tu ima detalja. Kao prvo
-	morate sjesti za stol, ali i to ne mo\v{z}ete bez da prethodno ne odmaknete stolicu
-	od stola. Kad sjednete, stolicu treba opet pribli\v{z}iti stolu. OK, idemo na juhu:
-	imate \v{z}licu, grabite u tanjur i stavljate u usta. Opet! Jeste li sigurno da je
-	juha uop\'{c}e na tanjuru, ako nije trebate opisati kako staviti juhu u tanjur.
-	\v{Z}licom, jel? Hm, jeste li sigurni da ste to\v{c}no opisali kako se \v{z}licom
-	stavlja juha, jer ako \v{z}licu ne dr\v{z}ite pod pravim kutom juha \'{c}e
-	se proliti iz \v{z}lice. A jo\v{s} nismo niti po\v{c}eli s jelom. Zamislite
-	koliko komplicirano mo\v{z}e biti ako morate obja\v{s}njavati neki specijalitet od
+	morate sjesti za stol, ali i to ne mozete bez da prethodno ne odmaknete stolicu
+	od stola. Kad sjednete, stolicu treba opet pribliziti stolu. OK, idemo na juhu:
+	imate zlicu, grabite u tanjur i stavljate u usta. Opet! Jeste li sigurno da je
+	juha uopće na tanjuru, ako nije trebate opisati kako staviti juhu u tanjur.
+	Zlicom, jel? Hm, jeste li sigurni da ste točno opisali kako se zlicom
+	stavlja juha, jer ako zlicu ne drzite pod pravim kutom juha će
+	se proliti iz zlice. A još nismo niti počeli s jelom. Zamislite
+	koliko komplicirano moze biti ako morate objašnjavati neki specijalitet od
 	ribe kao drugo jelo.
-	Tko bi imao volje stroju obja\v{s}njavati kako se
-	\v{c}iste riblje kosti?
+	Tko bi imao volje stroju objašnjavati kako se
+	čiste riblje kosti?
 
 	\subsection{Primjeri u raznim programskim jezicima}
 
 	OK, uspio sam vas obeshrabriti\dots Molim? Nisam? Hhhmmm\dots Ajmo onda probati
-	ovako: slijedi nekoliko programa u razli\v{c}itim programskim jezicima koji rade
+	ovako: slijedi nekoliko programa u različitim programskim jezicima koji rade
 	jednu te istu stvar:
 
 	\source{Pascal:}{
@@ -211,13 +211,13 @@
 		\}
 	}
 
-	\v{C}esto je u istom programskom jeziku mogu\'{c}e isti problem rije\v{s}iti na
-	razli\v{c}ite na\v{c}ine, a programski jezik Perl je posebno poznat po tome. 
-	Ovaj gornji program\v{c}i\'{c} iskusan programer bi napisao ovako:
+	Često je u istom programskom jeziku moguće isti problem riješiti na
+	različite načine, a programski jezik Perl je posebno poznat po tome. 
+	Ovaj gornji programčić iskusan programer bi napisao ovako:
 
 	\source{Perl:}{
 		x = 5;\\
-		print x $==$ 10 ? "x je manji od 10$\setminus$n" : "x je ve\'{c}i od 10$\setminus$n";
+		print x $==$ 10 ? "x je manji od 10$\setminus$n" : "x je veći od 10$\setminus$n";
 		}
 
 	U Pythonu bi to izgledalo:
@@ -227,7 +227,7 @@
 		if x $<$ 10:\\
 		\hspace*{10mm}print "x je manje od 10"\\
 		else:\\
-		\hspace*{10mm}print "x je ve\'{c}e od 10"
+		\hspace*{10mm}print "x je veće od 10"
 	}
 	
 	U programskom jeziku Java:
@@ -254,33 +254,33 @@
 	}
 	
 
-	Vjerujem da ste uo\v{c}ili neke sli\v{c}nosti u ovim kratkim program\v{c}i\'{c}ima.
-	Nemojte dopustiti vas ono \v{s}to ne razumijete obeshrabri. Toga \'{c}e uvijek
-	biti -- na veliku \v zalost onih koji brzo odustaju, a na zadovoljstvo onima koji
-	je "nepoznato" samo jo\v s jedan izazov.
+	Vjerujem da ste uočili neke sličnosti u ovim kratkim programčićima.
+	Nemojte dopustiti vas ono što ne razumijete obeshrabri. Toga će uvijek
+	biti -- na veliku zalost onih koji brzo odustaju, a na zadovoljstvo onima koji
+	je "nepoznato" samo još jedan izazov.
 
 \section{O programskom jeziku \emph{Python}}
 
 	Python je programski jezik kojeg je stvorio/kreirao/dizajnirao/smislio Guido Van
-	Rossum. Za razliku od komercijalnih programskih jezika, Guido je odlu\v{c}io da
-	njegov programski jezik mora biti svima dostupan. I, ne samo da \'{c}e biti svima
-	dostupan nego nego programeri sami mogu mijenjati doti\v{c}ni jezik prema svojim
-	potrebama. S vremenom se stvorila grupa ljudi koji su po\v{c}eli pisati programe u
-	tom jeziku, a ako im se svi\dj{}ala neka sitnica iz nekog drugog jezika jednostavno
+	Rossum. Za razliku od komercijalnih programskih jezika, Guido je odlučio da
+	njegov programski jezik mora biti svima dostupan. I, ne samo da će biti svima
+	dostupan nego nego programeri sami mogu mijenjati dotični jezik prema svojim
+	potrebama. S vremenom se stvorila grupa ljudi koji su počeli pisati programe u
+	tom jeziku, a ako im se sviđala neka sitnica iz nekog drugog jezika jednostavno
 	bi i nju dodali Pythonu.
 
-	Python je interpretirani (ali ne ba\v{s} u smislu "simultanog prevo\dj{}enja") i
+	Python je interpretirani (ali ne baš u smislu "simultanog prevođenja") i
 	objektno orijentirani (ali bez problema mogu se pisati strukturalni programi)
-	programski jezik. Zbog svoje vrlo \v{c}iste i stroge sintakse je vrlo pogodan da
-	bude "prvi programski jezik" ne-programerima. \v{C}esto je ulogu programskog jezika
-	za u\v{c}enje naj\v{c}e\v{s}\'{c}e imao BASIC, Pascal, Logo i razni drugi jezici. 
-	Well\dots Ne\'{c}u u detalje, ali Python je bolji od njih :-)
+	programski jezik. Zbog svoje vrlo čiste i stroge sintakse je vrlo pogodan da
+	bude "prvi programski jezik" ne-programerima. Često je ulogu programskog jezika
+	za učenje najčešće imao BASIC, Pascal, Logo i razni drugi jezici. 
+	Well\dots Neću u detalje, ali Python je bolji od njih :-)
 
-	Python je i besplatan, a mo\v{z}e se pokrenuti na skoro svakom ra\v{c}unalu koje
-	vam padne na pamet (osim onih \emph{stvarno} prastarih). Ukoliko \v{z}elite
-	nastaviti \v{c}itanje ove knjige po\v{z}eljno bi bilo da s internet adrese
+	Python je i besplatan, a moze se pokrenuti na skoro svakom računalu koje
+	vam padne na pamet (osim onih \emph{stvarno} prastarih). Ukoliko zelite
+	nastaviti čitanje ove knjige pozeljno bi bilo da s internet adrese
 	http://www.python.org/ skinete Python interpreter i instalirate ga na svom
-	ra\v{c}unalu.
+	računalu.
 
 \subsection{"Python kao Monty Python?"}
 

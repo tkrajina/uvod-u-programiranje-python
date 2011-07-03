@@ -2,13 +2,13 @@
 
 \section{Jednostavni tipovi podataka}
 
-	Varijable u dosada\v{s}njim programima se kao vrijednosti imale brojeve, ali
-	mogle su sadr\v{z}avati i razne druge vrste podataka.
+	Varijable u dosadašnjim programima se kao vrijednosti imale brojeve, ali
+	mogle su sadrzavati i razne druge vrste podataka.
 
-	Ovisno o tome koliko je slo\v{z}en problem kojeg \v{z}elimo rije\v{s}iti s
-	programom podaci s kojima trebamo raditi mogu biti i vrlo slo\v{z}eni. Okvirno
-	podatke mo\v{z}emo podijeliti na dva jednostavne i slo\v{z}ene. Slo\v{z}eni tipovi
-	podataka su oni koji u sebi mogu sadr\'{c}avati nekoliko drugih podataka.
+	Ovisno o tome koliko je slozen problem kojeg zelimo riješiti s
+	programom podaci s kojima trebamo raditi mogu biti i vrlo slozeni. Okvirno
+	podatke mozemo podijeliti na dva jednostavne i slozene. Slozeni tipovi
+	podataka su oni koji u sebi mogu sadrćavati nekoliko drugih podataka.
 
 	Jednostavni su cjelobrojni tip, realni brojevi i stringovi.
 
@@ -17,11 +17,11 @@
 	Cijeli brojevi su svi prirodni brojevi, nula i brojevi suprotni prirodnim
 	brojevima.
 
-	Kad ka\v{z}emo realni brojevi u programiranju obi\v{c}no mislimo samo na relalne
-	brojeve koje mo\v{z}emo zapisati u s to\v{c}no odre\dj{}enim brojem decimalnih
-	mjesta. Za svako ra\v{c}unalo i programski jezik postoje to\v{c}ne granice koliko
-	najvie\v{s} decimalnih mjesta mogu sadr\v{z}\'{c}avati, koja je najmanja, a koja
-	najve\'{c}a mogu\'{c}a brojevna vrijednost koju mo\v{z}emo koristiti itd.
+	Kad kazemo realni brojevi u programiranju obično mislimo samo na relalne
+	brojeve koje mozemo zapisati u s točno određenim brojem decimalnih
+	mjesta. Za svako računalo i programski jezik postoje točne granice koliko
+	najvieš decimalnih mjesta mogu sadrzćavati, koja je najmanja, a koja
+	najveća moguća brojevna vrijednost koju mozemo koristiti itd.
 
 	\sourcee{
 	\var{broj} = 12.13 \textcolor{green}{\# realni broj}\\
@@ -29,10 +29,10 @@
 	\var{r} = 12.0 \textcolor{green}{\# realni broj (jer ima decimalnu tocku!)}
 	}
 
-	U zadnjem slu\v{c}aju varijabla "r" sadr\v{z}ava realan broj jer je 12.0
+	U zadnjem slučaju varijabla "r" sadrzava realan broj jer je 12.0
 	opisan kao decimalan broj. 
 
-	Realne brojeve mo\v{z}emo napisati i u "znanstvenom obliku", dakle u obliku $a\cdot
+	Realne brojeve mozemo napisati i u "znanstvenom obliku", dakle u obliku $a\cdot
 	10^{b}$.
 
 	\vspace{3mm}
@@ -62,12 +62,12 @@
 	\end{tabular}
 	\vspace{3mm}
 
-	Ukoliko radimo s cjelobrojnim varijablama i veli\v{c}inama, ra\v{c}unalo nam
-	postavlja odre\dj{}ene granice. Ne mo\v{z}emo ra\v{c}unati s \emph{obi\v{c}nim}
-	cijeli brojem koji ima 20 znamenaka. Kad nam je zbog nekog slo\v{z}enog ra\v{c}una
+	Ukoliko radimo s cjelobrojnim varijablama i veličinama, računalo nam
+	postavlja određene granice. Ne mozemo računati s \emph{običnim}
+	cijeli brojem koji ima 20 znamenaka. Kad nam je zbog nekog slozenog računa
 	potrebno raditi s tako veliki brojevima moramo iza samog broja dodati "L"\footnote{Ovo
-	"L" mo\v{z}e slobodno biti napisano i malim slovom "l", ali ovdje je napisano "L"
-	da se ne bi pomije\v{s}alo "l" (malo "l") s "I" (veliko "i")}. Dakle ne
+	"L" moze slobodno biti napisano i malim slovom "l", ali ovdje je napisano "L"
+	da se ne bi pomiješalo "l" (malo "l") s "I" (veliko "i")}. Dakle ne
 	ne bi napisali 
 	
 	"a = 128904389523789123789"
@@ -76,41 +76,41 @@
 
 	"a = 128904389523789123789L"
 
-	Probajte oba slu\v{c}aja napisati kao dio jednog va\v{s}eg programa i nakon toga
-	probati ispisati tu varijablu s "print a" i pogledajte \v{s}to se desilo!
+	Probajte oba slučaja napisati kao dio jednog vašeg programa i nakon toga
+	probati ispisati tu varijablu s "print a" i pogledajte što se desilo!
 
 \subsection{Stringovi}
 
-	String je niz znakova proizvoljne du\v zine. \v{C}lan stringa mo\v{z}e biti svaki
-	simbol kojeg mo\v{z}ete dobiti pritiskom na neku tipku tastature, a i omnogi drugi.
+	String je niz znakova proizvoljne duzine. Član stringa moze biti svaki
+	simbol kojeg mozete dobiti pritiskom na neku tipku tastature, a i omnogi drugi.
 	Stringovi se zapisuju u navodnicima. Dakle primjeri stringova su 
 	>>Ovo je string"123"<<, >>'sdjkl'<< ili >>"""String"""<<
 
-\textbf{Zapamtite:} Stringove (nizove znakova) mo\v{z}emo zapisati
-na tri na\v{c}ina: 
+\textbf{Zapamtite:} Stringove (nizove znakova) mozemo zapisati
+na tri načina: 
 
 	\begin{itemize}
 		\item Unutar dvostrukih navodnika -- " 
 		\item Unutar jednostrukih navodnika -- '
-		\item Ograni\v{c}enih (na po\v{c}etku i na kraju) s nizom od tri dvostruka
+		\item Ograničenih (na početku i na kraju) s nizom od tri dvostruka
 			navodnika
 	\end{itemize}
 
-	Ponekad \'{c}e nam trebati da unutar stringa moramo imati neki drugi navodnik. Da
-	bi to postigli promotrimo sljede\'{c}i primjer.
+	Ponekad će nam trebati da unutar stringa moramo imati neki drugi navodnik. Da
+	bi to postigli promotrimo sljedeći primjer.
 	
 	\sourcee{
 		\var{str} = "Ovo je jedan 'string'"\\
 		\textcolor{blue}{print} \var{str}
 	}
 
-	Ispisati \'{c}e
+	Ispisati će
 
 	\sourcee{
 		Ovo je jedan 'string'
 	}
 
-	Postoji jo\v{s} nekoliko na\v{c}ina:
+	Postoji još nekoliko načina:
 
 	\sourcee{
 		\var{str} = "Ovo je jedan 'string'" \\
@@ -132,21 +132,21 @@ na tri na\v{c}ina:
 		Ovo je jedan "string"
 	}
 
-	Dakle, dvostruki navodnik u stringu mo\v{z}ete dobiti tako da string
-	ograni\v{c}ite s jednostrukim navodnicima ili s nizom trostrukih navodnika. I,
-	postoji jo\v{s} jedan izuzetno va\v{z}an na\v{c}in, a to je ono 
+	Dakle, dvostruki navodnik u stringu mozete dobiti tako da string
+	ograničite s jednostrukim navodnicima ili s nizom trostrukih navodnika. I,
+	postoji još jedan izuzetno vazan način, a to je ono 
 	>>str4 = "Ovo je jedan \"string\""<<
-	Tamo gdje \v{z}elimo da nam se u varijabli nalazi jednostruki ili dvostruki
+	Tamo gdje zelimo da nam se u varijabli nalazi jednostruki ili dvostruki
 	navodnik jednostavimo \verb+\"+. Isto tako bi mogli staviti i \verb+\'+. 
 	
-	Ako recimo \v{z}elimo da se na\v{s} string sastoji samo od jednog dvostrukog
-	navodnika mo\v{z}emo napisati \verb+a = "\""+, a ako \v{z}elimo da se sastoji od
+	Ako recimo zelimo da se naš string sastoji samo od jednog dvostrukog
+	navodnika mozemo napisati \verb+a = "\""+, a ako zelimo da se sastoji od
 	znaka \verb+\\+ i " napisali bi \verb+a = "\\\""+ -- prvi i zadnji navodnik su oznake gdje
-	po\v{c}inje, a gdje zavr\v{s}ava string. Nakon prvog navodnika niz \verb+\\+ zna\v{c}i
+	počinje, a gdje završava string. Nakon prvog navodnika niz \verb+\\+ znači
 	da se tu nalazi simbol \verb+\+, a \verb+\+" je simbol dvostrukog navodnika.
 	
 	Postoji
-	odre\dj{}eni broj znakova i i simbola koje mo\v{z}emo staviti u string samo
+	određeni broj znakova i i simbola koje mozemo staviti u string samo
 	kombinacijom \verb+\+ i taj znak ili neko slovo:
 
 	{\normalsize
@@ -171,16 +171,16 @@ na tri na\v{c}ina:
 	}
 
 	\vspace{2mm}
-Veliku ve\'{c}inu njih mo\v{z}ete slobodno zaboraviti, ali ima
-nekoliko njih koje \'{c}ete \v{c}esto koristiti: \verb+\<newline>+
+Veliku većinu njih mozete slobodno zaboraviti, ali ima
+nekoliko njih koje ćete često koristiti: \verb+\<newline>+
 (ovdje \verb+<newline>+ predstavlja tipku "enter", "newline" ili
-"return"). Interpreter to jednostavno ignorira, \v{s}to je jako
+"return"). Interpreter to jednostavno ignorira, što je jako
 korisno ako imamo string koji je prevelik za jedan red pa ga u
-programu \v{z}elimo imati napisanog u vi\v{s}e redova.
+programu zelimo imati napisanog u više redova.
 
-Izuzetno va\v{z}na je i kombinacija \verb+\n+ -- kada u string
-stavimo tu kombinaciju, pri ispisu stringa \'{c}e na tom mjestu
-ra\v{c}unalo pre\'{c}i u novi red.
+Izuzetno vazna je i kombinacija \verb+\n+ -- kada u string
+stavimo tu kombinaciju, pri ispisu stringa će na tom mjestu
+računalo preći u novi red.
 
 	\sourcee{
 		\var{a} = "Ovo je jedan $\setminus$"string$\setminus$" koji je $\setminus$ \\
@@ -192,10 +192,10 @@ ra\v{c}unalo pre\'{c}i u novi red.
 		\textcolor{blue}{print} \var{b}
 	}
 
-	Sadr\v{z}aj stringa a je "Ovo je jedan $\setminus$"string$\setminus$" koji je toliko dug da mi ga je malo nezgodno imati u jednom redu, pa sam ga napisao u vise redova",
-	a kad budemo ispisivali varijablu b vidjeti \'{c}emo \v{s}ta se zbiva s onim
-	\verb+\n+ -- svaki put kad ga ra\v{c}unalo "sretne" oti\'{c}i \'{c}e u novi red.
-	Dakle ispisati \'{c}e "A ovo je jedan" zatim tri puta novi red (dakle tri razmaka
+	Sadrzaj stringa a je "Ovo je jedan $\setminus$"string$\setminus$" koji je toliko dug da mi ga je malo nezgodno imati u jednom redu, pa sam ga napisao u vise redova",
+	a kad budemo ispisivali varijablu b vidjeti ćemo šta se zbiva s onim
+	\verb+\n+ -- svaki put kad ga računalo "sretne" otići će u novi red.
+	Dakle ispisati će "A ovo je jedan" zatim tri puta novi red (dakle tri razmaka
 	od jedan red) i onda "hmmmm...".
 
 	Rezultat je dakle:
@@ -216,21 +216,21 @@ ra\v{c}unalo pre\'{c}i u novi red.
 	hmmm...
 	}
 
-Uo\v{c}ite da je ra\v{c}unalo, ipak, string \verb+a+ napisalo u
-dva reda i to jednostavno zato \v{s}to mu nije stalo u jedan red.
+Uočite da je računalo, ipak, string \verb+a+ napisalo u
+dva reda i to jednostavno zato što mu nije stalo u jedan red.
 Da smo imali dovoljno velik monitor bilo bi napisano sve u jednom
-redu za razliku od string b u kojemu \'{c}e uvijek ispisati ona
-tri prazna reda upravo zato \v{s}to smo mi eksplicitno tra\'{c}ili
+redu za razliku od string b u kojemu će uvijek ispisati ona
+tri prazna reda upravo zato što smo mi eksplicitno traćili
 da oni tu budu.
 
-Jo\v{s} samo jedna zadnja napomena. Trebate znati razlikovati
-izme\dj{}u \verb+a = 123+ i \verb+a = "123"+. U prvom slu\v{c}aju
-varijabla \verb+a+ \'{c}e sadr\v{z}avati \underline{broj} 123 i s
-njim mo\v{z}emo raditi sve ono \v{s}to mo\v{z}emo raditi s brojevima,
-a u drugom slu\v{c}aju varijabla a sadr\v{z}ava \underline{string}
-"123". Sa brojem 123 \'{c}emo mo\'{c}i normalno ra\v{c}unati kao
-\v{s}to op\'{c}enito mo\v{z}emo s brojevima, a sa stringom "123"
-to ne mo\v{z}emo.
+Još samo jedna zadnja napomena. Trebate znati razlikovati
+između \verb+a = 123+ i \verb+a = "123"+. U prvom slučaju
+varijabla \verb+a+ će sadrzavati \underline{broj} 123 i s
+njim mozemo raditi sve ono što mozemo raditi s brojevima,
+a u drugom slučaju varijabla a sadrzava \underline{string}
+"123". Sa brojem 123 ćemo moći normalno računati kao
+što općenito mozemo s brojevima, a sa stringom "123"
+to ne mozemo.
 
 \subsection{Konverzija tipova}
 
@@ -238,33 +238,33 @@ to ne mo\v{z}emo.
 
 \subsection{Varijable i vrste podataka}
 
-Neki programski jezici od programera zahtijevaju da to\v{c}no odredi
-kakve \'{c}e podatke (odnosno vrste podataka) neka varijabla
-sadr\v{z}avati. Na po\v{c}etku programa se odredi da \'{c}e npr.
-varijabla \verb+x+ sadr\v{z}avati samo cijele brojeve, a ako onda
-negdje u programu toj varijabli poku\v{s}amo pridru\v{z}iti neki
-string ili realan broj, javiti \'{c}e nam se gre\v{s}ka. Za primjer
+Neki programski jezici od programera zahtijevaju da točno odredi
+kakve će podatke (odnosno vrste podataka) neka varijabla
+sadrzavati. Na početku programa se odredi da će npr.
+varijabla \verb+x+ sadrzavati samo cijele brojeve, a ako onda
+negdje u programu toj varijabli pokušamo pridruziti neki
+string ili realan broj, javiti će nam se greška. Za primjer
 takvog programskog jezika pogledajte Pascal-program u 1.3.1.  U
-Pythonu svaka varijabla mo\v{z}e sadr\v{z}avati podatak bilo kojeg
+Pythonu svaka varijabla moze sadrzavati podatak bilo kojeg
 tipa. Ipak, postoje neke dobre programerske navike, a jedna od njih
-je da se trudite varijablama . Dakle, ako na po\v{c}etku programa
+je da se trudite varijablama . Dakle, ako na početku programa
 imate varijablu \verb+n+ koja ima cjelobrojnu vrijednost --
-po\v{z}eljno je da ta varijabla i dalje u programu sadr\v{z}i cijele
+pozeljno je da ta varijabla i dalje u programu sadrzi cijele
 brojeve.
 
 \section{Liste}
 
-Jednostavni tipovi podataka kao \v{s}to su brojevi i stringovi
-\v{c}esto nisu dovoljni (ili pogodni) za rje\v{s}avanje mnogih
-problema. Ako imamo neki jako dug program, \v{c}esto \'{c}e nam se
+Jednostavni tipovi podataka kao što su brojevi i stringovi
+često nisu dovoljni (ili pogodni) za rješavanje mnogih
+problema. Ako imamo neki jako dug program, često će nam se
 desiti da broj varijabli postane prevelik. Pretpostavimo npr. da
-imamo program u kojemu se mora raditi s jako velikom koli\v{c}inom
-podataka; npr. broj u\v{c}enika neke \v{s}kole.
+imamo program u kojemu se mora raditi s jako velikom količinom
+podataka; npr. broj učenika neke škole.
 
 \dots
 
-\section{Rije\v cnici}
+\section{Riječnici}
 
 \section{Datoteka}
 
-\section{Ostali slo\v zeni tipovi podataka}
+\section{Ostali slozeni tipovi podataka}
