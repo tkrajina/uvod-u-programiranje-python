@@ -1,4 +1,6 @@
-- Rad s datotekama
+- Rad s datotekama, komuniciranje s okolinom
+- Rad sa stringovima, relgularni izrazi, rad s brojevima
+- Web, GUI
 - Unicode
 - Python 2 i python 3
 - Nekakav predgovor
