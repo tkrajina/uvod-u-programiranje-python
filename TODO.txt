@@ -1,3 +1,4 @@
+- Introspekcija, __class__, dir(), je li nešto callable ili nije
 - Rad s datotekama, komuniciranje s okolinom
 - Rad sa stringovima, relgularni izrazi, rad s brojevima
 - Web, GUI
