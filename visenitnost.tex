@@ -1,3 +1,37 @@
 \chapter{Višenitnost}
 
+Uzmimo realnu situaciju dođete do bankomata. Unesete svoju karticu, upišete
+iznos kojeg želite uzeti. Neka je to, na primjer 300 kuna. Čekate trenutak i
+stroj vam izbacuje taj isti iznos. Tokom vremena dok ste čekali, neke stvari
+su se događale, a ovo je više-manje pojednostavljena verzija toga:
+
+\begin{itemize}
+	\item podatak sa vašim željenim iznosom je na neki način putovao do
+		servera koji se nalazi u banci $(i)$,
+	\item server je morao pročitati iznos $x$ u bazi, trebao je od njega
+		oduzeti 300 kuna $(ii)$,
+	\item server javlja bankomatu da je sve u redu i da može dostaviti
+		300 kuna,
+	\item bankomat dostavlja iznos $(iii)$.
+\end{itemize}
+
+Naravno, ima tu još toga. Na primjer, bankomat je morao provjeriti koliko ima
+novčanica od po 100 kuna ili onih po 200. I koliko uopće ima novaca. 
+
+No, koncentrirajmo se na trenutak na $(i)$ -- $(iii)$. Pretpostavimo da se glavni
+dio ovog događaja dešava na nekom bankarskom računalu na kojem se vrti aplikacija
+pisana u Pythonu. Recimo da je toj aplikaciji potrebno 3 sekunde da bi izvelo
+svoj izračun i javilo rezultate bankomatu. Nadalje, neka je, u trenutku kad ste
+htjeli dignuti svoj novac, cijela mreža bila potpuno neopterećena. Dakle, vi bili
+jedini klijent banke koji je s ikojeg njenog bankomata dizao novac. Tada je stvar
+jednostavna. Dogoditi će se točno ono što je opisano.
+
+Promijenimo sad malo naše pretpostavke. Pretpostavimo da je u isto vrijeme kad i vi
+drugih tisuću klijenata dizalo svoj novac. Svaki na nekom drugom bankomatu. 
+
+Podsjećam, centralnom serveru je potrebno $3$ sekunde da bi obradio svaki zahtjev.
+Dakle, ako on obrađuje zahtjeve jednog po jednog -- trebati će mu $3\cdot 3000$
+sekundi da bi ih obradio. Dakle, klijent koji je imao nesreću zadnji utipkati
+iznos -- čekati će toliko sekundi da server obradi sve prije njega. 
+
 TODO
