@@ -6,3 +6,4 @@
 - Python 2 i python 3
 - Nekakav predgovor
 - Pojašnjenje o nekim odlukama o pisanju programa koje ja koristim (razmaci, mod_, ... )
+- Objasniti # -*- coding: utf-8 -*-
