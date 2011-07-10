@@ -8,3 +8,7 @@
 - Pojašnjenje o nekim odlukama o pisanju programa koje ja koristim (razmaci, mod_, ... )
 - Objasniti # -*- coding: utf-8 -*-
 - Bytecode (.pyc) objašnjenje
+- Proučiti ovo:
+	% code listings (lots of languages)
+	% http://mirror.aarnet.edu.au/pub/CTAN/macros/latex/contrib/listings/
+	\usepackage{listings} 
