@@ -20,9 +20,53 @@ objašnjeni.
 
 \section{Interaktivno sučelje Pythona}
 
-Jednostavno u komandnoj liniji 
+Jednostavno u komandnoj liniji utpikajte \verb+python+ i dobiti ćete taj interaktivni
+\verb+shell+:
+
+\begin{verbatim}
+puzz@puzz:~$ python
+Python 2.6.6 (r266:84292, Sep 15 2010, 15:52:39) 
+[GCC 4.4.5] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+\end{verbatim}
+
+Ovdje sad možete upisivati python naredbe i odmah dobiti povratnu informaciju od \verb+python+ovog
+interpretera. Na primjer, idemo zatražiti da nam zbroji dva broja:
+
+\begin{verbatim}
+>>> zbroji mi dva i pet
+  File "<stdin>", line 1
+    zbroji mi dva i pet
+            ^
+SyntaxError: invalid syntax
+\end{verbatim}
+
+Rezultat je poruka o grešci, jer \verb+python+ ne razumije normalan ljudski jezik, a posebno ne
+hrvatski. Ispravno bi bilo:
+
+\begin{verbatim}
+>>> 2 + 5
+7
+\end{verbatim}
 
 \section{Varijable}
+
+Ukoliko želimo da nam \verb+python+ privremeno zapamti neku vrijednost, možemo koristiti varijable:
+
+\begin{verbatim}
+>>> a = 5 + 7
+>>> a
+12
+>>> b = a * 2
+>>> b
+24
+>>> print 'a = ', a
+a =  12
+>>> print 'b = ', b
+b =  24
+>>> 
+\end{verbatim}
 
 \section{Brojevi i matematički izrazi}
 
