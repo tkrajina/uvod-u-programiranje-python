@@ -8,7 +8,12 @@
 \usepackage[croatian]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage{epsfig}
-\usepackage{listings} 
+\usepackage{listings}
+\lstset{
+  literate={š}{\v s}1
+  literate={Š}{\v S}1
+  % ...
+}
 
 % \addtolength{\hoffset}{-1cm}
 % \addtolength{\voffset}{-3cm}
@@ -73,6 +78,7 @@
 \include{moduli}
 \include{io2}
 \include{citljivost_koda}
+\include{testiranje}
 \include{visenitnost}
 \include{algoritmi}
 \include{baze}
