@@ -1,5 +1,76 @@
 \chapter{Osnove objektno orijentiranog programiranja}
 
+Pretpostavite da vam treba aplikacija koja izračunava statistike ocjena učenika u nekom 
+razredu. Prvo i osnovno, ta aplikacija treba nekako čuvati sve podatke o svakom ueniku.
+To bi, na primjer, mogli na sljedeći način:
+
+\begin{lstlisting}
+ana = { 'hrvatski': 4, 'matematika': 3, 'kemija': 2 }
+\end{lstlisting}
+
+I sad bi podaci učenicima nekog razreda mogli biti sačuvani u python programu ovako:
+
+\begin{lstlisting}
+ana = { 'hrvatski': 4, 'matematika': 3, 'kemija': 2 }
+josip = { 'hrvatski': 5, 'matematika': 2, 'kemija': 3 }
+ivana = { 'hrvatski': 5, 'matematika': 5, 'kemija': 5 }
+ucenici_razreda = [ ana, josip, ivana ]
+\end{lstlisting}
+
+Dakle, u listi čuvam spisak svih učenika, a svaki učenik mi je \emph+dictionary+ \TODO
+sa predmetima i njihovim ocjenama. 
+
+Sad, kad mi treba prosjek ocjena za hrvatski jezik, izračunao bih to ovako:
+
+\begin{lstlisting}
+zbroj = 0.
+for ucenik in ucenici_razreda:
+	ocjena_iz_hrvatskog = ucenik[ 'hrvatski' ]
+	zbroj = zbroj + ocjena_iz_hrvatskog
+print zbroj / len( ucenici_razreda )
+\end{lstlisting}
+
+Međutim, što ako uz svakog učenika trebamo čuvati i grad i godinu rođenja, te
+imena roditelja.
+
+\begin{lstlisting}
+ana = {
+	'ocjene': { 'hrvatski': 4, 'matematika': 3, 'kemija': 2 },
+	'grad_rodjenja': 'Split',
+	'godina_rodjenja': 1999
+}
+\end{lstlisting}
+
+Ili, na primjer, da dodamo još i slobne aktivnosti. 
+
+\begin{lstlisting}
+ana = {
+	'ocjene': { 'hrvatski': 4, 'matematika': 3, 'kemija': 2 },
+	'grad_rodjenja': 'Split',
+	'godina_rodjenja': 1999,
+	'slobodne_aktivnosti': ( 'Odbojka', 'Radio grupa' )
+}
+\end{lstlisting}
+
+Prikaz te "strukture" se ovdje znatno zakomplicirao, no uspijeli smo u pythonu
+prikazati jednu kompleksnu strukturu pomoću kombinacije listi, brojeva i stringova.
+Međutim, ono čemuvi težimo kad radimo s takvim složenim strukturama je da nam
+zapis bude što sliniji ljudskom jeziku. Pa tako, kao što mi neki podatak može
+biti \emph+lista+, \emph+string+ ili \emph+broj+, zašto ne bi imali tip podatka
+koji bi se zvao \emph+Ucenik+?
+
+Ljudskim jezikom bi moj primjer izgledao ovako: \emph{Neka je Ana učenica. Ana
+ima ocjene ih hrvatskog 4, iz matematike 3, iz kemije 2. Ana je rođena u Splitu.
+Rođena je 1999 godine. Ona ide na sljedeće slobodne aktivnosti: odbojka i radio
+grupa}.
+
+\begin{lstlisting}
+ana = Ucenik()
+ana.grad_rodjenja = 'Split'
+ana.slobodne_aktivnosti = ( 'Odbojka', 'Radio grupa' )
+ana.ocjene = { 'hrvatski': 4, 'matematika': 3, 'kemija': 2 },
+\end{lstlisting}
+
 \section{Klase i objekti}
 
 \section{Atributi i metode}
