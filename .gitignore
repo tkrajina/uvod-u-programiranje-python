@@ -5,3 +5,4 @@
 *.swo
 *.toc
 tmp/*
+*.pdf
