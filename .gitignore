@@ -6,3 +6,4 @@
 *.toc
 tmp/*
 *.pdf
+.DS_Store
